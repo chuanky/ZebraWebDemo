@@ -1,0 +1,52 @@
+header {
+	text-align: center;
+	height: 200px;
+	background: red;
+}
+
+.range {
+	height: 1000px;
+	background: khaki;
+}
+
+.rhombus_header {
+	height: 200px;
+	background: url('rhombus.png') no-repeat center;
+	position: relative;
+	margin-top: -100px;
+	z-index: 2;
+}
+
+.tags {
+	height: 200px;
+	background: lightgrey;
+}
+
+.range_img {
+	height: 400px;
+	background: orange;
+}
+
+.tech {
+	height: 1000px;
+	background: #f1f1c1;
+}
+
+#tech_text1 {
+	width: 30%;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

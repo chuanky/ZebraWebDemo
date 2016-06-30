@@ -1,0 +1,357 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+video,img {
+	display: block;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+	font-size: 16px;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 9px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #b2a682;
+}
+
+.active {
+	background-color: #b2a682;
+}
+
+#debug {
+	margin:10px;
+	text-align: center;
+}
+
+.container {
+	min-width: 650px;
+	max-width: 1920px;
+	position: relative;
+	margin: auto;
+	display: block;
+}
+
+.fill_content {
+	height: 800px;
+	/*background-color: orange;*/
+	position: relative;
+}
+
+.fill_content p {
+	text-align: center;
+	font-size: 100px;
+}
+
+/*header logo*/
+#header_logo {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+
+.logo_text {
+	display: inline;
+	position: absolute;
+	top: 10px;
+}
+
+#logo_text1 {
+	font-size: 22px;
+}
+
+.logo {
+	min-width: 230px;
+	position: absolute;
+	margin: 40px 10%;
+}
+
+/*top menu*/
+#top_menu {
+	min-width: 270px;
+	position: absolute;
+	margin: 50px 70%;
+}
+
+#wechat {
+	width: 32px;
+	display: inline-block;
+}
+
+#weibo {
+	width: 32px;
+	display: inline-block;
+}
+
+#youku {
+	width: 32px;
+	display: inline-block;
+}
+
+
+/*main menu*/
+#main_menu {
+	height: 40px;
+	background: black;
+}
+
+#split {
+	color: #b2a682;
+	padding: 12px 36px;
+	display: block;
+}
+
+/*homg video and image*/
+/*#index_video {
+	margin: 0px 0px -4px 0px;
+}
+
+#index_img1 {
+	margin: 0px 0px -4px 0px;
+}
+*/
+/*overlap blocks*/
+#block1 {
+	height: 160px;
+	width: 280px;
+	background: #292929;
+	position: absolute;
+	margin: -300px 45px;
+}
+
+.block1_text {
+	position: absolute;
+	color: #b2a682;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 30px 40px;
+}
+
+#block2 {
+	height: 300px;
+	width: 400px;
+	background: white;
+	position: absolute;
+	margin: -140px 325px;
+}
+
+.block2_text {
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 60px 50px;
+}
+
+#block3 {
+	width: 425px;
+	position: absolute;
+	margin-left: -100px;
+}
+
+#block3_img {
+	width: 100%;
+}
+
+/*rhombus header*/
+
+.rhomb_header {
+	height: 200px;
+	background: url('assets/rhombus.png') center no-repeat;
+	z-index: 1;
+	margin-top: -100px;
+}
+
+.rhomb_text {
+	color: #b2a682;
+	text-align: center;
+	line-height: 200px;
+}
+
+/*业务范畴标签*/
+#range_tag,#tech_tag {
+	height: 360px;
+	background-color: lightgrey;
+	margin-top: -100px;
+	z-index: -1;
+}
+
+#range_tag.hover {
+	background: black;
+}
+
+ul.range_tag_text {
+	position: relative;
+}
+
+.range_tag_text li{
+}
+
+.range_tag_text li a {
+	background: #b2a682;
+	padding: 100px 40px;
+	margin: 15px;
+}
+
+.range_tag_text li a:hover {
+	background: black;
+}
+
+
+
+/*业务范畴文字块*/
+#range_img {
+	width: 75%;
+	margin: auto;
+}
+
+.range_block1,.range_block2,.range_block3 {
+	opacity: 1;
+}
+
+.range_block1 {
+	height: 110px;
+	width: 230px;
+	background: #292929;
+	position: absolute;
+	color: white;
+	right: 425px;
+	margin-top: -335px;
+}
+
+.range_block2 {
+	height: 50px;
+	width: 130px;
+	background: #b2a682;
+	position: absolute;
+	color: white;
+	right: 425px;
+	margin-top: -225px;
+}
+
+.range_block3 {
+	height: 225px;
+	width: 375px;
+	background: white;
+	position: absolute;
+	right: 50px;
+	margin-top: -225px;
+}
+
+/*technology and experience*/
+#tech_img {
+	width: 100%;
+}
+
+.tech_block1,.tech_block2,.tech_block3 {
+	position: absolute;
+}
+
+.tech_block1 {
+	height: 80px;
+	width: 230px;
+	background: black;
+	right: 600px;
+	margin-top: -320px;
+}
+
+.tech_block2 {
+	height: 50px;
+	width: 190px;
+	background-color: #b2a682;
+	right: 100px;
+	margin-top: -290px;
+}
+
+.tech_block3 {
+	height: 240px;
+	width: 500px;
+	background: white;
+	right: 100px;
+	margin-top: -240px;
+}
+
+#tech_block1_text {
+	color: white;
+}
+
+
+/*footer area*/
+#footer_logo {
+	width: 84px;
+	height: 84px;
+	margin: auto;
+	filter: invert(100%);
+	margin-top: -150px;
+	z-index: 2;
+}
+
+footer p {
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+
+@media (max-width:500px){
+	body {
+		margin: 10px;
+	}
+}
+
+.rhomb_footer {
+	height: 200px;
+	background: url('assets/rhombus.png') center no-repeat;
+	z-index: 1;
+	margin-top: -100px;
+	background-size: 13% 80%;
+}
+
+#footer_area {
+	height: 500px;
+	background: black;
+	margin-top: -35px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
