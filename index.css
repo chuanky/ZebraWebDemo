@@ -15,8 +15,8 @@ ul {
 }
 
 li {
-	float: right;
 	font-size: 16px;
+	display: inline-block;
 }
 
 li a {
@@ -111,21 +111,16 @@ li a:hover {
 	background: black;
 }
 
+.menu_tag li{
+	float: right;
+}
+
 #split {
 	color: #b2a682;
 	padding: 12px 36px;
 	display: block;
 }
 
-/*homg video and image*/
-/*#index_video {
-	margin: 0px 0px -4px 0px;
-}
-
-#index_img1 {
-	margin: 0px 0px -4px 0px;
-}
-*/
 /*overlap blocks*/
 #block1 {
 	height: 160px;
@@ -184,40 +179,44 @@ li a:hover {
 }
 
 /*业务范畴标签*/
-#range_tag,#tech_tag {
+#tag_bg {
 	height: 360px;
 	background-color: lightgrey;
 	margin-top: -100px;
 	z-index: -1;
 }
 
-#range_tag.hover {
-	background: black;
+#tag {
+	height: 200px;
+	width: 80%;
+	margin: auto;
+	margin-top: -200px;
+	z-index: 1;	
 }
 
-ul.range_tag_text {
-	position: relative;
+.tag_text {
+	width: 1200px;
+	margin: auto;
 }
 
-.range_tag_text li{
-}
-
-.range_tag_text li a {
-	background: #b2a682;
+.tag_text li{
+	background: white;
+	color: #b2a682;
 	padding: 100px 40px;
-	margin: 15px;
+	margin-top: 20px;
+	margin-left: 21px;
 }
 
-.range_tag_text li a:hover {
+.tag_text li:hover {
 	background: black;
+	transition-duration: 0.5s;
 }
-
-
 
 /*业务范畴文字块*/
 #range_img {
 	width: 75%;
 	margin: auto;
+	z-index: -1;
 }
 
 .range_block1,.range_block2,.range_block3 {
@@ -254,6 +253,14 @@ ul.range_tag_text {
 }
 
 /*technology and experience*/
+#tech_tag {
+	width: 900px;
+}
+
+#tech_tag li{
+	padding: 100px 60px;
+}
+
 #tech_img {
 	width: 100%;
 }
