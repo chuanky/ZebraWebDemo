@@ -1,0 +1,16 @@
+TODO LIST:
+	√1. index video and image resize 
+	√2. complete color code 
+	√3. format block texts 
+	4. dynamic range tags and corresponding images
+	5. format footer
+	√6. float text blocks reposition 
+	√7. how to center a div block 
+	√8. gaps between images 
+	√9. create range and tech tags
+	√10. position menu tags
+	11. learn SVG and then draw the rhombus header and video icons
+	12. optimize video player’s appearance
+	13. footer style
+	14. add baidu map into footer area
+	15. 2d barcode img
