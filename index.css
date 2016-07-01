@@ -1,3 +1,20 @@
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.font_size18 {
+	font-size: 18px;
+}
+
+.max_height900 {
+	max-height: 900px;
+	width: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -86,7 +103,7 @@ li a:hover {
 #top_menu {
 	min-width: 270px;
 	position: absolute;
-	margin: 50px 70%;
+	margin: 50px 80%;
 }
 
 #wechat {
@@ -119,6 +136,12 @@ li a:hover {
 	color: #b2a682;
 	padding: 12px 36px;
 	display: block;
+}
+
+#index_video {
+	width: 100%;
+	max-height: 900px;
+	background: black;
 }
 
 /*overlap blocks*/
@@ -178,15 +201,15 @@ li a:hover {
 	line-height: 200px;
 }
 
-/*业务范畴标签*/
-#tag_bg {
+/*标签*/
+.tag_bg {
 	height: 360px;
 	background-color: lightgrey;
 	margin-top: -100px;
 	z-index: -1;
 }
 
-#tag {
+.tag {
 	height: 200px;
 	width: 80%;
 	margin: auto;
@@ -212,7 +235,20 @@ li a:hover {
 	transition-duration: 0.5s;
 }
 
+#more:hover {
+	color: white;
+}
+
 /*业务范畴文字块*/
+#range_bottom {
+	background: black;
+	font-size: 18px;
+}
+
+#range_bottom span {
+	display: block;
+}
+
 #range_img {
 	width: 75%;
 	margin: auto;
@@ -238,9 +274,9 @@ li a:hover {
 	width: 130px;
 	background: #b2a682;
 	position: absolute;
-	color: white;
 	right: 425px;
 	margin-top: -225px;
+	line-height: 50px;
 }
 
 .range_block3 {
@@ -252,7 +288,15 @@ li a:hover {
 	margin-top: -225px;
 }
 
+.range_block3 span {
+	margin: 13px 0px;
+}
+
 /*technology and experience*/
+#tech_3rd span {
+	display: block;
+}
+
 #tech_tag {
 	width: 900px;
 }
@@ -274,7 +318,8 @@ li a:hover {
 	width: 230px;
 	background: black;
 	right: 600px;
-	margin-top: -320px;
+	margin-top: -360px;
+	line-height: 30px;
 }
 
 .tech_block2 {
@@ -282,19 +327,17 @@ li a:hover {
 	width: 190px;
 	background-color: #b2a682;
 	right: 100px;
-	margin-top: -290px;
+	margin-top: -330px;
+	line-height: 50px;
 }
 
 .tech_block3 {
-	height: 240px;
+	height: 280px;
 	width: 500px;
 	background: white;
 	right: 100px;
-	margin-top: -240px;
-}
-
-#tech_block1_text {
-	color: white;
+	margin-top: -280px;
+	line-height: 30px;
 }
 
 
@@ -305,7 +348,8 @@ li a:hover {
 	margin: auto;
 	filter: invert(100%);
 	margin-top: -150px;
-	z-index: 2;
+	z-index: 1;
+	padding: 0 9px 0 0;
 }
 
 footer p {
@@ -323,16 +367,12 @@ footer p {
 .rhomb_footer {
 	height: 200px;
 	background: url('assets/rhombus.png') center no-repeat;
-	z-index: 1;
-	margin-top: -100px;
-	background-size: 13% 80%;
 }
 
 #footer_area {
 	height: 500px;
 	background: black;
 	margin-top: -35px;
-	z-index: -1;
 }
 
 

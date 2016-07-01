@@ -36,8 +36,8 @@
 	</div>
 
 	<div class="container">
-		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/index_img1.jpg" style="width: 100%; display:block;" id="index_video"></video>
-		<img src="assets/images/index_img2.jpg" style="width: 100%;" id="index_img2">
+		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/index_img1.jpg" id="index_video"></video>
+		<img src="assets/images/index_img2.jpg" class="max_height900">
 	</div>
 
 	<div class="container" style="width: 10%; height: 263px;">
@@ -62,9 +62,9 @@
 			<h2 class="rhomb_text">业务范畴</h2>
 		</div>
 
-		<div class="container" id="tag_bg"></div>
+		<div class="container tag_bg"></div>
 
-		<div class="container" id="tag">
+		<div class="container tag">
 			<ul class="tag_text">
 				<li>热门电影</li>
 				<li>热播剧集</li>
@@ -76,16 +76,22 @@
 			</ul>
 		</div>
 
-		<div class="container" style="background:black">
+		<div class="container" id="range_bottom">
 			<img src="assets/images/range_pop_movie.jpg" id="range_img">
 			<div class="range_block1">
-				<span>Know yourself<br>了解自己</span>
+				<span style="margin: 30px 20px 5px 20px;">Know yourself</span>
+				<span style="text-align:right; margin:0px 30px;">了解自己</span>
 			</div>
-			<div class="range_block2">
-				<span>More →</span>
+			<div class="range_block2 text_center">
+				<span id="more">More →</span>
 			</div>
 			<div class="range_block3">
-				<span>视觉形象<br>The visual image<br>我们拍摄最真实最珍贵的瞬间<br>We shot the most real and precious moments</span>
+				<div style="margin:30px;">
+					<span>视觉形象</span>
+					<span>The visual image</span>
+					<span>我们拍摄最真实最珍贵的瞬间</span>
+					<span>We shot the most real and precious moments</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -97,9 +103,9 @@
 			<h2 class="rhomb_text">技术经验</h2>
 		</div>
 
-		<div class="container" id="tag_bg"></div>
+		<div class="container tag_bg"></div>
 
-		<div class="container" id="tag">
+		<div class="container tag">
 			<ul class="tag_text" id="tech_tag">
 				<li>策划</li>
 				<li>拍摄</li>
@@ -109,16 +115,16 @@
 			</ul>
 		</div>	
 
-		<div class="container">
+		<div class="container font_size18 text_center" id="tech_3rd">
 			<img src="assets/images/tech_plan.jpg" id="tech_img">
 			<div class="tech_block1">
-				<span id="tech_block1_text">镜头世界<br>The camera world</span>
+				<span style="color:white; margin:10px 0px;">镜头世界<br>The camera world</span>
 			</div>
 			<div class="tech_block2">
-				<span>More →</span>
+				<span id="more">More →</span>
 			</div>
-			<div class="tech_block3">
-				<span>斑马团队拥有超强的文案能力，扎实的内容企划能力。<br>Zebra team has strong copywriting ablity, solid content planning ablitiy.<br>实时了解影视剧市场，及时把握新动态，新趋势。<br>To understand the film and television play market, grasp the new dynamic trend.</span>
+			<div class="tech_block3 text_left">
+				<span style="margin:30px;">斑马团队拥有超强的文案能力，扎实的内容企划能力。<br>Zebra team has strong copywriting ablity, solid content planning ablitiy.<br><br>实时了解影视剧市场，及时把握新动态，新趋势。<br>To understand the film and television play market, grasp the new dynamic trend.</span>
 			</div>
 		</div>
 	</div>
