@@ -17,3 +17,6 @@ SVG:
 	1.how to reuse svg code blocks
 	2.draw rhombus and play icon
 	3.draw lines for footer area
+
+JavaScript:
+	1.improve code for interactive tags
