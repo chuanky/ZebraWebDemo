@@ -9,8 +9,18 @@ TODO LIST:
 	√8. gaps between images 
 	√9. create range and tech tags
 	√10. position menu tags
-	11. learn SVG and then draw the rhombus header and video icons
-	12. optimize video player’s appearance
-	13. footer style
-	14. add baidu map into footer area
-	15. 2d barcode img
+	11. optimize video player’s appearance
+	12. add baidu map into footer area
+	13. 2d barcode img
+	14. align li tags 
+	15. add icons into tech and range tags
+
+SVG:
+	1.how to reuse svg code blocks
+	2.draw rhombus and play icon
+	3.draw lines for footer area
+
+JavaScript:
+	1. improve code for interactive tags
+	2. make responsive texts for tags
+	3. create animation for switching images
