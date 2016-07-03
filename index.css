@@ -10,10 +10,16 @@
 	font-size: 18px;
 }
 
-.max_height900 {
-	max-height: 900px;
-	width: 100%;
+.max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}
+
+.max_width{width: 100%;}.width80{width: 80%;}
+
+.bg_black {
+	background: black;
 }
+
+.deep{z-index: -1;}.high{z-index: 1;}
+
 
 body {
 	margin: 0;
@@ -48,8 +54,15 @@ li a:hover {
 	background-color: #b2a682;
 }
 
+.inactive {
+	background: white;
+	color: #b2a682;
+	transition-duration: 0.5s;
+}
+
 .active {
-	background-color: #b2a682;
+	background: black;
+	color: #b2a682;
 }
 
 #debug {
@@ -204,7 +217,7 @@ li a:hover {
 /*标签*/
 .tag_bg {
 	height: 360px;
-	background-color: lightgrey;
+	background-color: #f0f0f0;
 	margin-top: -100px;
 	z-index: -1;
 }
@@ -214,25 +227,29 @@ li a:hover {
 	width: 80%;
 	margin: auto;
 	margin-top: -200px;
-	z-index: 1;	
+	z-index: 1;
 }
 
 .tag_text {
-	width: 1200px;
+	width: 1152px;
 	margin: auto;
 }
 
 .tag_text li{
-	background: white;
-	color: #b2a682;
 	padding: 100px 40px;
 	margin-top: 20px;
-	margin-left: 21px;
+	float: left;
 }
+
 
 .tag_text li:hover {
 	background: black;
 	transition-duration: 0.5s;
+}
+
+#more {
+	text-decoration: none;
+	color: black;
 }
 
 #more:hover {
@@ -250,7 +267,6 @@ li a:hover {
 }
 
 #range_img {
-	width: 75%;
 	margin: auto;
 	z-index: -1;
 }
@@ -298,7 +314,8 @@ li a:hover {
 }
 
 #tech_tag {
-	width: 900px;
+	width: 760px;
+	margin: auto;
 }
 
 #tech_tag li{
@@ -348,7 +365,6 @@ li a:hover {
 	margin: auto;
 	filter: invert(100%);
 	margin-top: -150px;
-	z-index: 1;
 	padding: 0 9px 0 0;
 }
 
