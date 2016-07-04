@@ -66,42 +66,10 @@ function switch_range_img(num) {
 }
 
 function reset_button_range() {
-	// for (var i = 0; i < 7; i++) {
-	// 	if (range_tags[i].className == "active") {
-	// 		range_tags[i].className == "inactive";
-	// 	}
-	// }
-
-	if (range_tag1.className == "active") {
-		range_tag1.className = "inactive";
-	}
-
-	if (range_tag2.className == "active") {
-		range_tag2.className = "inactive";
-	}
-
-	if (range_tag3.className == "active") {
-		range_tag3.className = "inactive";
-	}
-
-	if (range_tag4.className == "active") {
-		range_tag4.className = "inactive";
-	}
-
-	if (range_tag5.className == "active") {
-		range_tag5.className = "inactive";
-	}
-
-	if (range_tag6.className == "active") {
-		range_tag6.className = "inactive";
-	}
-
-	if (range_tag7.className == "active") {
-		range_tag7.className = "inactive";
-	}
-
-	if (range_tag8.className == "active") {
-		range_tag8.className = "inactive";
+	for (var i in range_tags) {
+		if (range_tags[i].className == "active") {
+			range_tags[i].className = "inactive";
+		}
 	}
 }
 
@@ -111,6 +79,8 @@ var tech_tag2 = document.getElementById('tech_tag2');
 var tech_tag3 = document.getElementById('tech_tag3');
 var tech_tag4 = document.getElementById('tech_tag4');
 var tech_tag5 = document.getElementById('tech_tag5');
+
+var tech_tags = [tech_tag1, tech_tag2, tech_tag3, tech_tag4, tech_tag5];
 
 var tech_img = document.getElementById('tech_img');
 
@@ -151,20 +121,10 @@ function switch_tech_img(num) {
 }
 
 function reset_button_tech() {
-	if (tech_tag1.className == "active") {
-		tech_tag1.className = "inactive";
-	}
-	if (tech_tag2.className == "active") {
-		tech_tag2.className = "inactive";
-	}
-	if (tech_tag3.className == "active") {
-		tech_tag3.className = "inactive";
-	}
-	if (tech_tag4.className == "active") {
-		tech_tag4.className = "inactive";
-	}
-	if (tech_tag5.className == "active") {
-		tech_tag5.className = "inactive";
+	for (var i = tech_tags.length - 1; i >= 0; i--) {
+		if (tech_tags[i].className == "active") {
+			tech_tags[i].className = "inactive";
+		}
 	}
 }
 

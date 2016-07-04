@@ -21,6 +21,6 @@ SVG:
 	3.draw lines for footer area
 
 JavaScript:
-	1. improve code for interactive tags
+	√1. improve code for interactive tags
 	2. make responsive texts for tags
 	3. create animation for switching images
