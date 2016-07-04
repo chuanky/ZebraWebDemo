@@ -20,15 +20,12 @@
 
 .deep{z-index: -1;}.high{z-index: 1;}
 
-
 body {
 	margin: 0;
 	padding: 0;
 }
 
-video,img {
-	display: block;
-}
+video,img{display: block;}
 
 ul {
 	padding: 0;
@@ -48,16 +45,17 @@ li a {
 	text-align: center;
 	padding: 9px 16px;
 	text-decoration: none;
+	transition-duration: 0.6s;
 }
 
 li a:hover {
-	background-color: #b2a682;
+	color: #b2a682;
+	transition-duration: 0.6s;
 }
 
 .inactive {
-	background: white;
 	color: #b2a682;
-	transition-duration: 0.5s;
+	transition-duration: 0.6s;
 }
 
 .active {
@@ -116,24 +114,12 @@ li a:hover {
 #top_menu {
 	min-width: 270px;
 	position: absolute;
-	margin: 50px 80%;
+	margin: 60px 80%;
 }
 
-#wechat {
-	width: 32px;
-	display: inline-block;
-}
+#wechat, #weibo, #youku{width: 45px;display: inline-block;transition-duration: 0.6s}
 
-#weibo {
-	width: 32px;
-	display: inline-block;
-}
-
-#youku {
-	width: 32px;
-	display: inline-block;
-}
-
+#wechat:hover, #weibo:hover, #youku:hover{filter: brightness(130%);transition-duration: 0.6s}
 
 /*main menu*/
 #main_menu {
@@ -141,8 +127,14 @@ li a:hover {
 	background: black;
 }
 
-.menu_tag li{
-	float: right;
+.menu_tag {
+	width: 612px;
+	height: 40px;
+	margin: auto;
+}
+
+.menu_tag li {
+	float: left;
 }
 
 #split {
@@ -153,7 +145,6 @@ li a:hover {
 
 #index_video {
 	width: 100%;
-	max-height: 900px;
 	background: black;
 }
 
@@ -217,34 +208,64 @@ li a:hover {
 /*标签*/
 .tag_bg {
 	height: 360px;
-	background-color: #f0f0f0;
+	background-color: #f4f4f4;
 	margin-top: -100px;
 	z-index: -1;
 }
 
 .tag {
-	height: 200px;
-	width: 80%;
+	height: 210px;
 	margin: auto;
-	margin-top: -200px;
+	margin-top: -250px;
 	z-index: 1;
 }
 
 .tag_text {
-	width: 1152px;
 	margin: auto;
 }
 
-.tag_text li{
-	padding: 100px 40px;
+.range_tag {
+	width: 1152px;
+}
+
+.tech_tag {
+	width: 720px;
+}
+
+.range_tag img {
+	margin: auto;
 	margin-top: 20px;
+	border-radius: 50px;
+	width: 48px;
+	background: #b2a682;
+}
+
+.range_tag li:nth-child(even) img {
+	background: #b2b2b2;
+}
+
+.tech_tag img {
+	margin: auto;
+	margin-top: 50px;
+	width: 75px;
+}
+
+.tag_text li{
+	height: 180px;
+	width: 144px;
+	text-align: center;
 	float: left;
+	font-size: 15px;
+}
+
+.tag_text li:nth-child(even) {
+	color: #b2b2b2;
 }
 
 
 .tag_text li:hover {
 	background: black;
-	transition-duration: 0.5s;
+	transition-duration: 0.6s;
 }
 
 #more {
@@ -255,6 +276,29 @@ li a:hover {
 #more:hover {
 	color: white;
 }
+
+/*tag titles*/
+.range_title {
+	width: 1152px;
+	margin: auto;
+}
+
+.range_title h4, .tech_title h4{
+	display: inline-block;
+	border-bottom: 3px solid #b2a682;
+}
+
+#rt_movie,#rt_plan,#rt_prop{text-align: center;margin-left: 80px;width: 210px;}
+#rt_net,#rt_baby{text-align: center;margin-left: 60px;width: 80px;}
+#rt_movie{margin-left: 30px;}
+
+.tech_title {
+	width: 720px;
+	margin: auto;
+}
+
+#tt_plan,#tt_shoot,#tt_cut,#tt_special,#tt_adv{text-align:center;width:64px;margin-left: 75px;}
+#tt_plan{margin-left: 40px;}
 
 /*业务范畴文字块*/
 #range_bottom {
@@ -313,11 +357,6 @@ li a:hover {
 	display: block;
 }
 
-#tech_tag {
-	width: 760px;
-	margin: auto;
-}
-
 #tech_tag li{
 	padding: 100px 60px;
 }
@@ -336,7 +375,8 @@ li a:hover {
 	background: black;
 	right: 600px;
 	margin-top: -360px;
-	line-height: 30px;
+	line-height: 38px;
+	color: white;
 }
 
 .tech_block2 {
@@ -374,9 +414,9 @@ footer p {
 	color: white;
 }
 
-@media (max-width:500px){
+@media (max-width:1000px){
 	body {
-		margin: 10px;
+		margin: 20px;
 	}
 }
 
@@ -386,8 +426,8 @@ footer p {
 }
 
 #footer_area {
-	height: 500px;
-	background: black;
+	height: 600px;
+	background: #292929;
 	margin-top: -35px;
 }
 

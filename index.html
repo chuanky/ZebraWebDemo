@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<div class="container" style="height: 160px;">
+		<div class="container" style="height:130px;">
 			<div class="logo">
 				<img src="assets/logo/zebra.png" id="header_logo">
 				<span class="logo_text"><span id="logo_text1">斑马电影工作室</span>ZEBRA FILM STUDIO</span>
@@ -35,8 +35,13 @@
 			</ul>
 	</div>
 
+	<div class="container" style="height:15px;"></div>
+
 	<div class="container">
 		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/index_img1.jpg" id="index_video"></video>
+
+		<div class="container" style="height:15px;"></div>
+
 		<img src="assets/images/index_img2.jpg" class="max_height700 max_width">
 	</div>
 
@@ -65,15 +70,70 @@
 		<div class="container tag_bg"></div>
 
 		<div class="container tag">
-			<ul class="tag_text">
-				<li id="range_tag1" class="active" onclick="switch_range_img(0)">热门电影</li>
-				<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">热播剧集</li>
-				<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">中式婚礼</li>
-				<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">西式婚礼</li>
-				<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">企业宣传</li>
-				<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">产品宣传</li>
-				<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">网络电影</li>
-				<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">儿童记录</li>
+			<div class="range_title">
+				<h4 id="rt_movie">微电影拍摄</h4>
+				<h4 id="rt_plan">高端婚礼策划</h4>
+				<h4 id="rt_prop">企业宣传策划</h4>
+				<h4 id="rt_net">网络大电影</h4>		
+				<h4 id="rt_baby">儿童记录</h4>		
+			</div>
+			<ul class="tag_text range_tag">
+				<li id="range_tag1" class="active" onclick="switch_range_img(0)">
+					<img src="assets/logo/热门电影.png">
+					<br><br>
+					热门电影
+					<br>
+					Popular Movie
+				</li>
+				<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">
+					<img src="assets/logo/热播剧集.png">
+					<br><br>
+					热播剧集
+					<br>
+					Hot Movie
+				</li>
+				<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">
+					<img src="assets/logo/中式婚礼.png">
+					<br><br>
+					中式婚礼
+					<br>
+					Chinese Wedding
+				</li>
+				<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">
+					<img src="assets/logo/西式婚礼.png">
+					<br><br>
+					西式婚礼
+					<br>
+					Western Wedding
+				</li>
+				<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">
+					<img src="assets/logo/企业宣传.png">
+					<br><br>
+					企业宣传
+					<br>
+					Company Prop
+				</li>
+				<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">
+					<img src="assets/logo/产品宣传.png">
+					<br><br>
+					产品宣传
+					<br>
+					Product Prop
+				</li>
+				<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">
+					<img src="assets/logo/网络电影.png">
+					<br><br>
+					网络电影
+					<br>
+					Internet Moive
+				</li>
+				<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">
+					<img src="assets/logo/儿童记录.png">
+					<br><br>
+					儿童记录
+					<br>
+					Baby Record
+				</li>
 			</ul>
 		</div>
 
@@ -88,16 +148,16 @@
 			</div>
 			<div class="range_block3">
 				<div style="margin:30px;">
-					<span>视觉形象</span>
-					<span>The visual image</span>
-					<span>我们拍摄最真实最珍贵的瞬间</span>
-					<span>We shot the most real and precious moments</span>
+					<span id="rb3_text1">视觉形象</span>
+					<span id="rb3_text2">The visual image</span>
+					<span id="rb3_text3">我们拍摄最真实最珍贵的瞬间</span>
+					<span id="rb3_text4">We shot the most real and precious moments</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container" style="height:200px;"></div>
+	<div class="container" style="height:150px;"></div>
 
 	<div class="container" id="tech">
 		<div class="rhomb_header">
@@ -107,30 +167,47 @@
 		<div class="container tag_bg"></div>
 
 		<div class="container tag">
-			<ul class="tag_text" id="tech_tag">
-				<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">策划</li>
-				<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">拍摄</li>
-				<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">剪辑</li>
-				<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">特效</li>
-				<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">推广</li>
+			<div class="tech_title">
+				<h4 id="tt_plan">策划</h4>
+				<h4 id="tt_shoot">拍摄</h4>
+				<h4 id="tt_cut">剪辑</h4>
+				<h4 id="tt_special">特效</h4>
+				<h4 id="tt_adv">推广</h4>
+			</div>
+			<ul class="tag_text tech_tag">
+				<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">
+					<img src="assets/logo/策划.png">
+				</li>
+				<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">
+					<img src="assets/logo/拍摄.png">
+				</li>
+				<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">
+					<img src="assets/logo/剪辑.png">
+				</li>
+				<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">
+					<img src="assets/logo/特效.png">
+				</li>
+				<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">
+					<img src="assets/logo/推广.png">
+				</li>
 			</ul>
 		</div>	
 
 		<div class="container font_size18 text_center bg_black" id="tech_3rd">
 			<img src="assets/images/tech_plan.jpg" id="tech_img" class="max_height600">
 			<div class="tech_block1">
-				<span style="color:white; margin:10px 0px;">镜头世界<br>The camera world</span>
+				<span id="tb1_text1">镜头世界<br>The camera world</span>
 			</div>
 			<div class="tech_block2">
 				<span><a id="more" href="tech_plan_more.html">More →</a></span>
 			</div>
 			<div class="tech_block3 text_left">
-				<span style="margin:30px;">斑马团队拥有超强的文案能力，扎实的内容企划能力。<br>Zebra team has strong copywriting ablity, solid content planning ablitiy.<br><br>实时了解影视剧市场，及时把握新动态，新趋势。<br>To understand the film and television play market, grasp the new dynamic trend.</span>
+				<span style="margin:30px;" id="tb3_text1">斑马团队拥有超强的文案能力，扎实的内容企划能力<br>Zebra team has strong copywriting ablity, solid content planning ablitiy<br><br>实时了解影视剧市场，及时把握新动态，新趋势<br>To understand the film and television play market, grasp the new dynamic trend</span>
 			</div>
 		</div>
 	</div>
 
-	<div class="container" style="height:350px;"></div>
+	<div class="container" style="height:300px;"></div>
 
 	<footer>
 		<div class="container" style="z-index:1;">
