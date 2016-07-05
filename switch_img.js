@@ -13,6 +13,10 @@ var range_tags = [range_tag1, range_tag2, range_tag3, range_tag4, range_tag5, ra
 
 var range_img = document.getElementById('range_img');
 
+var rb1 = document.getElementById('rb1');
+var rb2 = document.getElementById('rb2');
+var rb3 = document.getElementById('rb3');
+
 var rb1_text1 = document.getElementById('rb1_text1');
 var rb1_text2 = document.getElementById('rb1_text2');
 var rb3_text1 = document.getElementById('rb3_text1');
@@ -20,14 +24,10 @@ var rb3_text2 = document.getElementById('rb3_text2');
 var rb3_text3 = document.getElementById('rb3_text3');
 var rb3_text4 = document.getElementById('rb3_text4');
 
-//initial texts
-
 
 function switch_range_img(num) {
 	var pic;
-	reset_button_range();
-
-	range_img.style.width = "100%";
+	reset_range();
 
 	switch(num) {
 		case 0:
@@ -43,8 +43,11 @@ function switch_range_img(num) {
 			break;
 		case 1:
 			pic = "assets/images/range_hot.jpg";
+
+			rb1.style.right = "525px";
 			rb1_text1.innerHTML = "About the secret";
 			rb1_text2.innerHTML = "关于秘密";
+
 			rb3_text1.innerHTML = "没有任何理由";
 			rb3_text2.innerHTML = "There is no reason";
 			rb3_text3.innerHTML = "才发现有你生命才完整";
@@ -116,12 +119,24 @@ function switch_range_img(num) {
 	range_img.src = pic;
 }
 
-function reset_button_range() {
+function reset_range() {
+	//reset tags
 	for (var i in range_tags) {
 		if (range_tags[i].className == "active") {
 			range_tags[i].className = "inactive";
 		}
 	}
+
+	//reset images
+	range_img.style.width = "100%";
+
+	//reset blocks
+	rb1.style.right = "425px";
+	rb1.style.marginTop = "-335px";
+	rb2.style.right = "425px";
+	rb2.style.marginTop = "-225px";
+	rb3.style.right = "50px";
+	rb3.style.marginTop = "-225px";
 }
 
 //creat short var names for tech
@@ -135,15 +150,16 @@ var tech_tags = [tech_tag1, tech_tag2, tech_tag3, tech_tag4, tech_tag5];
 
 var tech_img = document.getElementById('tech_img');
 
-var tech_block3 = document.getElementsByClassName('tech_block3');
+var tb1 = document.getElementById('tb1');
+var tb2 = document.getElementById('tb2');
+var tb3 = document.getElementById('tb3');
+
 var tb1_text1 = document.getElementById('tb1_text1');
 var tb3_text1 = document.getElementById('tb3_text1');
 
 function switch_tech_img(num) {
 	var pic;
-	reset_button_tech();
-	tech_img.style.width = "100%";
-	tech_img.style.margin = "0";
+	reset_tech();
 
 	switch(num) {
 		case 0:
@@ -154,6 +170,7 @@ function switch_tech_img(num) {
 			break;
 		case 1:
 			pic = "assets/images/tech_shoot.jpg";
+			tb1.style.right = "700px";
 			tb1_text1.innerHTML = "生命 —— 意义<br>Life —— Meaning";
 			tb3_text1.innerHTML = "独特的视觉角度，拍摄出不同人对生命的定义<br>Different visual angles reflect different understandings of life<br>我想，生命的意义，只能靠自己，在体验，观察，阅读，思考<br>In my opinion, the meanding of life could only discover by myself through experiencing, observations, reading and thinking";
 			tech_img.style.width = "60%";
@@ -185,12 +202,25 @@ function switch_tech_img(num) {
 	tech_img.src = pic;
 }
 
-function reset_button_tech() {
+function reset_tech() {
+	//reset tags
 	for (var i = tech_tags.length - 1; i >= 0; i--) {
 		if (tech_tags[i].className == "active") {
 			tech_tags[i].className = "inactive";
 		}
 	}
+
+	//reset images
+	tech_img.style.width = "100%";
+	tech_img.style.margin = "0";
+
+	//reset blocks
+	tb1.style.right = "600px";
+	tb1.style.marginTop = "-360px";
+	tb2.style.right = "100px";
+	tb2.style.marginTop = "-330px";
+	tb3.style.right = "100px";
+	tb3.style.marginTop = "-280px";
 }
 
 
