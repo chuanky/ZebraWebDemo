@@ -13,10 +13,10 @@ var range_tags = [range_tag1, range_tag2, range_tag3, range_tag4, range_tag5, ra
 
 var range_img = document.getElementById('range_img');
 
+var rb_container = document.getElementById('rb_container');
 var rb1 = document.getElementById('rb1');
 var rb2 = document.getElementById('rb2');
 var rb3 = document.getElementById('rb3');
-
 var rb1_text1 = document.getElementById('rb1_text1');
 var rb1_text2 = document.getElementById('rb1_text2');
 var rb3_text1 = document.getElementById('rb3_text1');
@@ -43,11 +43,9 @@ function switch_range_img(num) {
 			break;
 		case 1:
 			pic = "assets/images/range_hot.jpg";
-
-			rb1.style.right = "525px";
+			rb_container.style.left = "10%";
 			rb1_text1.innerHTML = "About the secret";
 			rb1_text2.innerHTML = "关于秘密";
-
 			rb3_text1.innerHTML = "没有任何理由";
 			rb3_text2.innerHTML = "There is no reason";
 			rb3_text3.innerHTML = "才发现有你生命才完整";
@@ -66,6 +64,7 @@ function switch_range_img(num) {
 			break;
 		case 3:
 			pic = "assets/images/range_wedding_w.jpg";
+			rb_container.style.left = "10%";
 			rb1_text1.innerHTML = "浪漫而神圣 人心向往";
 			rb1_text2.innerHTML = "Romantic";
 			rb3_text1.innerHTML = "王子和公主的背后，是普通人一样的共坚持、共患难";
@@ -76,6 +75,10 @@ function switch_range_img(num) {
 			break;
 		case 4:
 			pic = "assets/images/range_company.png";
+			rb_container.style.left = "65%";
+			rb1.style.margin = "30px";
+			rb2.style.marginTop = "60px";
+			rb2.style.left = "475px";
 			rb1_text1.innerHTML = "纪实、表现 展播方式";
 			rb1_text2.innerHTML = "Show way";
 			rb3_text1.innerHTML = "通过故事的形式，对企业形象进行战略层面的宣传和创博，也是一种企业传播路径<br><br>";
@@ -86,6 +89,8 @@ function switch_range_img(num) {
 			break;
 		case 5:
 			pic = "assets/images/range_product.jpg";
+			rb_container.style.left = "10%";
+			rb2.style.marginTop = "240px";
 			rb1_text1.innerHTML = "创业创意点子";
 			rb1_text2.innerHTML = "Innovations";
 			rb3_text1.innerHTML = "为企业宣传创作的中点在于情景的故事性，是佛找到与现实场景中的共鸣<br><br>";
@@ -96,6 +101,8 @@ function switch_range_img(num) {
 			break;
 		case 6:
 			pic = "assets/images/range_internet.jpg";
+			rb1.style.left = "375px";
+			rb2.style.marginTop = "280px";
 			rb1_text1.innerHTML = "表达创作者的思想";
 			rb1_text2.innerHTML = "Concepts";
 			rb3_text1.innerHTML = "“小体积”的电影";
@@ -106,6 +113,8 @@ function switch_range_img(num) {
 			break;
 		case 7:
 			pic = "assets/images/range_baby.jpg";
+			rb1.style.left = "60px";
+			rb2.style.marginTop = "280px";
 			rb1_text1.innerHTML = "Sweat Sisters";
 			rb1_text2.innerHTML = "好姐妹";
 			rb3_text1.innerHTML = "“为小宝贝们记录成长的每个快乐瞬间";
@@ -130,13 +139,12 @@ function reset_range() {
 	//reset images
 	range_img.style.width = "100%";
 
-	//reset blocks
-	rb1.style.right = "425px";
-	rb1.style.marginTop = "-335px";
-	rb2.style.right = "425px";
-	rb2.style.marginTop = "-225px";
-	rb3.style.right = "50px";
-	rb3.style.marginTop = "-225px";
+	//reset block container
+	rb_container.style.left = "50%";
+	rb1.style.margin = "";
+	rb1.style.left = "";
+	rb2.style.marginTop = "110px";
+	rb2.style.left = "100px";
 }
 
 //creat short var names for tech
@@ -150,6 +158,7 @@ var tech_tags = [tech_tag1, tech_tag2, tech_tag3, tech_tag4, tech_tag5];
 
 var tech_img = document.getElementById('tech_img');
 
+var tb_container = document.getElementById('tb_container');
 var tb1 = document.getElementById('tb1');
 var tb2 = document.getElementById('tb2');
 var tb3 = document.getElementById('tb3');
@@ -170,7 +179,7 @@ function switch_tech_img(num) {
 			break;
 		case 1:
 			pic = "assets/images/tech_shoot.jpg";
-			tb1.style.right = "700px";
+			tb_container.style.left = "65%";
 			tb1_text1.innerHTML = "生命 —— 意义<br>Life —— Meaning";
 			tb3_text1.innerHTML = "独特的视觉角度，拍摄出不同人对生命的定义<br>Different visual angles reflect different understandings of life<br>我想，生命的意义，只能靠自己，在体验，观察，阅读，思考<br>In my opinion, the meanding of life could only discover by myself through experiencing, observations, reading and thinking";
 			tech_img.style.width = "60%";
@@ -178,6 +187,8 @@ function switch_tech_img(num) {
 			break;
 		case 2:
 			pic = "assets/images/tech_cut.jpg";
+			tb1.style.marginTop = "-50px";
+			tb1.style.marginLeft = "-140px";
 			tb1_text1.innerHTML = "精湛的技术源于<br>艺术的魅力";
 			tb3_text1.innerHTML = "让前方的自由和弥漫都在你心上<br>Let the freedom and diffuse in front of the spectrum in your heart<br><br><br>让路程所有的光亮都围绕你绽放<br>To light all up around you"
 			tech_img.style.width = "60%";
@@ -185,12 +196,22 @@ function switch_tech_img(num) {
 			break;
 		case 3:
 			pic = "assets/images/tech_special.jpg";
+			tb_container.style.left = "10%";
+			tb1.style.marginTop = "-50px";
+			tb1.style.marginLeft = "-140px";
+			tb2.style.marginTop = "230px";
+			tb2.style.marginLeft = "500px";
 			tb1_text1.innerHTML = "街头”随机“特效<br>Random";
 			tb3_text1.innerHTML = "<br>一部好的艺术影片<br>往往需要过人的观察力、时机点和反应速度<br><br><br>Observations, chances, and the reaction speed"
 			tech_tag4.className = "active";
 			break;
 		case 4:
 			pic = "assets/images/tech_adv.jpg";
+			tb_container.style.left = "10%";
+			tb1.style.marginTop = "-80px";
+			tb1.style.marginLeft = "-100px";
+			tb2.style.marginTop = "230px";
+			tb2.style.marginLeft = "-190px";
 			tb1_text1.innerHTML = "商家与客户共赢<br>WIN-WIN";
 			tb3_text1.innerHTML = "<br>斑马传媒将影视推广到更完善的运作模式，更形象化、具体化，最终为客户带来更多的有利的效益<br><br>We will try our best for your benefits"
 			tech_img.style.width = "90%";
@@ -215,12 +236,11 @@ function reset_tech() {
 	tech_img.style.margin = "0";
 
 	//reset blocks
-	tb1.style.right = "600px";
-	tb1.style.marginTop = "-360px";
-	tb2.style.right = "100px";
-	tb2.style.marginTop = "-330px";
-	tb3.style.right = "100px";
-	tb3.style.marginTop = "-280px";
+	tb_container.style.left = "60%";
+	tb1.style.marginTop = "-80px";
+	tb1.style.marginLeft = "-230px";
+	tb2.style.marginTop = "-50px"
+	tb2.style.marginLeft = "310px";
 }
 
 
