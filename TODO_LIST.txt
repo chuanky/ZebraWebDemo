@@ -14,6 +14,7 @@ TODO LIST:
 	13. 2d barcode img
 	√14. align li tags 
 	√15. add icons into tech and range tags
+	16. main menu - avoid selecting tag texts
 
 Images:
 	1. get proper size for video poster
