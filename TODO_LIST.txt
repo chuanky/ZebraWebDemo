@@ -17,6 +17,7 @@ TODO LIST:
 
 Images:
 	1. get proper size for video poster
+	2. resize tag icons
 
 SVG:
 	1.how to reuse svg code blocks

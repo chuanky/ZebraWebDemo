@@ -74,7 +74,7 @@ a {
 }
 
 .container {
-	min-width: 650px;
+	min-width: 320px;
 	max-width: 1920px;
 	position: relative;
 	margin: auto;
@@ -101,7 +101,6 @@ a {
 
 .fill_content {
 	height: 800px;
-	/*background-color: orange;*/
 	position: relative;
 }
 
@@ -438,12 +437,6 @@ footer p {
 	color: white;
 }
 
-@media (max-width:1000px){
-	body {
-		margin: 0px;
-	}
-}
-
 .rhomb_footer {
 	height: 200px;
 	background: url('assets/rhombus.png') center no-repeat;
@@ -461,15 +454,15 @@ footer p {
 	width: 30%;
 	height: 50%;
 	border: #b2a682 solid 6px;
-	margin-top: 150px;
+	margin-top: 10%;
 	margin-left: 10%;
 }
 
 #line_m {
 	width: 0;
-	height: 320px;
+	height: 50%;
 	border: #b2a682 solid 2px;
-	margin-left: 8.6%;
+	margin-left: 7.8%;
 }
 
 #bar_code {
@@ -505,6 +498,7 @@ footer p {
 #bb_text {
 	border-bottom: #b2a682 solid 4px;
 	margin-top: 20px;
+	background: #292929;
 }
 
 #bb_text span {
@@ -523,6 +517,28 @@ footer p {
 }
 
 
+/*responsive demo*/
+
+/*ipad pro*/
+@media screen and (max-width:1024px){
+	#footer_area {
+		height: 500px;
+	}
+}
+
+/*ipad*/
+@media screen and (max-width: 768px){
+	#footer_area {
+		height: 400px;
+	}
+}
+
+/*iphone6*/
+@media screen and (max-width: 375px){
+	#footer_area {
+		height: 300px;
+	}
+}
 
 
 
