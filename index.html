@@ -5,6 +5,7 @@
 	<title>斑马主页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="header_footer.css">
 	<!-- <link rel="stylesheet" type="text/css" href="w3.css"> -->
 </head>
 <body>
@@ -16,8 +17,7 @@
 				<span class="logo_text"><span id="logo_text1">斑马电影工作室</span>ZEBRA FILM STUDIO</span>
 				</a>
 			</div>
-			<div id="top_menu">
-				<div id="top_menu_text"></div>
+			<div class="top_icon">
 				<img src="assets/logo/wechat.png" id="wechat">
 				<img src="assets/logo/weibo.png" id="weibo">
 				<img src="assets/logo/youku.jpg" id="youku">
@@ -25,20 +25,35 @@
 		</div>
 	</header>
 
-	<div class="container" align="center" id="main_menu">
+	<div class="container" id="main_menu">
 			<ul class="menu_tag">
-				<li>
-					服务类别
+				<li id="pro_team">
+					专业团队
 					<div class="dropdown_content">
 						<img src="assets/images/dropdown_team.jpg">
 					</div>
 				</li>
 				<li>·</li>
-				<li id="elite_movie" onclick="display_img('elite_movie')">精品影视</li>
+				<li id="high_tech">
+					精湛技术
+					<div class="dropdown_content">
+						<img src="assets/images/dropdown_tech.jpg">
+					</div>
+				</li>
 				<li>·</li>
-				<li id="high_tech" onclick="display_img('high_tech')">精湛技术</li>
+				<li id="elite_movie">
+					精品影视
+					<div class="dropdown_content">
+						<img src="assets/images/dropdown_mov.jpg">
+					</div>
+				</li>
 				<li>·</li>
-				<li id="pro_team" onclick="display_img('pro_team')">专业团队</li>
+				<li id="services">
+					服务类别
+					<div class="dropdown_content">
+						<img src="assets/images/dropdown_services.jpg">
+					</div>
+				</li>
 			</ul>
 	</div>
 
@@ -52,7 +67,7 @@
 		<img src="assets/images/index_img2.jpg" class="max_height700 max_width">
 	</div>
 
-	<div class="container" style="width: 10%; height: 263px;">
+	<div class="container" style="width: 0; height: 263px;">
 		<div id="block1">
 			<span class="block1_text">
 				Spicial Wedding<br>
@@ -144,8 +159,8 @@
 			</ul>
 		</div>
 
-		<div class="container" id="range_bottom">
-			<img src="assets/images/range_pop.jpg" id="range_img" class="max_height800" style="width:80%">
+		<div class="container range_bottom">
+			<img src="assets/images/range_pop.jpg" id="range_img" class="max_height600" style="width:80%">
 			<div id="rb_container">
 				<div class="range_block1" id="rb1">
 					<span id="rb1_text1" style="margin: 30px 20px 5px 20px;">Know yourself</span>
@@ -202,7 +217,7 @@
 			</ul>
 		</div>	
 
-		<div class="container font_size18 text_center bg_black" id="tech_3rd">
+		<div class="container font_size18 text_center" id="tech_3rd">
 			<img src="assets/images/tech_plan.jpg" id="tech_img" class="max_height600">
 			<div id="tb_container">
 				<div class="tech_block1" id="tb1">
