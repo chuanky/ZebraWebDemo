@@ -1,0 +1,8 @@
+分辨率 (px)
+iphone 4s -- 320 * 480
+iphone 5s -- 320 * 568
+iphone 6s -- 375 * 667
+iphone 6s plus -- 441 * 736
+ipad mini 4 -- 1024 * 768
+ipad aire 2 -- 1024 * 768
+ipad pro -- 1366 * 1024
