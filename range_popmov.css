@@ -1,0 +1,34 @@
+#pop_pray_text {
+	padding: 20px 10px;
+	background: #393939;
+	color: white;
+	font-weight: bold;
+	width: 10%;
+	min-width: 200px;
+	position: absolute;
+	margin: -10%;
+	right: 10%;
+}
+
+#pop_thrilldemo,#pop_factory {
+	float: left;
+	background: orange;
+}
+
+#pop_overview_bg {
+	height: 600px;
+}
+
+#pop_blackflower {
+	float: right;
+	margin-top: 100px;
+}
+
+#pop_overview_text {
+	background: black;
+	color: white;
+	position: absolute;
+	margin-top: 600px;
+	width: 50%;
+	height: 200px;
+}

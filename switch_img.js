@@ -24,6 +24,8 @@ var rb3_text2 = document.getElementById('rb3_text2');
 var rb3_text3 = document.getElementById('rb3_text3');
 var rb3_text4 = document.getElementById('rb3_text4');
 
+var range_more = document.getElementById('range_more');
+
 
 function switch_range_img(num) {
 	var pic;
@@ -40,6 +42,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "我们拍摄最真实最珍贵的瞬间";
 			rb3_text4.innerHTML = "We shot the most real and precious moments";
 			range_tag1.className = "active";
+			range_more.href = "range_popmov.html";
 			break;
 		case 1:
 			pic = "assets/images/range_hot.jpg";
@@ -51,6 +54,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "才发现有你生命才完整";
 			rb3_text4.innerHTML = "To find that life is comlplete only with you"; 
 			range_tag2.className = "active";
+			range_more.href = "range_hotmov.html";
 			break;
 		case 2:
 			pic = "assets/images/range_wedding_c.jpg";

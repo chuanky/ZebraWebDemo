@@ -36,6 +36,7 @@
 
 /*footer area*/
 #footer_logo {
+	display: block;
 	width: 84px;
 	height: 84px;
 	margin: auto;

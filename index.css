@@ -10,9 +10,9 @@
 	font-size: 18px;
 }
 
-.max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}
+.max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}.max_height500{max-height: 500px;}.max_height400{max-height: 400px;}
 
-.max_width{width: 100%;}.width80{width: 80%;}
+.max_width{width: 100%;}.width80{width: 80%;}.width50{width: 50%;}
 
 .bg_black {
 	background: black;
@@ -33,7 +33,10 @@ body {
 	display: block;
 }
 
-video,img {display: block;}
+video,img {
+	display: block;
+}
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -194,7 +197,7 @@ ul {
 .rhomb_text {
 	color: #b2a682;
 	text-align: center;
-	line-height: 200px;
+	padding: 60px;
 }
 
 /*标签*/
@@ -261,12 +264,12 @@ ul {
 	transition-duration: 0.6s;
 }
 
-#more {
+#range_more,#tech_more {
 	text-decoration: none;
 	color: black;
 }
 
-#more:hover {
+#range_more:hover,#tech_more:hover {
 	color: white;
 }
 
