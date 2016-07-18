@@ -16,19 +16,24 @@
 }
 
 #pop_overview_bg {
-	height: 600px;
+	background: #f4f4f4;
 }
 
 #pop_blackflower {
-	float: right;
-	margin-top: 100px;
+	margin-left: 50%;
 }
 
 #pop_overview_text {
 	background: black;
 	color: white;
-	position: absolute;
-	margin-top: 600px;
 	width: 50%;
 	height: 200px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.pop_rhomb_text {
+	color: #b2a682;
+	text-align: center;
+	padding: 60px;
 }

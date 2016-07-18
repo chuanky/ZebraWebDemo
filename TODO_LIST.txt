@@ -17,6 +17,22 @@ TODO LIST:
 	16. main menu - avoid selecting tag texts
 	17. find a better way of placing range_img and tech_img
 
+subpages for service range:
+	√1. popular movie
+	√2. hot movie
+	√3. chinese wedding
+	4. western wedding
+	5. product
+	6. company
+	7. baby
+
+subpages for tech:
+	1. plan
+	2. shoot
+	3. cut
+	4. special effect
+	5. advertisement
+
 Images:
 	1. get proper size for video poster
 	√2. resize tag icons
