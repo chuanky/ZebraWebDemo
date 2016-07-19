@@ -44,14 +44,14 @@
 				<li id="elite_movie">
 					精品影视
 					<div class="dropdown_content">
-						<img src="assets/images/dropdown_mov.jpg">
+						<img src="assets/images/dropdown_mov.png">
 					</div>
 				</li>
 				<li>·</li>
 				<li id="services">
 					服务类别
 					<div class="dropdown_content">
-						<img src="assets/images/dropdown_services.jpg">
+						<img src="assets/images/dropdown_services.png" alt="menu_map" id="menu_map" class="width100">
 					</div>
 				</li>
 			</ul>
@@ -60,26 +60,24 @@
 	<div class="container" style="height:15px;"></div>
 
 	<div class="container">
-		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/index_img1.jpg" id="index_video" class="max_width max_height800 bg_black"></video>
+		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
 
-		<div class="container" style="height:15px;"></div>
-
-		<img src="assets/images/index_img2.jpg" class="max_height700 max_width">
+		<img src="assets/images/index_img2.jpg" class="max_height700 width100">
 	</div>
 
 	<div class="container" style="width: 0; height: 263px;">
-		<div id="block1">
+		<div class="box_shadow" id="block1">
 			<span class="block1_text">
 				Spicial Wedding<br>
 				<span style="margin-left:100px;">OF</span><br>
 				<span style="margin-left:120px; color:white;">专题婚礼</span>
 			</span>
 		</div>
-		<div id="block2">
+		<div class="box_shadow" id="block2">
 			<span class="block2_text">斑马传媒有限公司拥有丰富的婚礼策划经验，为您打造更多更时尚的专题婚礼。斑马传媒将为您打造一场独特难忘的回忆。<br><br><br>只观风景，只谈爱情，优雅的享受婚礼吧！</span>
 		</div>
 		<div id="block3">
-			<img src="assets/images/block3_img.jpg" id="block3_img">
+			<img src="assets/images/index_propose.jpg" id="block3_img">
 		</div>
 	</div>
 
@@ -166,10 +164,10 @@
 					<span id="rb1_text1" style="margin: 30px 20px 5px 20px;">Know yourself</span>
 					<span id="rb1_text2" style="text-align:right; margin:0px 30px;">了解自己</span>
 				</div>
-				<div class="range_block2 text_center" id="rb2">
+				<div class="range_block2 text_center box_shadow" id="rb2">
 					<span><a id="range_more" href="range_popmov.html">More →</a></span>
 				</div>
-				<div class="range_block3" id="rb3">
+				<div class="range_block3 box_shadow" id="rb3">
 					<div style="margin:30px;">
 						<span id="rb3_text1">视觉形象</span>
 						<span id="rb3_text2">The visual image</span>
@@ -223,10 +221,10 @@
 				<div class="tech_block1" id="tb1">
 					<span id="tb1_text1">镜头世界<br>The camera world</span>
 				</div>
-				<div class="tech_block2" id="tb2">
+				<div class="tech_block2 box_shadow" id="tb2">
 					<span><a id="tech_more" href="tech_plan.html">More →</a></span>
 				</div>
-				<div class="tech_block3 text_left" id="tb3">
+				<div class="tech_block3 text_left box_shadow" id="tb3">
 					<span style="margin:30px;" id="tb3_text1">斑马团队拥有超强的文案能力，扎实的内容企划能力<br>Zebra team has strong copywriting ablity, solid content planning ablitiy<br><br>实时了解影视剧市场，及时把握新动态，新趋势<br>To understand the film and television play market, grasp the new dynamic trend</span>
 				</div>
 			</div>
@@ -235,21 +233,59 @@
 
 	<div class="container" style="height:200px;"></div>
 
-	<footer>
-		<div class="container" style="z-index:1;">
-			<div class="rhomb_footer"></div>
+<footer>
+	<div class="rhomb_header rhomb_footer">
+		<div class="logo_container">
 			<img src="assets/logo/zebra.png" id="footer_logo">
 		</div>
-		<div class="container" id="footer_area">
-			<div id="dituContent" class="baidu_map"></div>
-			<div id="line_m"></div>
-			<div id="bar_code"></div>
-			<div id="line_bl"></div>
-			<div id="m_text">WELCOME<br>ZEBRA FILM STUDIO</div>
-			<div id="line_br"></div>
-			<div id="bb_text"><span id="bb_text1">辽宁省鞍山市立山区胜利北路86-S10</span><span id="bb_text2">ZEBRA CULTURE MEDIA CO.LTD</span></div>
+	</div>
+
+	<div class="container" id="footer_area">
+		<div class="footer_title bg_black">
+			<div id="map_title">
+				<p>Zebra Address</p>
+			</div>
+			<div id="barcode_title">
+				<p>Follow Us</p>
+			</div>
 		</div>
-	</footer>
+	</div>
+
+	<div class="container" id="footer_content">
+			<div class="map_container bg_black">
+				<div id="dituContent" class="baidu_map"></div>
+			</div>
+
+			<div class="contact_container bg_black">
+				<img src="assets/logo/二维码.png" id="bar_code">
+				<img src="assets/logo/homepage.png" id="icon_homepage">
+				<img src="assets/logo/telephone.png" id="icon_telephone">
+				<img src="assets/logo/email.png" id="icon_email">
+				<img src="assets/logo/location.png" id="icon_location">
+			</div>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:30px;"></div>
+
+	<div class="container bg_black">
+		<div id="line_bl"></div>
+		<div id="m_text">
+			<p>WELCOME</p>
+			<p>ZEBRA FILM STUDIO</p>
+		</div>
+		<div id="line_br"></div>
+	</div>
+
+	<div class="container bg_black">
+		<div id="bb_text">
+			<p>辽宁省鞍山市立山区胜利北路85—S10</p>
+			<p>ZEBRA CULTURE MEDIA CO.LTD</p>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:50px;"></div>
+</footer>
 
 <script src="switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>

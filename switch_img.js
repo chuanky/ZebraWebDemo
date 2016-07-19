@@ -81,7 +81,8 @@ function switch_range_img(num) {
 			break;
 		case 4:
 			pic = "assets/images/range_company.png";
-			rb_container.style.left = "65%";
+			rb_container.style.left = "";
+			rb_container.style.right = "10%";
 			rb1.style.margin = "30px";
 			rb2.style.marginTop = "60px";
 			rb2.style.left = "475px";
@@ -151,6 +152,7 @@ function reset_range() {
 
 	//reset block container
 	rb_container.style.left = "50%";
+	rb_container.style.right = "";
 	rb1.style.margin = "";
 	rb1.style.left = "";
 	rb2.style.marginTop = "110px";

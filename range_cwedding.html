@@ -27,40 +27,49 @@
 </header>
 
 <div class="container" id="main_menu">
-	<ul class="menu_tag">
-		<li id="pro_team">
-			专业团队
-			<div class="dropdown_content">
-				<img src="assets/images/dropdown_team.jpg">
-			</div>
-		</li>
-		<li>·</li>
-		<li id="high_tech">
-			精湛技术
-			<div class="dropdown_content">
-				<img src="assets/images/dropdown_tech.jpg">
-			</div>
-		</li>
-		<li>·</li>
-		<li id="elite_movie">
-			精品影视
-			<div class="dropdown_content">
-				<img src="assets/images/dropdown_mov.jpg">
-			</div>
-		</li>
-		<li>·</li>
-		<li id="services">
-			服务类别
-			<div class="dropdown_content">
-				<img src="assets/images/dropdown_services.jpg">
-			</div>
-		</li>
-	</ul>
+		<ul class="menu_tag">
+			<li id="pro_team">
+				专业团队
+				<div class="dropdown_content">
+					<img src="assets/images/dropdown_team.jpg">
+				</div>
+			</li>
+			<li>·</li>
+			<li id="high_tech">
+				精湛技术
+				<div class="dropdown_content">
+					<img src="assets/images/dropdown_tech.jpg">
+				</div>
+			</li>
+			<li>·</li>
+			<li id="elite_movie">
+				精品影视
+				<div class="dropdown_content">
+					<img src="assets/images/dropdown_mov.jpg">
+				</div>
+			</li>
+			<li>·</li>
+			<li id="services">
+				服务类别
+				<div class="dropdown_content">
+					<div class="dropdown_services">
+						<a href="range_popmov.html"><img src="assets/logo/热门电影.png"></a>
+						<a href="range_hotmov.html"><img src="assets/logo/热播剧集.png"></a>
+						<a href="range_cwedding.html"><img src="assets/logo/中式婚礼.png"></a>
+						<a href="range_wwedding.html"><img src="assets/logo/西式婚礼.png"></a>
+						<a href="range_product.html"><img src="assets/logo/企业宣传.png"></a>
+						<a href="range_company.html"><img src="assets/logo/产品宣传.png"></a>
+						<a href="range_internet.html"><img src="assets/logo/网络电影.png"></a>
+						<a href="range_baby.html"><img src="assets/logo/儿童记录.png"></a>
+					</div>
+				</div>
+			</li>
+		</ul>
 </div>
 <!-- end of header -->
 
 <div class="container">
-	<video src="assets/video/secret.mp4" controls preload="none" poster="assets/images/poster_cwedding.jpg" id="pop_video" class="max_width bg_black max_height800"></video>
+	<video src="assets/video/secret.mp4" controls preload="none" poster="assets/images/poster_cwedding.jpg" id="pop_video" class="width100 bg_black"></video>
 </div>
 
 <div class="container" style="height:15px;"></div>
@@ -94,19 +103,57 @@
 <div class="container" style="height:100px;"></div>
 
 <footer>
-	<div class="container" style="z-index:1;">
-		<div class="rhomb_footer"></div>
-		<img src="assets/logo/zebra.png" id="footer_logo">
+	<div class="rhomb_header rhomb_footer">
+		<div class="logo_container">
+			<img src="assets/logo/zebra.png" id="footer_logo">
+		</div>
 	</div>
+
 	<div class="container" id="footer_area">
-		<div id="dituContent" class="baidu_map"></div>
-		<div id="line_m"></div>
-		<div id="bar_code"></div>
-		<div id="line_bl"></div>
-		<div id="m_text">WELCOME<br>ZEBRA FILM STUDIO</div>
-		<div id="line_br"></div>
-		<div id="bb_text"><span id="bb_text1">辽宁省鞍山市立山区胜利北路86-S10</span><span id="bb_text2">ZEBRA CULTURE MEDIA CO.LTD</span></div>
+		<div class="footer_title bg_black">
+			<div id="map_title">
+				<p>Zebra Address</p>
+			</div>
+			<div id="barcode_title">
+				<p>Follow Us</p>
+			</div>
+		</div>
 	</div>
+
+	<div class="container" id="footer_content">
+			<div class="map_container bg_black">
+				<div id="dituContent" class="baidu_map"></div>
+			</div>
+
+			<div class="contact_container bg_black">
+				<img src="assets/logo/二维码.png" id="bar_code">
+				<img src="assets/logo/homepage.png" id="icon_homepage">
+				<img src="assets/logo/telephone.png" id="icon_telephone">
+				<img src="assets/logo/email.png" id="icon_email">
+				<img src="assets/logo/location.png" id="icon_location">
+			</div>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:30px;"></div>
+
+	<div class="container bg_black">
+		<div id="line_bl"></div>
+		<div id="m_text">
+			<p>WELCOME</p>
+			<p>ZEBRA FILM STUDIO</p>
+		</div>
+		<div id="line_br"></div>
+	</div>
+
+	<div class="container bg_black">
+		<div id="bb_text">
+			<p>辽宁省鞍山市立山区胜利北路85—S10</p>
+			<p>ZEBRA CULTURE MEDIA CO.LTD</p>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:50px;"></div>
 </footer>
 
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
