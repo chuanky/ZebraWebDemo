@@ -14,9 +14,12 @@ TODO LIST:
 	13. 2d barcode img
 	√14. align li tags 
 	√15. add icons into tech and range tags
+	16. main menu - avoid selecting tag texts
+	17. find a better way of placing range_img and tech_img
 
 Images:
 	1. get proper size for video poster
+	√2. resize tag icons
 
 SVG:
 	1.how to reuse svg code blocks
@@ -28,7 +31,7 @@ JavaScript:
 	√1. improve code for interactive tags
 	√2. make responsive texts for tags
 	3. create animation for switching images
-	4. active main menu
+	√4. active main menu
 	√5. format blocks for each tag in range and tech
 
 PHP:
