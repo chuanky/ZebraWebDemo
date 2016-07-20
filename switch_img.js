@@ -24,6 +24,8 @@ var rb3_text2 = document.getElementById('rb3_text2');
 var rb3_text3 = document.getElementById('rb3_text3');
 var rb3_text4 = document.getElementById('rb3_text4');
 
+var range_more = document.getElementById('range_more');
+
 
 function switch_range_img(num) {
 	var pic;
@@ -40,6 +42,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "我们拍摄最真实最珍贵的瞬间";
 			rb3_text4.innerHTML = "We shot the most real and precious moments";
 			range_tag1.className = "active";
+			range_more.href = "range_popmov.html";
 			break;
 		case 1:
 			pic = "assets/images/range_hot.jpg";
@@ -51,6 +54,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "才发现有你生命才完整";
 			rb3_text4.innerHTML = "To find that life is comlplete only with you"; 
 			range_tag2.className = "active";
+			range_more.href = "range_hotmov.html";
 			break;
 		case 2:
 			pic = "assets/images/range_wedding_c.jpg";
@@ -61,6 +65,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag3.className = "active";
+			range_more.href = "range_cwedding.html";
 			break;
 		case 3:
 			pic = "assets/images/range_wedding_w.jpg";
@@ -72,10 +77,12 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "总是让人心中充满暖意";
 			rb3_text4.innerHTML = "Let warm fulfill your heart";
 			range_tag4.className = "active";
+			range_more.href = "range_wwedding.html";
 			break;
 		case 4:
 			pic = "assets/images/range_company.png";
-			rb_container.style.left = "65%";
+			rb_container.style.left = "";
+			rb_container.style.right = "10%";
 			rb1.style.margin = "30px";
 			rb2.style.marginTop = "60px";
 			rb2.style.left = "475px";
@@ -86,6 +93,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag5.className = "active";
+			range_more.href = "range_company.html";
 			break;
 		case 5:
 			pic = "assets/images/range_product.jpg";
@@ -98,6 +106,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag6.className = "active";
+			range_more.href = "range_product.html";
 			break;
 		case 6:
 			pic = "assets/images/range_internet.jpg";
@@ -110,6 +119,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "Tiny movies";
 			rb3_text4.innerHTML = 'could include "big ideas"';
 			range_tag7.className = "active";
+			range_more.href = "range_internet.html";
 			break;
 		case 7:
 			pic = "assets/images/range_baby.jpg";
@@ -122,6 +132,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "永远手拉手，好姐妹一起走";
 			rb3_text4.innerHTML = "Be friends forever";
 			range_tag8.className = "active";
+			range_more.href = "range_baby.html";
 			break;
 	}
 
@@ -141,6 +152,7 @@ function reset_range() {
 
 	//reset block container
 	rb_container.style.left = "50%";
+	rb_container.style.right = "";
 	rb1.style.margin = "";
 	rb1.style.left = "";
 	rb2.style.marginTop = "110px";

@@ -1,0 +1,53 @@
+#company_intro {
+	width: 60%;
+	margin: auto;
+	padding: 30px 0px;
+	line-height: 40px;
+}
+
+#company_inv {
+	width: 60%;
+	margin: auto;
+	background: black;
+	color: white;	
+	text-align: center;
+}
+
+#company_inv h3 {
+	line-height: 30px;
+}
+
+#company_inv h3:nth-child(2) {
+	border-bottom: 3px #b2a682 solid;
+}
+
+#company_inv img {
+	width: 100%;
+}
+
+.polaroid {
+	display: inline-block;
+	width: 48%;
+}
+
+.polaroid img {
+	width: 100%;
+}
+
+#company_bottle {
+	margin-left: 2%;
+}
+
+#sakura_text {
+	position: absolute;
+	background: white;
+	right: 0;
+	line-height: 30px;
+	margin-top: -40px;
+	z-index: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sakura_text h3 {
+	padding: 10px 20px 0px 20px;
+}

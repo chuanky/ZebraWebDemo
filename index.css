@@ -1,29 +1,22 @@
-.text_center {
-	text-align: center;
-}
-
-.text_left {
-	text-align: left;
-}
+.text_center{text-align: center;}.text_left {text-align: left;}
 
 .font_size18 {
 	font-size: 18px;
 }
 
-.max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}
+.max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}.max_height500{max-height: 500px;}.max_height400{max-height: 400px;}.max_height300{max-height: 300px;}
 
-.max_width{width: 100%;}.width80{width: 80%;}
+.width100{width: 100%;}.width80{width: 80%;}.width60{width:60%;}.width50{width: 50%;}.width30{width:30%}.width25{width:25%;}
 
-.bg_black {
-	background: black;
-}
+.bg_black {background: black;}.bg_f4grey{background: #f4f4f4;}
 
 .deep{z-index: -1;}.high{z-index: 1;}
 
-body {
-	margin: 0;
-	padding: 0;
-}
+.half_left{width: 50%;float: left;}
+.half_right{width: 50%;margin-left:50%;}
+.box_shadow{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+body,h3,p {margin: 0;padding: 0;}
 
 .container {
 	width: 100%;
@@ -33,14 +26,27 @@ body {
 	display: block;
 }
 
-video,img {display: block;}
+.polaroid {
+	background: white;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+}
+
+.img_desc {
+	text-align: center;
+	padding: 15px 0px;
+}
+
+video,img {
+	display: block;
+}
+
 ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
-
-
 
 .inactive {
 	color: #b2a682;
@@ -98,7 +104,7 @@ ul {
 
 #main_menu li{
 	display: inline-block;
-	width: 7%;
+	width: 15%;
 	font-size: 16px;
 	color: white;
 	text-align: center;
@@ -108,15 +114,16 @@ ul {
 	float: right;
 }
 
-#main_menu li:first-child {
+#main_menu li:nth-child(even) {
+	width: 5%;
 }
 
-#main_menu li:last-child {
-
+#main_menu li:nth-child(odd):hover {
+	background: #b2a682;
 }
 
-#main_menu li:hover {
-	color: #b2a682;
+#main_menu li:hover span{
+	color: black;
 	transition-duration: 0.6s;
 }
 
@@ -133,9 +140,51 @@ ul {
 	margin-top: 9px;
 }
 
-#services .dropdown_content{margin-left: -51%;}#elite_movie .dropdown_content{margin-left: -65%;}#high_tech .dropdown_content{margin-left: -79%;}#pro_team .dropdown_content{margin-left: -93%;}
+#services .dropdown_content{width:15%;}#elite_movie .dropdown_content{margin-left:-45%;}#high_tech .dropdown_content{margin-left: -65%;}#pro_team .dropdown_content{margin-left: -85%;}
 
-.dropdown_content img {
+#services p {
+	padding: 10px 0px;
+	transition-duration: 0.6s;
+}
+
+#services p:hover {
+	background: #b2a682;
+	transition-duration: 0.6s;
+}
+
+#services p a {
+	text-decoration: none;
+	color: white;
+	transition-duration: 0.6s;
+}
+
+#services p a:hover {
+	color: black;
+	transition-duration: 0.6s;
+}
+
+.dropdown_services {
+	height: 200px;
+	background: black;
+	margin: auto;
+}
+
+.dropdown_services img {
+	display: inline-block;
+	width: 5%;
+	height: 120px;
+	margin: 20px 30px;
+}
+
+.dropdown_services img:nth-child(odd) {
+	background: #b2a682;
+}
+
+.dropdown_services img:nth-child(even) {
+	background: #b2b2b2;
+}
+
+#pro_team img,#high_tech img,#elite_movie img {
 	width: 100%;
 	max-height: 500px;
 }
@@ -194,10 +243,27 @@ ul {
 .rhomb_text {
 	color: #b2a682;
 	text-align: center;
-	line-height: 200px;
+	padding: 80px;
+}
+
+.rheader_text_container {
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+
+.rheader_text {
+	width: 200px;
+	position: absolute;
+	margin-top: 85px;
 }
 
 /*标签*/
+#range {
+	margin-top: -120px;
+}
+
 .tag_bg {
 	height: 360px;
 	background-color: #f4f4f4;
@@ -261,12 +327,12 @@ ul {
 	transition-duration: 0.6s;
 }
 
-#more {
+#range_more,#tech_more {
 	text-decoration: none;
 	color: black;
 }
 
-#more:hover {
+#range_more:hover,#tech_more:hover {
 	color: white;
 }
 
@@ -397,28 +463,6 @@ ul {
 
 
 /*responsive demo*/
-
-/*ipad pro*/
-@media screen and (max-width:1024px){
-	#footer_area {
-		height: 500px;
-	}
-}
-
-/*ipad*/
-@media screen and (max-width: 768px){
-	#footer_area {
-		height: 400px;
-	}
-}
-
-/*iphone6*/
-@media screen and (max-width: 375px){
-	#footer_area {
-		height: 300px;
-	}
-}
-
 
 
 

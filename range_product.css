@@ -1,0 +1,43 @@
+
+#product_circle {
+	width: 40%;
+	margin-left: 60%;
+}
+
+#text_belowtank {
+	position: absolute;
+	height: 100%;
+}
+
+#text_belowtank p {
+	padding: 5% 20% 0 10%;
+}
+
+.rhomb_header {
+	margin-top: 0;
+	z-index: -1;
+}
+
+.rheader_text {
+	margin-top: -120px;
+	text-align: center;
+	color: white;
+}
+
+.rheader_text h3:nth-child(2) {
+	font-size: 13px;
+}
+
+#product_map {
+	width: 50%;
+}
+
+#product_map_text {
+	width: 50%;
+	position: absolute;
+	margin-left: 50%;
+}
+
+#product_map_text p {
+	padding: 5% 20% 0 10%;
+}

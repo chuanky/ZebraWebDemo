@@ -35,96 +35,133 @@
 #wechat:hover, #weibo:hover, #youku:hover{filter: brightness(130%);transition-duration: 0.6s}
 
 /*footer area*/
-#footer_logo {
+.rhomb_footer {
+}
+
+.logo_container {
 	width: 84px;
 	height: 84px;
 	margin: auto;
+}
+
+#footer_logo {
+	width: 84px;
 	filter: invert(100%);
-	margin-top: -150px;
-	padding: 0 9px 0 0;
+	position: absolute;
+	margin-top: 50px;
+	padding: 0px 9px 0px 0px;
+	z-index: 1;
 }
 
 footer p {
 	text-align: center;
-	font-size: 100px;
+	font-size: 18px;
 	color: white;
 }
 
-.rhomb_footer {
-	height: 200px;
-	background: url('assets/rhombus.png') center no-repeat;
-}
-
 #footer_area {
-	height: 650px;
-	background: #292929;
-	margin-top: -35px;
+	margin-top:-100px;
 }
 
-.baidu_map,#line_m,#bar_code,#line_bl,#line_br,#line_bb,#m_text {display: inline-block;}
+#footer_content {
+}
+
+.footer_title {
+	height: 100px;
+}
+
+#map_title,#barcode_title {
+	margin-top: 60px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+
+#barcode_title {
+	float: right;
+}
+
+.map_container {
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	border-right: 3px #b2a682 solid;
+}
 
 .baidu_map {
-	width: 30%;
-	height: 50%;
-	border: #b2a682 solid 6px;
-	margin-top: 10%;
-	margin-left: 10%;
+	width: 60%;
+	height: 100%;
+	margin: auto;
 }
 
-#line_m {
-	width: 0;
-	height: 50%;
-	border: #b2a682 solid 2px;
-	margin-left: 7.8%;
+.contact_container {
+	width: 50%;
+	margin-left: 50%;
+}
+
+.contact_icon {
+}
+
+.contact_icon p {
+	position: absolute;
+	margin-left: 20%;
+	line-height: 20px;
 }
 
 #bar_code {
 	width: 30%;
-	height: 50%;
-	border: #b2a682 solid 6px;
-	margin-left: 9%;
+	margin-left: 35%;
 }
+
+#icon_homepage,#icon_telephone,#icon_email,#icon_location {
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 35%;
+}
+
+#line_bl,#line_br,#line_bb,#m_text {display: inline-block;}
 
 #line_bl {
 	width: 30%;
 	height: 0;
-	border: white solid 2px;
-	margin-top: 50px;
+	border: white solid 1px;
 	margin-left: 10%;
 }
 
 #m_text {
 	color: white;
-	border: white solid 2px;
+	border: white solid 1px;
 	text-align: center;
 	margin-left: 3%;
 	width: 12%;
 }
 
+#m_text p {
+	font-size: 12px;
+}
+
 #line_br {
 	width: 30%;
 	height: 0;
-	border: white solid 2px;
+	border: white solid 1px;
 	margin-left: 3%;
 }
 
 #bb_text {
 	border-bottom: #b2a682 solid 4px;
-	margin-top: 20px;
-	background: #292929;
+}
+
+#bb_text p{
+	display: inline-block;
+	width: 49%;
+	line-height: 20px;
+	font-size: 12px;
+	padding: 20px 0 0 0;
 }
 
 #bb_text span {
-	display: inline-block;
-	color: white;
-	width: 20%;
-	height: auto;
-}
-
-#bb_text1 {
-	margin-left: 15%;
-}
-
-#bb_text2 {
-	margin-left: 30%;
+	margin-left: 10%;
 }
