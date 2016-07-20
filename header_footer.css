@@ -101,13 +101,23 @@ footer p {
 	margin-left: 50%;
 }
 
+.contact_icon {
+}
+
+.contact_icon p {
+	position: absolute;
+	margin-left: 20%;
+	line-height: 20px;
+}
+
 #bar_code {
 	width: 30%;
 	margin-left: 35%;
 }
 
 #icon_homepage,#icon_telephone,#icon_email,#icon_location {
-	width: 4%;
+	height: 20px;
+	width: 20px;
 	margin-top: 10px;
 	margin-left: 35%;
 }

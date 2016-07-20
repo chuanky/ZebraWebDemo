@@ -104,7 +104,7 @@ ul {
 
 #main_menu li{
 	display: inline-block;
-	width: 7%;
+	width: 15%;
 	font-size: 16px;
 	color: white;
 	text-align: center;
@@ -114,15 +114,16 @@ ul {
 	float: right;
 }
 
-#main_menu li:first-child {
+#main_menu li:nth-child(even) {
+	width: 5%;
 }
 
-#main_menu li:last-child {
-
+#main_menu li:nth-child(odd):hover {
+	background: #b2a682;
 }
 
-#main_menu li:hover {
-	color: #b2a682;
+#main_menu li:hover span{
+	color: black;
 	transition-duration: 0.6s;
 }
 
@@ -139,7 +140,28 @@ ul {
 	margin-top: 9px;
 }
 
-#services .dropdown_content{margin-left: -51%;}#elite_movie .dropdown_content{margin-left: -65%;}#high_tech .dropdown_content{margin-left: -79%;}#pro_team .dropdown_content{margin-left: -93%;}
+#services .dropdown_content{width:15%;}#elite_movie .dropdown_content{margin-left:-45%;}#high_tech .dropdown_content{margin-left: -65%;}#pro_team .dropdown_content{margin-left: -85%;}
+
+#services p {
+	padding: 10px 0px;
+	transition-duration: 0.6s;
+}
+
+#services p:hover {
+	background: #b2a682;
+	transition-duration: 0.6s;
+}
+
+#services p a {
+	text-decoration: none;
+	color: white;
+	transition-duration: 0.6s;
+}
+
+#services p a:hover {
+	color: black;
+	transition-duration: 0.6s;
+}
 
 .dropdown_services {
 	height: 200px;
