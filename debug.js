@@ -1,26 +1,19 @@
-// var debug = document.getElementById('debug');
-// var menu = document.getElementById('main_menu');
+function playVideo (videoID, iconID) {
+	var video = document.getElementById(videoID);
+	var icon = document.getElementById(iconID);
 
-// function myFunction() {
-// 	m_width = window.innerWidth;
-// 	debug.innerHTML = "marginLeft = " + menu.style.marginLeft + " m_width = " + m_width;
-// 	debug.style.backgroundColor = "red";
-// 	if (m_width < 800) {
-// 		menu.style.marginLeft = "-8px";
-// 	} else {
-// 		menu.style.marginLeft = "20%";
-// 	}
-// }
+	if (icon.style.display == 'none') {
+		icon.style.display = 'block';
+	} else {
+		icon.style.display = 'none';
+	}
 
-// function widthCheck() {
-// 	m_width = window.innerWidth;
-// 	debug.innerHTML = "marginLeft = " + menu.style.marginLeft + " m_width = " + m_width;
-// 	var t = setTimeout("widthCheck()", 200);
-// 	if (m_width < 800) {
-// 		menu.style.marginLeft = "-8px";
-// 		menu.style.marginRight = "-8px";
-// 	} else {
-// 		menu.style.marginLeft = "-8px";
-// 		menu.style.marginRight = "-8px";
-// 	}
-// }
+	if (video.paused) {
+		video.play();
+		icon.style.display = 'none';
+	} else {
+		video.paused();
+		icon.style.display = 'block';
+	}
+
+};

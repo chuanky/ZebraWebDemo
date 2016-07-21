@@ -24,7 +24,6 @@
 		</div>
 	</div>
 </header>
-
 <div class="container" id="main_menu">
 	<ul class="menu_tag">
 		<li id="pro_team">
@@ -50,7 +49,7 @@
 		<li>·</li>
 		<li id="services">
 			<span>服务类别</span>
-			<div class="dropdown_content bg_black">
+			<div class="dropdown_content bg_black" id="sss">
 			<p><a href="popmov.html">热门电影</a></p>
 			<p><a href="hotmov.html">热播剧集</a></p>
 			<p><a href="cwedding.html">中式婚礼</a></p>
@@ -63,13 +62,15 @@
 		</li>
 	</ul>
 </div>
-
-	<div class="container" style="height:15px;"></div>
+	<div class="container video_container">
+		<a href="#" onclick="playVideo('index_video', 'playicon');">
+			<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon">
+			<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
+		</a>
+	</div>
 
 	<div class="container">
-		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
-
-		<img src="assets/images/index_img2.jpg" class="max_height700 width100">
+		<img src="assets/images/index_img2.jpg" class="width100">
 	</div>
 
 	<div class="container" style="width: 0; height: 263px;">
@@ -165,7 +166,7 @@
 		</div>
 
 		<div class="container range_bottom">
-			<img src="assets/images/range_pop.jpg" id="range_img" class="max_height600" style="width:80%">
+			<img src="assets/images/range_pop.jpg" id="range_img" style="width:80%">
 			<div id="rb_container">
 				<div class="range_block1" id="rb1">
 					<span id="rb1_text1" style="margin: 30px 20px 5px 20px;">Know yourself</span>
@@ -306,6 +307,7 @@
 	<div class="container bg_black" style="height:50px;"></div>
 </footer>
 
+<script src="debug.js"></script>
 <script src="switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="map.js"></script>
