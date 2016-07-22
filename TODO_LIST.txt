@@ -16,7 +16,7 @@ TODO LIST:
 	√13. 2d barcode img
 	√14. align li tags 
 	√15. add icons into tech and range tags
-	16. main menu - avoid selecting tag texts
+	√16. main menu - avoid selecting tag texts
 		-add fake links for main menu tags
 	17. find a better way of placing range_img and tech_img
 

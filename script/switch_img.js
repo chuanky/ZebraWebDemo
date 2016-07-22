@@ -42,7 +42,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "我们拍摄最真实最珍贵的瞬间";
 			rb3_text4.innerHTML = "We shot the most real and precious moments";
 			range_tag1.className = "active";
-			range_more.href = "range_popmov.html";
+			range_more.href = "popmov.html";
 			break;
 		case 1:
 			pic = "assets/images/range_hot.jpg";
@@ -54,7 +54,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "才发现有你生命才完整";
 			rb3_text4.innerHTML = "To find that life is comlplete only with you"; 
 			range_tag2.className = "active";
-			range_more.href = "range_hotmov.html";
+			range_more.href = "hotmov.html";
 			break;
 		case 2:
 			pic = "assets/images/range_wedding_c.jpg";
@@ -65,7 +65,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag3.className = "active";
-			range_more.href = "range_cwedding.html";
+			range_more.href = "cwedding.html";
 			break;
 		case 3:
 			pic = "assets/images/range_wedding_w.jpg";
@@ -77,7 +77,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "总是让人心中充满暖意";
 			rb3_text4.innerHTML = "Let warm fulfill your heart";
 			range_tag4.className = "active";
-			range_more.href = "range_wwedding.html";
+			range_more.href = "wwedding.html";
 			break;
 		case 4:
 			pic = "assets/images/range_company.png";
@@ -93,7 +93,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag5.className = "active";
-			range_more.href = "range_company.html";
+			range_more.href = "company.html";
 			break;
 		case 5:
 			pic = "assets/images/range_product.jpg";
@@ -106,7 +106,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "";
 			rb3_text4.innerHTML = "";
 			range_tag6.className = "active";
-			range_more.href = "range_product.html";
+			range_more.href = "product.html";
 			break;
 		case 6:
 			pic = "assets/images/range_internet.jpg";
@@ -119,7 +119,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "Tiny movies";
 			rb3_text4.innerHTML = 'could include "big ideas"';
 			range_tag7.className = "active";
-			range_more.href = "range_internet.html";
+			range_more.href = "internet.html";
 			break;
 		case 7:
 			pic = "assets/images/range_baby.jpg";
@@ -132,7 +132,7 @@ function switch_range_img(num) {
 			rb3_text3.innerHTML = "永远手拉手，好姐妹一起走";
 			rb3_text4.innerHTML = "Be friends forever";
 			range_tag8.className = "active";
-			range_more.href = "range_baby.html";
+			range_more.href = "baby.html";
 			break;
 	}
 

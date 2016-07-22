@@ -23,11 +23,11 @@ h1 {
 }
 
 .container {
-	width: 100%;
+	display: block;
+	margin: auto;
 	max-width: 1920px;
 	position: relative;
-	margin: auto;
-	display: block;
+	width: 100%;
 }
 
 .polaroid {
@@ -93,11 +93,11 @@ ul {
 
 #tb_container {
 	height: 280px;
-	width: 500px;
+	left: 60%;
 	margin-top: -280px;
 	position: relative;
-	left: 60%;
 	transition-duration: 0.6s;
+	width: 500px;
 }
 
 .fill_content {
@@ -115,6 +115,11 @@ ul {
 #main_menu {
 	height: 40px;
 	background: black;
+}
+
+#main_menu a {
+	text-decoration: none;
+	color: white;
 }
 
 .menu_tag {
@@ -254,7 +259,7 @@ ul {
 
 .rhomb_header {
 	height: 200px;
-	background: url('assets/rhombus.png') center no-repeat;
+	background: url('rhombus.png') center no-repeat;
 	z-index: 1;
 	margin-top: -100px;
 }
