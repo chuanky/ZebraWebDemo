@@ -255,6 +255,63 @@ function reset_tech() {
 	tb2.style.marginLeft = "310px";
 }
 
+//team tags
+var team_tag1 = document.getElementById('team_tag1');
+var team_tag2 = document.getElementById('team_tag2');
+var team_tag3 = document.getElementById('team_tag3');
+var team_tag4 = document.getElementById('team_tag4');
+
+var team_tags = [team_tag1, team_tag2, team_tag3, team_tag4];
+
+var tag3_content = document.getElementById('tag3_content');
+
+function switch_team(num) {
+	var pic;
+	reset_team();
+
+	switch (num) {
+		case 0:
+			team_tag1.className = "active";
+			break;
+		case 1:
+			team_tag2.className = "active";
+			break;
+		case 2:
+			team_tag3.className = "active";
+			tag3_content.style.display = "block";
+			break;
+		case 3:
+			team_tag4.className = "active";
+			break;
+		default:
+			console.log('no such an img')
+			break;
+	} 
+}
+
+function reset_team () {
+	for (var i = team_tags.length - 1; i >= 0; i--) {
+		if(team_tags[i].className == "active") {
+			team_tags[i].className = "inactive";
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

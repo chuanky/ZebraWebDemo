@@ -5,18 +5,74 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style/index.css">
 	<link rel="stylesheet" type="text/css" href="style/header_footer.css">
-	<link rel="stylesheet" type="text/css" href="sytle/team.css">
+	<link rel="stylesheet" type="text/css" href="style/team.css">
 </head>
 <body>
 
 <header id="header"></header>
 <div class="container" id="main_menu"></div>
 
+<div class="container" id="team_img_container">
+	<img src="assets/images/team_front.png" alt="team_front" id="team_front" class="width100">
+	<img src="assets/images/team_chair.png" alt="team_chair" id="team_chair">
+</div>
+
+<div class="container bg_f4grey" id="team_tag">
+	<ul>
+		<li id="team_tag1" class="active" onclick="switch_team(0)">
+			<p>斑马团队</p>
+			<p>ZEBRA TEAM</p>
+		</li>
+		<li id="team_tag2" class="inactive" onclick="switch_team(1)">
+			<p>斑马工作</p>
+			<p>ZEBRA WORK</p>
+		</li>
+		<li id="team_tag3" class="inactive" onclick="switch_team(2)">
+			<p>斑马环境</p>
+			<p>ZEBRA ENV</p>
+		</li>
+		<li id="team_tag4" class="inactive" onclick="switch_team(3)">
+			<p>斑马集群</p>
+			<p>ZEBRA CLAN</p>
+		</li>
+	</ul>
+</div>
+
+<div class="hidden" id="tag1_content"></div>
+
+<div class="hidden" id="tag2_content"></div>
+
+<div class="hidden" id="tag3_content">
+	<div class="container">
+		<div id="team_title">
+			<h3 id="title_text">THIS IS OUR HOME</h3>
+		</div>
+		<div id="team_text">
+			<h3 id="team_text1">这是承载着大家共同梦想的地方</h3>
+			<h3 id="team_text2">设计，也是生活</h3>
+		</div>
+		<img src="assets/images/team_env.png" alt="team_env" id="team_env" class="width100">
+	</div>
+
+	<div class="container" style="height:50px;"></div>
+
+	<div class="container box_shadow">
+		<div id="book_text">
+			<h3 id="book_text1">公司按照业务方向，设置总裁，人力资源部，市场业务部，财务部，制作部等</h3>
+			<h3 id="book_text2">公司部门设备齐全，占地约300平方米。确保了公司的核心竞争力和自主创新能力</h3>
+		</div>
+		<img src="assets/images/team_book.png" alt="team_book" id="team_book" class="width30">
+	</div>
+</div>
+
+<div class="hidden" id="tag3_content"></div>
+
 <div class="container" style="height:150px;"></div>
 
 <footer id="footer"></footer>
 
 <script src="script/header_footer.js"></script>
+<script src="script/switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="script/map.js"></script>
 </body>

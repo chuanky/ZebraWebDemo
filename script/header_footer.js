@@ -28,13 +28,10 @@ mainMenu.innerHTML =
 		'<li>·</li>' +
 		'<li id="elite_movie">' +
 			'<a href="movies.html"><span>精品影视</span></a>' +
-			'<div class="dropdown_content">' +
-				'<img src="assets/images/dropdown_mov.png">' +
-			'</div>' +
 		'</li>' +
 		'<li>·</li>' +
 		'<li id="services">' +
-			'<a href="#"><span>服务类别</span></a>' +
+			'<span>服务类别</span>' +
 			'<div class="dropdown_content bg_black" id="sss">' +
 				'<a href="popmov.html"><p>热门电影</p></a>' +
 				'<a href="hotmov.html"><p>热播剧集</p></a>' +
