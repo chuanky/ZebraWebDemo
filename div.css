@@ -1,0 +1,132 @@
+.container{
+	
+	min-width: 30%;
+	max-width: 100％;
+	position: relative;
+	display: block;
+}
+
+.logo {
+	min-width: 230px;
+	margin: 10px 10px; 
+	display:inline-block;
+	
+}
+
+#header_logo {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	margin: 10px;
+	margin-left: 50%;
+}
+
+.logo_text {
+	display: inline;
+	position: absolute;
+	top: 34px;
+	color: black;
+	font-family:Consolas,"courier new";
+	width: 120px;	
+	
+
+}
+
+.logo_text2 {
+	display: inline-block;
+	position: absolute;
+	color: black;
+	font-family:Consolas,"courier new";
+	font-size: 15px;
+	top:54px;
+	letter-spacing: -2px;
+	
+}
+
+.top_icon{
+	top:34px;
+	display:inline-block;
+	min-width: 10%;
+	position: absolute;
+	
+	right:10%;
+	padding:2px 3px 2px 15px;
+	border-right: solid;
+	border-left:solid;
+    border-color: #f1f1f1
+}
+
+#wechat{
+	width: 25px;
+	height:25px;
+	display: inline-block;
+	margin:3px;
+}
+
+#weibo{
+	width: 23px;
+	height:23px;
+	display: inline-block;
+	margin:3px;
+}
+
+#youku{
+	width: 25px;
+	height:25px;
+	display: inline-block;
+	margin:3px 0px 3px 3px;
+}
+
+.menu{
+	background-color: black;
+	position: fixed;
+	margin:auto;
+	padding: auto;
+	display: block;
+    height: 50px;
+    width: 100%;
+}
+
+.menu_font{
+	padding:0px 0px;
+	margin: 0px;
+	left:10%;
+
+}
+
+.menu_en{
+	left:;
+}
+
+
+#reservation_logo{
+    width: 13.7%;
+	position: absolute;
+	margin-left: 15%;
+
+}
+
+.header_menu{
+	list-style-type:none;
+	display: inline-block;
+	color: grey;
+    margin: 0px;
+    padding: 0px;
+    right: 22%;
+    top:20px;
+    position: absolute;
+}
+
+.header_menu_font{
+	font-size: 70%;
+	display: inline-block;
+}
+.header_menu_font a{text-decoration: none;}
+
+
+.video{
+display: block;
+width＝100%；
+
+}
+

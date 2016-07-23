@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>斑马主页</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="header_footer.css">
+	<!-- <link rel="stylesheet" type="text/css" href="w3.css"> -->
+</head>
+<body>
+<header>
+	<div class="container" style="height:130px;">
+		<div class="logo">
+			<a href="index.html">
+			<img src="assets/logo/zebra.png" id="header_logo">
+			<span class="logo_text"><span id="logo_text1">斑马电影工作室</span>ZEBRA FILM STUDIO</span>
+			</a>
+		</div>
+		<div class="top_icon">
+			<img src="assets/logo/wechat.png" id="wechat">
+			<img src="assets/logo/weibo.png" id="weibo">
+			<img src="assets/logo/youku.jpg" id="youku">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<ul class="menu_tag">
+		<li id="pro_team">
+			<span>专业团队</span>
+			<div class="dropdown_content">
+				<img src="assets/images/dropdown_team.jpg">
+			</div>
+		</li>
+		<li>·</li>
+		<li id="high_tech">
+			<span>精湛技术</span>
+			<div class="dropdown_content">
+				<img src="assets/images/dropdown_tech.jpg">
+			</div>
+		</li>
+		<li>·</li>
+		<li id="elite_movie">
+			<span>精品影视</span>
+			<div class="dropdown_content">
+				<img src="assets/images/dropdown_mov.png">
+			</div>
+		</li>
+		<li>·</li>
+		<li id="services">
+			<span>服务类别</span>
+			<div class="dropdown_content bg_black">
+			<p><a href="popmov.html">热门电影</a></p>
+			<p><a href="hotmov.html">热播剧集</a></p>
+			<p><a href="cwedding.html">中式婚礼</a></p>
+			<p><a href="wwedding.html">西式婚礼</a></p>
+			<p><a href="company.html">企业宣传</a></p>
+			<p><a href="product.html">产品宣传</a></p>
+			<p><a href="internet.html">网络电影</a></p>
+			<p><a href="baby.html">儿童记录</a></p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+	<div class="container" style="height:15px;"></div>
+
+	<div class="container">
+		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
+
+		<img src="assets/images/index_img2.jpg" class="max_height700 width100">
+	</div>
+
+	<div class="container" style="width: 0; height: 263px;">
+		<div class="box_shadow" id="block1">
+			<span class="block1_text">
+				Spicial Wedding<br>
+				<span style="margin-left:100px;">OF</span><br>
+				<span style="margin-left:120px; color:white;">专题婚礼</span>
+			</span>
+		</div>
+		<div class="box_shadow" id="block2">
+			<span class="block2_text">斑马传媒有限公司拥有丰富的婚礼策划经验，为您打造更多更时尚的专题婚礼。斑马传媒将为您打造一场独特难忘的回忆。<br><br><br>只观风景，只谈爱情，优雅的享受婚礼吧！</span>
+		</div>
+		<div id="block3">
+			<img src="assets/images/index_propose.jpg" id="block3_img">
+		</div>
+	</div>
+
+	<!--rhombus header -->
+	<div class="container" id="range">
+		<div class="rhomb_header">
+			<h2 class="rhomb_text">业务范畴</h2>
+		</div>
+
+		<div class="container tag_bg"></div>
+
+		<div class="container tag">
+			<div class="range_title">
+				<h4 id="rt_movie">微电影拍摄</h4>
+				<h4 id="rt_plan">高端婚礼策划</h4>
+				<h4 id="rt_prop">企业宣传策划</h4>
+				<h4 id="rt_net">网络大电影</h4>		
+				<h4 id="rt_baby">儿童记录</h4>		
+			</div>
+			<ul class="tag_text range_tag">
+				<li id="range_tag1" class="active" onclick="switch_range_img(0)">
+					<img src="assets/logo/热门电影.png">
+					<br><br>
+					热门电影
+					<br>
+					Popular Movie
+				</li>
+				<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">
+					<img src="assets/logo/热播剧集.png">
+					<br><br>
+					热播剧集
+					<br>
+					Hot Movie
+				</li>
+				<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">
+					<img src="assets/logo/中式婚礼.png">
+					<br><br>
+					中式婚礼
+					<br>
+					Chinese Wedding
+				</li>
+				<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">
+					<img src="assets/logo/西式婚礼.png">
+					<br><br>
+					西式婚礼
+					<br>
+					Western Wedding
+				</li>
+				<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">
+					<img src="assets/logo/企业宣传.png">
+					<br><br>
+					企业宣传
+					<br>
+					Company Prop
+				</li>
+				<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">
+					<img src="assets/logo/产品宣传.png">
+					<br><br>
+					产品宣传
+					<br>
+					Product Prop
+				</li>
+				<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">
+					<img src="assets/logo/网络电影.png">
+					<br><br>
+					网络电影
+					<br>
+					Internet Moive
+				</li>
+				<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">
+					<img src="assets/logo/儿童记录.png">
+					<br><br>
+					儿童记录
+					<br>
+					Baby Record
+				</li>
+			</ul>
+		</div>
+
+		<div class="container range_bottom">
+			<img src="assets/images/range_pop.jpg" id="range_img" class="max_height600" style="width:80%">
+			<div id="rb_container">
+				<div class="range_block1" id="rb1">
+					<span id="rb1_text1" style="margin: 30px 20px 5px 20px;">Know yourself</span>
+					<span id="rb1_text2" style="text-align:right; margin:0px 30px;">了解自己</span>
+				</div>
+				<div class="range_block2 text_center box_shadow" id="rb2">
+					<span><a id="range_more" href="popmov.html">More →</a></span>
+				</div>
+				<div class="range_block3 box_shadow" id="rb3">
+					<div style="margin:30px;">
+						<span id="rb3_text1">视觉形象</span>
+						<span id="rb3_text2">The visual image</span>
+						<span id="rb3_text3">我们拍摄最真实最珍贵的瞬间</span>
+						<span id="rb3_text4">We shot the most real and precious moments</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="height:150px;"></div>
+
+	<div class="container" id="tech">
+		<div class="rhomb_header">
+			<h2 class="rhomb_text">技术经验</h2>
+		</div>
+
+		<div class="container tag_bg"></div>
+
+		<div class="container tag">
+			<div class="tech_title">
+				<h4 id="tt_plan">策划</h4>
+				<h4 id="tt_shoot">拍摄</h4>
+				<h4 id="tt_cut">剪辑</h4>
+				<h4 id="tt_special">特效</h4>
+				<h4 id="tt_adv">推广</h4>
+			</div>
+			<ul class="tag_text tech_tag">
+				<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">
+					<img src="assets/logo/策划.png">
+				</li>
+				<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">
+					<img src="assets/logo/拍摄.png">
+				</li>
+				<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">
+					<img src="assets/logo/剪辑.png">
+				</li>
+				<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">
+					<img src="assets/logo/特效.png">
+				</li>
+				<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">
+					<img src="assets/logo/推广.png">
+				</li>
+			</ul>
+		</div>	
+
+		<div class="container font_size18 text_center bg_black" id="tech_3rd">
+			<img src="assets/images/tech_plan.jpg" id="tech_img" class="max_height600">
+			<div id="tb_container">
+				<div class="tech_block1" id="tb1">
+					<span id="tb1_text1">镜头世界<br>The camera world</span>
+				</div>
+				<div class="tech_block2 box_shadow" id="tb2">
+					<span><a id="tech_more" href="plan.html">More →</a></span>
+				</div>
+				<div class="tech_block3 text_left box_shadow" id="tb3">
+					<span style="margin:30px;" id="tb3_text1">斑马团队拥有超强的文案能力，扎实的内容企划能力<br>Zebra team has strong copywriting ablity, solid content planning ablitiy<br><br>实时了解影视剧市场，及时把握新动态，新趋势<br>To understand the film and television play market, grasp the new dynamic trend</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="height:200px;"></div>
+
+<footer>
+	<div class="rhomb_header rhomb_footer">
+		<div class="logo_container">
+			<img src="assets/logo/zebra.png" id="footer_logo">
+		</div>
+	</div>
+
+	<div class="container" id="footer_area">
+		<div class="footer_title bg_black">
+			<div id="map_title">
+				<p>Zebra Address</p>
+			</div>
+			<div id="barcode_title">
+				<p>Follow Us</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="footer_content">
+			<div class="map_container bg_black">
+				<div id="dituContent" class="baidu_map"></div>
+			</div>
+
+			<div class="contact_container bg_black">
+				<img src="assets/logo/二维码.png" id="bar_code">
+				<div class="contact_icon">
+					<p>www.zebraStudio.com</p>
+					<img src="assets/logo/homepage.png" id="icon_homepage">
+				</div>
+				<div class="contact_icon">
+					<p>电话</p>
+					<img src="assets/logo/telephone.png" id="icon_telephone">
+				</div>
+				<div class="contact_icon">
+					<p>chunguang@zebraStudio.com</p>
+					<img src="assets/logo/email.png" id="icon_email">
+				</div>
+				<div class="contact_icon">
+					<p>地址</p>
+					<img src="assets/logo/location.png" id="icon_location">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:30px;"></div>
+
+	<div class="container bg_black">
+		<div id="line_bl"></div>
+		<div id="m_text">
+			<p>WELCOME</p>
+			<p>ZEBRA FILM STUDIO</p>
+		</div>
+		<div id="line_br"></div>
+	</div>
+
+	<div class="container bg_black">
+		<div id="bb_text">
+			<p>辽宁省鞍山市立山区胜利北路85—S10</p>
+			<p>ZEBRA CULTURE MEDIA CO.LTD</p>
+		</div>
+	</div>
+
+	<div class="container bg_black" style="height:50px;"></div>
+</footer>
+
+<script src="switch_img.js"></script>
+<script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="map.js"></script>
+</body>
+</html>
