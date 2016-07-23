@@ -19,21 +19,15 @@ header.innerHTML =
 mainMenu.innerHTML = 
 	'<ul class="menu_tag">' +
 		'<li id="pro_team">' +
-			'<a href="#"><span>专业团队</span></a>' +
-			'<div class="dropdown_content">' +
-				'<img src="assets/images/dropdown_team.jpg">' +
-			'</div>' +
+			'<a href="team.html"><span>专业团队</span></a>' +
 		'</li>' +
 		'<li>·</li>' +
 		'<li id="high_tech">' +
-			'<a href="#"><span>精湛技术</span></a>' +
-			'<div class="dropdown_content">' +
-				'<img src="assets/images/dropdown_tech.jpg">' +
-			'</div>' +
+			'<a href="professions.html"><span>精湛技术</span></a>' +
 		'</li>' +
 		'<li>·</li>' +
 		'<li id="elite_movie">' +
-			'<a href="#"><span>精品影视</span></a>' +
+			'<a href="movies.html"><span>精品影视</span></a>' +
 			'<div class="dropdown_content">' +
 				'<img src="assets/images/dropdown_mov.png">' +
 			'</div>' +
