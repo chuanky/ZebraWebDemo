@@ -51,8 +51,8 @@ SVG:
 JavaScript:
 	√1. improve code for interactive tags
 	√2. make responsive texts for tags
-	3. create animation for switching images
-		-css,js or bootstrap
+	√3. create animation for switching images
+		-css,js or bootstrap -- jQuery
 	√4. active main menu
 	√5. format blocks for each tag in range and tech
 
@@ -61,4 +61,8 @@ PHP:
 	2. company emails
 
 CSS:
-	1. check transition
+	√1. check transition -- use jQuery
+
+jQuery:
+	1. create animation for switching images
+	2. improve code for clan tag in team subpage

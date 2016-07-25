@@ -1,5 +1,4 @@
 #team_img_container {
-	z-index: 1;
 }
 
 #team_chair {
@@ -10,11 +9,6 @@
 #team_tag {
 	height: 300px;
 	margin-top: -100px;
-}
-
-#team_tag a {
-	text-decoration: none;
-	color: black;
 }
 
 #team_tag ul {
@@ -94,6 +88,106 @@
 	margin: 5% 5%;
 }
 
+/*tag1_content*/
+p.img_desc{
+	font-size: 12px;
+}
+
+.movies_container {
+}
+
+/*tag4_content*/
+#clan_tag {
+	height: 100px;
+	margin-top: 30px;
+}
+
+#clan_tag ul {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#clan_tag li {
+	display: inline-block;
+	width: 18.4%;
+	float: left;
+	text-align: center;
+	margin-left: 2%;
+	transition-duration: 0.6s;
+	height: 80px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#clan_tag li:nth-child(1) {
+	margin-left: 0;
+}
+
+#clan_tag p {
+	padding: 10px 0px;
+}
+
+#clan_icon {
+	height: 80px;
+}
+
+#clan_icon ul {
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+#clan_icon li {
+	display: inline-block;
+	width: 14.72%;
+	float: left;
+	margin-left: 1.6%;
+}
+
+#clan_icon li:nth-child(1) {
+	margin-left: 10%;
+}
+
+#clan_icon li img {
+	width: 50%;
+	height: 70px;
+	margin: auto;
+}
+
+.clan_text {
+	position: absolute;
+	width: 100%;
+}
+
+.clan_text div {
+	display: inline-block;
+	text-align: center;
+}
+
+.clan_text ul {
+	display: inline-block;
+	list-style-type: square;
+}
+
+.clan_textleft ul {
+	margin-left: 10%;
+}
+
+.clan_text li {
+	text-align: left;
+	margin: 5px 0;
+}
+
+.clan_text p {
+	margin-left: 10%;
+	margin-top: 50px;
+	text-align: left;
+	font-size: 18px;
+}
+
+
+.clan_textright {
+	position: absolute;
+}
 
 @media screen and (max-width: 1024px) {
 	#team_tag li p {
@@ -116,6 +210,33 @@
 		color: white;
 		text-shadow: 0 0 10px #000000;
 		font-size: 15px;
+	}
+
+	#team_tag {
+		height: 250px;
+	}
+
+	#clan_tag {
+		height: 100px;
+		margin-top: 15px;
+	}
+
+	#clan_icon {
+		height: 60px;
+	}
+
+	#clan_icon li img {
+		width: 50%;
+		height: 40px;
+		margin: auto;
+	}
+
+	.clan_text p {
+		font-size: 15px;
+	}
+	
+	.clan_text li {
+		font-size: 12px;
 	}
 }
 

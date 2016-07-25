@@ -18,17 +18,17 @@ header.innerHTML =
 
 mainMenu.innerHTML = 
 	'<ul class="menu_tag">' +
-		'<li id="pro_team">' +
-			'<a href="team.html"><span>专业团队</span></a>' +
-		'</li>' +
+		'<a href="team.html"><li id="pro_team">' +
+			'<span>专业团队</span>' +
+		'</li></a>' +
 		'<li>·</li>' +
-		'<li id="high_tech">' +
-			'<a href="professions.html"><span>精湛技术</span></a>' +
-		'</li>' +
+		'<a href="professions.html"><li id="high_tech">' +
+			'<span>精湛技术</span>' +
+		'</li></a>' +
 		'<li>·</li>' +
-		'<li id="elite_movie">' +
-			'<a href="movies.html"><span>精品影视</span></a>' +
-		'</li>' +
+		'<a href="movies.html"><li id="elite_movie">' +
+			'<span>精品影视</span>' +
+		'</li></a>' +
 		'<li>·</li>' +
 		'<li id="services">' +
 			'<span>服务类别</span>' +

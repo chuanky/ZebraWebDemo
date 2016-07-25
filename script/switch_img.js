@@ -256,45 +256,45 @@ function reset_tech() {
 }
 
 //team tags
-var team_tag1 = document.getElementById('team_tag1');
-var team_tag2 = document.getElementById('team_tag2');
-var team_tag3 = document.getElementById('team_tag3');
-var team_tag4 = document.getElementById('team_tag4');
+var clan_tag1 = document.getElementById('clan_tag1');
+var clan_tag2 = document.getElementById('clan_tag2');
+var clan_tag3 = document.getElementById('clan_tag3');
+var clan_tag4 = document.getElementById('clan_tag4');
+var clan_tag5 = document.getElementById('clan_tag5');
 
-var team_tags = [team_tag1, team_tag2, team_tag3, team_tag4];
+var clan_tags = [clan_tag1, clan_tag2, clan_tag3, clan_tag4, clan_tag5];
 
-var tag3_content = document.getElementById('tag3_content');
+function switch_clan (num) {
+	 reset_clan();
 
-function switch_team(num) {
-	var pic;
-	reset_team();
-
-	switch (num) {
-		case 0:
-			team_tag1.className = "active";
-			break;
-		case 1:
-			team_tag2.className = "active";
-			break;
-		case 2:
-			team_tag3.className = "active";
-			tag3_content.style.display = "block";
-			break;
-		case 3:
-			team_tag4.className = "active";
-			break;
-		default:
-			console.log('no such an img')
-			break;
-	} 
+	 switch (num) {
+	  	case 0:
+	  		clan_tag1.className = "active";
+	  		break;
+	  	case 1:
+	  		clan_tag2.className = "active";
+	  		break;
+	  	case 2:
+	  		clan_tag3.className = "active";
+	  		break;
+	  	case 3:
+	  		clan_tag4.className = "active";
+	  		break;
+	  	case 4:
+	  		clan_tag5.className = "active";
+	  		break;
+	  	default:
+	  		console.log('no such an tag')
+	  		break;
+	  } 
 }
 
-function reset_team () {
-	for (var i = team_tags.length - 1; i >= 0; i--) {
-		if(team_tags[i].className == "active") {
-			team_tags[i].className = "inactive";
-		}
-	}
+function reset_clan () {
+	 for (var i = clan_tags.length - 1; i >= 0; i--) {
+	  	if(clan_tags[i].className == "active") {
+	  		clan_tags[i].className = "inactive";
+	  	}
+	  } 
 }
 
 
