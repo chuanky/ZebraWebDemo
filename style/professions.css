@@ -1,0 +1,98 @@
+#whitespace1 {
+	height: 100px;
+}
+
+#whitespace2 {
+	height: 50px;
+}
+#move_text {
+	background: black;
+	color: white;
+	width: 350px;
+	height: 60px;
+	line-height: 60px;
+	position: absolute;
+	text-align: center;
+	font-size: 18px;
+	bottom: 15%;
+}
+
+#wheel_text {
+	font-size: 16px;
+	margin-left: 35%;
+	width: 65%;
+	position: absolute;
+	height: 100%;
+}
+
+#wheel_text p {
+	margin: 10%;
+}
+
+#professions_wheel {
+	width: 35%;
+	position: relative;
+	top: -50px;
+}
+
+#light_text {
+	width: 65%;
+	position: absolute;
+	height: 100%;
+}
+
+#light_text p {
+	margin: 3%;
+}
+
+#light_text p:nth-child(3),#light_text p:nth-child(4) {
+	text-align: right;
+}
+
+#professions_light {
+	width: 35%;
+	margin-left: 65%;
+}
+
+@media screen and (max-width: 1024px) {
+	#move_text {
+		width: 200px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+	#wheel_text {
+		margin: auto;
+		z-index: 1;
+		color: white;
+		text-shadow: 0px 0px 10px #000000;
+		font-size: 14px;
+	}
+
+	#wheel_text p {
+		margin: 20%;
+	}
+
+	#professions_wheel {
+		width: 100%;
+		top: 0;
+	}
+
+	#professions_light {
+		width: 100%;
+		margin: auto;
+	}
+
+	#light_text p {
+		text-shadow: 0px 0px 10px #000000;
+	}
+
+	#whitespace1 {
+		height: 15px;
+	}
+
+	#whitespace2 {
+		height: 15px;
+	}
+}

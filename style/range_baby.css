@@ -1,0 +1,51 @@
+.sleepy_desc {
+	background: #f4f4f4;
+}
+
+#sleepy_text {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	background: black;
+	color: white;
+	line-height: 60px;
+	font-size: 30px;
+}
+
+.baby_intro {
+	margin: auto;
+	margin-top: 50px;
+	width: 50%;
+	text-align: center;
+	line-height: 30px;
+}
+
+#baby_paint {
+	margin-top: 30px;
+}
+
+#baby_bottom {
+	margin-top: -100px;
+	z-index: -1;
+}
+
+#baby_play_text p {
+	margin: 20% 5% 0px 5%;
+}
+
+#baby_play_text p:nth-child(2) {
+	margin: 10% 5% 0px 5%;
+}
+
+#baby_kiss_text {
+	width: 50%;
+	float: right;
+}
+
+#baby_kiss_text p{
+	margin: 20% 5% 0px 5%;
+}
+
+#baby_kiss_text p:nth-child(2) {
+	margin: 10% 5% 0px 5%;
+}

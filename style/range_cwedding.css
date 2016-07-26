@@ -1,0 +1,35 @@
+.rhomb_header {
+	margin-top: -120px;
+}
+
+.rhomb_text {
+	padding: 70px;
+}
+
+#cwedding_text {
+	float: left;
+}
+
+#cwedding_text1 {
+	float: left;
+	text-align: center;
+	margin-top: 15%;
+}
+
+#mooncake,#mooncake1 {
+	margin-left: 50%;
+}
+
+#cwedding_text h3 {
+	text-align: center;
+	margin-top: 15%;
+}
+
+#bowl {
+	position: absolute;
+}
+
+#couple {
+	margin-left: 50%;
+	width: 25%;
+}

@@ -10,19 +10,40 @@ TODO LIST:
 	√9. create range and tech tags
 	√10. position menu tags
 	11. optimize video player’s appearance
+		√-start
+		-finish
 	√12. add baidu map into footer area
-	13. 2d barcode img
+	√13. 2d barcode img
 	√14. align li tags 
 	√15. add icons into tech and range tags
-	16. main menu - avoid selecting tag texts
+	√16. main menu - avoid selecting tag texts
+		-add fake links for main menu tags
 	17. find a better way of placing range_img and tech_img
 
+subpages for service range:
+	√1. popular movie
+	√2. hot movie
+	√3. chinese wedding
+	√4. western wedding
+	√5. product
+	√6. company
+	√7. baby
+	8. internet movie 
+
+subpages for tech:
+	√1. plan
+	√2. shoot
+	√3. cut
+	4. special effect
+	5. advertisement
+
 Images:
-	1. get proper size for video poster
+	√1. get proper size for video poster
 	√2. resize tag icons
 
 SVG:
 	1.how to reuse svg code blocks
+		-.svg can be used as an image
 	√2.draw rhombus and play icon
 	√3.draw lines for footer area (complete through css)
 	4.rhombus for footer
@@ -30,7 +51,8 @@ SVG:
 JavaScript:
 	√1. improve code for interactive tags
 	√2. make responsive texts for tags
-	3. create animation for switching images
+	√3. create animation for switching images
+		-css,js or bootstrap -- jQuery
 	√4. active main menu
 	√5. format blocks for each tag in range and tech
 
@@ -39,5 +61,12 @@ PHP:
 	2. company emails
 
 CSS:
-	1. check transition
-	2. animation for switching images 
+	√1. check transition -- use jQuery
+
+jQuery:
+	1. create animation for switching images
+	2. improve code for clan tag in team subpage
+
+网页文书:
+	1. 完善策划部分文书 —— last block
+	2. 完善推广部分文书 —— 公司简介

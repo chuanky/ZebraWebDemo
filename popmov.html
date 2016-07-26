@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>热门电影</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/header_footer.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/range_popmov.css">
+</head>
+<body>
+<header id="header"></header>
+<div class="container" id="main_menu"></div>
+<!-- end of header -->
+
+<div class="container">
+	<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon">
+	<video src="assets/video/thrill.mp4" controls preload="none" poster="assets/images/poster_pop.jpg" id="index_video" class="width100 bg_black"></video>
+</div>
+
+<div class="container" style="height:15px;"></div>
+
+<div class="container">
+	<div id="pop_pray_text">
+		<h3>BLACK AND WHITE</h3>
+	</div>
+	<img src="assets/images/pop_pray.jpg" class="width100">
+</div>
+
+<div class="container">
+	<div class="width50">
+		<img src="assets/images/pop_factory.png" alt="pop_factory" id="pop_factory" class="width100">
+	</div><div class="width50" id="factory_text">
+		<h3>精彩的剧情+惊悚的画面+震撼的音效+悬念</h3>
+	</div>
+</div>
+
+<div class="container" style="height:450px;"></div>
+
+<div class="container" id="pop_overview">
+	<div class="rhomb_header">
+		<h2 class="pop_rhomb_text">概述<br>OVERVIEW</h2>
+	</div>
+	<div class="container" id="pop_overview_bg">
+		<img src="assets/images/pop_blackflower.jpg" class="width50 max_height500" alt="pop_blackflower" id="pop_blackflower">
+		<div id="pop_overview_text">电影简介</div>
+	</div>
+</div>
+
+<div class="container" style="height:100px;"></div>
+
+<footer id="footer"></footer>
+
+<script src="script/header_footer.js"></script>
+<script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="style/map.js"></script>
+</body>
+</html>
