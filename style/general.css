@@ -1,0 +1,778 @@
+
+
+/*header and footer css*/
+/*header logo*/
+.logo {
+	min-width: 230px;
+	position: absolute;
+	margin: 40px 10%;
+}
+
+#header_logo {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+
+.logo_text {
+	display: inline;
+	position: absolute;
+	top: 10px;
+	color: black;
+}
+
+#logo_text1 {
+	font-size: 22px;
+}
+
+
+/*top icons*/
+.top_icon {
+	min-width: 270px;
+	position: absolute;
+	margin: 60px 80%;
+}
+
+#wechat, #weibo, #youku{width: 45px;display: inline-block;transition-duration: 0.6s}
+
+#wechat:hover, #weibo:hover, #youku:hover{filter: brightness(130%);transition-duration: 0.6s}
+
+/*footer area*/
+
+.rhomb_footer {
+	height: 200px;
+	background: url('rhombus_footer.png') center no-repeat;
+	z-index: 1;
+	margin-top: -100px;
+}
+
+.logo_container {
+	width: 84px;
+	height: 84px;
+	margin: auto;
+}
+
+#footer_logo {
+	width: 84px;
+	filter: invert(100%);
+	position: absolute;
+	margin-top: 50px;
+	padding: 0px 9px 0px 0px;
+	z-index: 1;
+}
+
+#footer_container {
+	background: #292929;
+}
+
+footer p {
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+
+#footer_area {
+	margin-top:-100px;
+}
+
+#footer_content {
+}
+
+.footer_title {
+	height: 100px;
+}
+
+#map_title,#barcode_title {
+	margin-top: 60px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+
+#barcode_title {
+	float: right;
+}
+
+.map_container {
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	border-right: 3px #b2a682 solid;
+}
+
+.baidu_map {
+	width: 60%;
+	height: 100%;
+	margin: auto;
+}
+
+.contact_container {
+	width: 50%;
+	margin-left: 50%;
+}
+
+.contact_icon {
+}
+
+.contact_icon p {
+	position: absolute;
+	margin-left: 20%;
+	line-height: 20px;
+}
+
+#bar_code {
+	width: 30%;
+	margin-left: 35%;
+}
+
+#icon_homepage,#icon_telephone,#icon_email,#icon_location {
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 35%;
+}
+
+#line_bl,#line_br,#line_bb,#m_text {display: inline-block;}
+
+#line_bl {
+	width: 30%;
+	height: 0;
+	border: white solid 1px;
+	margin-left: 10%;
+}
+
+#m_text {
+	color: white;
+	border: white solid 1px;
+	text-align: center;
+	margin-left: 3%;
+	width: 12%;
+}
+
+#m_text p {
+	font-size: 12px;
+}
+
+#line_br {
+	width: 30%;
+	height: 0;
+	border: white solid 1px;
+	margin-left: 3%;
+}
+
+#bb_text {
+	border-bottom: #b2a682 solid 4px;
+}
+
+#bb_text p{
+	display: inline-block;
+	width: 49%;
+	line-height: 20px;
+	font-size: 12px;
+	padding: 20px 0 0 0;
+}
+
+#bb_text span {
+	margin-left: 10%;
+}
+
+/*movies css*/
+#movblock_title {
+	color: white;
+	width: 20%;
+	position: absolute;
+	margin-top: -30px;
+}
+
+#movblock_title h3 {
+	font-size: 15px;
+}
+
+#movblock_title h3:nth-child(1) {
+	padding: 10px 10% 10px 10%;
+}
+
+#movblock_title h3:nth-child(2) {
+	text-align: center;
+	padding: 0px 20% 10px 20%;
+}
+
+.movies_container {
+	display: inline-block;
+	position: relative;
+	width: 23.3%;
+	margin: 30px 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movies_container img {
+	width: 100%;
+}
+
+.movblock_text {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+	text-shadow: 5px 5px 5px #000000;
+}
+
+@media screen and (max-width: 1024px) {
+	.movies_container {
+		margin: 10px 5%;
+	}
+	.movblock_text {
+		font-size: 18px;
+	}
+}
+
+
+/*team css*/
+#team_img_container {
+}
+
+#team_chair {
+	width: 40%;
+	margin-left: 50%;
+}
+
+#team_tag {
+	height: 300px;
+	margin-top: -100px;
+}
+
+#team_tag ul {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 150px;
+	position: absolute;
+}
+
+#team_tag li {
+	display: inline-block;
+	width: 23%;
+	float: left;
+	text-align: center;
+	margin-left: 2%;
+	transition-duration: 0.6s;
+	height: 100px;
+	padding: 10px 0 0 0;
+	font-size: 15px;
+}
+
+#team_tag li p:nth-child(2) {
+	padding: 10px 0 10px 0;
+	border-bottom: #b2a682 solid 3px;
+	width: 80%;
+	margin: auto;
+}
+
+#team_tag li:hover {
+	background: black;
+	color: #b2a682;
+	cursor: pointer;
+	transition-duration: 0.6s;
+}
+
+#team_title {
+	color: white;
+	width: 30%;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	height: 100%;
+}
+
+#team_title h3 {
+	background: black;
+	line-height: 50px;
+	margin-top: 10%;
+}
+
+#team_text {
+	width: 40%;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	line-height: 30px;
+}
+
+#team_text h3 {
+	background: white;
+}
+
+#team_text h3:nth-child(2) {
+		text-align: right;
+}
+
+#book_text {
+	position: absolute;
+	width: 70%;
+	margin-left: 30%;
+	bottom: 0;
+}
+
+#book_text h3 {
+	margin: 5% 5%;
+}
+
+/*tag1_content*/
+.portrait {
+	display: inline-block;
+	width: 10%;
+	margin-left: 10%;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portrait:nth-child(4n + 1) {
+	margin-left: 15%;
+}
+
+.portrait img {
+	width: 100%;
+}
+
+.portrait p.img_desc {
+	font-size: 15px;
+	padding: 5px 0px 5px 0px;
+	color: #b2a682;
+}
+
+.portrait p:nth-child(3){
+	color: black;
+}
+
+/*tag2_content*/
+p.img_desc{
+	font-size: 12px;
+}
+
+
+/*tag4_content*/
+#clan_tag {
+	height: 100px;
+	margin-top: 30px;
+}
+
+#clan_tag ul {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#clan_tag li {
+	display: inline-block;
+	width: 18.4%;
+	float: left;
+	text-align: center;
+	margin-left: 2%;
+	transition-duration: 0.6s;
+	height: 80px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#clan_tag li:nth-child(1) {
+	margin-left: 0;
+}
+
+#clan_tag p {
+	padding: 10px 0px;
+}
+
+#clan_icon {
+	height: 80px;
+}
+
+#clan_icon ul {
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+#clan_icon li {
+	display: inline-block;
+	width: 14.72%;
+	float: left;
+	margin-left: 1.6%;
+}
+
+#clan_icon li:nth-child(1) {
+	margin-left: 10%;
+}
+
+#clan_icon li img {
+	width: 50%;
+	height: 70px;
+	margin: auto;
+}
+
+.clan_text {
+	position: absolute;
+	width: 100%;
+}
+
+.clan_text div {
+	display: inline-block;
+	text-align: center;
+}
+
+.clan_text ul {
+	display: inline-block;
+	list-style-type: square;
+}
+
+.clan_textleft ul {
+	margin-left: 10%;
+}
+
+.clan_text li {
+	text-align: left;
+	margin: 5px 0;
+}
+
+.clan_text p {
+	margin-left: 10%;
+	margin-top: 50px;
+	text-align: left;
+	font-size: 18px;
+}
+
+
+.clan_textright {
+	position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+	.portrait p.img_desc {
+		font-size: 10px;
+	}
+
+	#team_tag li p {
+		font-size: 12px;
+	}
+
+	#team_title h3{
+		font-size: 14px;
+	}
+
+	#team_text h3 {
+		font-size: 13px;
+	}
+
+	#team_book {
+		width: 100%;
+	}
+
+	#book_text h3 {
+		color: white;
+		text-shadow: 0 0 10px #000000;
+		font-size: 15px;
+	}
+
+	#team_tag {
+		height: 250px;
+	}
+
+	#clan_tag {
+		height: 100px;
+		margin-top: 15px;
+	}
+
+	#clan_icon {
+		height: 60px;
+	}
+
+	#clan_icon li img {
+		width: 50%;
+		height: 40px;
+		margin: auto;
+	}
+
+	.clan_text p {
+		font-size: 15px;
+	}
+	
+	.clan_text li {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 512px) {
+	.portrait p.img_desc {
+		display: none;
+	}
+
+	.portrait:hover p.img_desc {
+		display: block;
+	}
+
+}
+
+/*plan css*/
+#plan_poster_text {
+	line-height: 30px;
+	width: 20%;
+	background: black;
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+
+.plan_block1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.plan_block1 p {
+	line-height: 40px;
+}
+
+.plan_block2, .plan_block3, .plan_block4{
+	margin-top: 50px;
+	width: 100%;
+	position: relative;
+}
+
+#plan_bamboo {
+	margin-left: 30%;
+}
+
+#pb3_text {
+	position: absolute;
+	width: 30%;
+}
+
+#pb3_text p {
+	margin: 5% 5%;
+}
+
+#pb4_text {
+	position: absolute;
+	width: 40%;
+	margin-left: 60%;
+}
+
+#pb4_text p {
+	margin: 5% 5%;
+}
+
+
+/*shoot css*/
+#shoot_poster_text {
+	width: 250px;
+	background: white;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+}
+
+.shoot_block1 {
+	text-align: center;
+	margin-top: 50px;
+	line-height: 30px;
+}
+
+#shoot_moat {
+	margin-top: 30px;
+}
+
+.shoot_block2 {
+	position: relative;
+}
+
+.palace_text {
+	position: absolute;
+	width: 70%;
+	z-index: -1;
+}
+
+.palace_text p {
+	margin: 3% 5%;
+}
+
+#shoot_palace {
+	margin-left: 70%;
+}
+
+#shoot_chinaware {
+	margin-top: 25px;
+	margin-left: 50%;
+}
+
+.chinaware_text {
+	position: absolute;
+	width: 50%;
+	z-index: -1;
+}
+
+.chinaware_text p {
+	margin: 3% 5%;
+}
+
+#shoot_winter {
+	margin-top: 25px;
+}
+
+/*cut css*/
+.cut_block1 {
+	margin-top: 50px;
+}
+
+.cb1_text {
+	width: 70%;
+	margin-left: 30%;
+	position: absolute;
+	text-align: center;
+}
+
+.cb1_text p {
+	margin: 3% 5%;
+}
+
+#cut_cloud2 {
+	margin-left: 30%;
+}
+
+.cut_block2 {
+	margin-top: 50px;
+}
+
+.cut_block2 p {
+	margin: 3% 5%;
+	text-align: center;
+}
+
+#cut_cloud4 {
+	margin-left: 50%;
+}
+
+/*special effect*/
+.poster_bottomtext {
+	width: 30%;
+	background: black;
+	color: white;
+	text-align: center;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+.special_block1 {
+	margin-top: 50px;
+}
+
+.sb1_text {
+	width: 30%;
+	position: absolute;
+	margin-left: 70%;
+}
+
+.sb1_text p {
+	margin: 3% 5%;
+	text-align: center;
+}
+
+.sb2_text {
+	width: 70%;
+	position: absolute;
+	margin-left: 30%;
+}
+
+.sb2_text p {
+	margin: 3% 5%;
+	text-align: center;
+}
+
+#special_pillar {
+	margin-left: 50%;
+}
+
+.sb3_text {
+	width: 50%;
+	position: absolute;
+	margin-left: 50%;
+}
+
+.sb3_text p {
+	margin: 3% 5%;
+	text-align: center;
+}
+
+#special_innovation {
+	margin-left: 50%;
+}
+
+/*adv css*/
+
+.adv_intro {
+	position: absolute;
+	width: 50%;
+	margin-left: 50%;
+	color: white;
+	top: 10%;
+}
+
+.adv_intro_alt {
+	text-align: center;
+	margin-top: 25px;
+	display: none;
+}
+
+.adv_intro_alt p {
+	margin: 0px 10%;
+	padding: 10px 0px;
+}
+
+.adv_intro p {
+	font-size: 15px;
+}
+
+#adv_run {
+	margin-top: 50px;
+}
+
+#adv_discipline {
+	margin-top: 50px;
+}
+
+#adv_co_icons {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+	.adv_intro {
+		display: none;
+	}
+
+	.adv_intro_alt {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/

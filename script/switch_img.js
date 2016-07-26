@@ -33,8 +33,7 @@ function switch_range_img(num) {
 
 	switch(num) {
 		case 0:
-			pic = "assets/images/range_pop.jpg";
-			range_img.style.width = "80%";
+			pic = "assets/images/range_pop.png";
 			rb1_text1.innerHTML = "Know yourself";
 			rb1_text2.innerHTML = "了解自己";
 			rb3_text1.innerHTML = "视觉形象";
@@ -45,7 +44,7 @@ function switch_range_img(num) {
 			range_more.href = "popmov.html";
 			break;
 		case 1:
-			pic = "assets/images/range_hot.jpg";
+			pic = "assets/images/range_hot.png";
 			rb_container.style.left = "10%";
 			rb1_text1.innerHTML = "About the secret";
 			rb1_text2.innerHTML = "关于秘密";
@@ -57,7 +56,7 @@ function switch_range_img(num) {
 			range_more.href = "hotmov.html";
 			break;
 		case 2:
-			pic = "assets/images/range_wedding_c.jpg";
+			pic = "assets/images/range_cwedding.png";
 			rb1_text1.innerHTML = "栈桥约定";
 			rb1_text2.innerHTML = "Convention";
 			rb3_text1.innerHTML = "中式婚礼我们有独到的见解和独特的做法，自成体系<br><br>";
@@ -68,7 +67,7 @@ function switch_range_img(num) {
 			range_more.href = "cwedding.html";
 			break;
 		case 3:
-			pic = "assets/images/range_wedding_w.jpg";
+			pic = "assets/images/range_wwedding.png";
 			rb_container.style.left = "10%";
 			rb1_text1.innerHTML = "浪漫而神圣 人心向往";
 			rb1_text2.innerHTML = "Romantic";
@@ -96,7 +95,7 @@ function switch_range_img(num) {
 			range_more.href = "company.html";
 			break;
 		case 5:
-			pic = "assets/images/range_product.jpg";
+			pic = "assets/images/range_product.png";
 			rb_container.style.left = "10%";
 			rb2.style.marginTop = "240px";
 			rb1_text1.innerHTML = "创业创意点子";
@@ -109,7 +108,7 @@ function switch_range_img(num) {
 			range_more.href = "product.html";
 			break;
 		case 6:
-			pic = "assets/images/range_internet.jpg";
+			pic = "assets/images/range_internet.png";
 			rb1.style.left = "375px";
 			rb2.style.marginTop = "280px";
 			rb1_text1.innerHTML = "表达创作者的思想";
@@ -178,57 +177,58 @@ var tb3 = document.getElementById('tb3');
 var tb1_text1 = document.getElementById('tb1_text1');
 var tb3_text1 = document.getElementById('tb3_text1');
 
+var tech_more = document.getElementById('tech_more');
+
 function switch_tech_img(num) {
 	var pic;
 	reset_tech();
 
 	switch(num) {
 		case 0:
-			pic = "assets/images/tech_plan.jpg";
+			pic = "assets/images/tech_plan.png";
 			tb1_text1.innerHTML = "镜头世界<br>The camera world";
 			tb3_text1.innerHTML = "斑马团队拥有超强的文案能力，扎实的内容企划能力<br>Zebra team has strong copywriting ablity, solid content planning ablitiy<br><br>实时了解影视剧市场，及时把握新动态，新趋势<br>To understand the film and television play market, grasp the new dynamic trend";
 			tech_tag1.className = "active";
+			tech_more.href = "plan.html";
 			break;
 		case 1:
-			pic = "assets/images/tech_shoot.jpg";
+			pic = "assets/images/tech_shoot.png";
 			tb_container.style.left = "65%";
 			tb1_text1.innerHTML = "生命 —— 意义<br>Life —— Meaning";
 			tb3_text1.innerHTML = "独特的视觉角度，拍摄出不同人对生命的定义<br>Different visual angles reflect different understandings of life<br>我想，生命的意义，只能靠自己，在体验，观察，阅读，思考<br>In my opinion, the meanding of life could only discover by myself through experiencing, observations, reading and thinking";
-			tech_img.style.width = "60%";
 			tech_tag2.className = "active";
+			tech_more.href = "shoot.html";
 			break;
 		case 2:
-			pic = "assets/images/tech_cut.jpg";
+			pic = "assets/images/tech_cut.png";
 			tb1.style.marginTop = "-50px";
 			tb1.style.marginLeft = "-140px";
 			tb1_text1.innerHTML = "精湛的技术源于<br>艺术的魅力";
 			tb3_text1.innerHTML = "让前方的自由和弥漫都在你心上<br>Let the freedom and diffuse in front of the spectrum in your heart<br><br><br>让路程所有的光亮都围绕你绽放<br>To light all up around you"
-			tech_img.style.width = "60%";
 			tech_tag3.className = "active";
+			tech_more.href = "cut.html";
 			break;
 		case 3:
-			pic = "assets/images/tech_special.jpg";
+			pic = "assets/images/tech_special.png";
 			tb_container.style.left = "10%";
 			tb1.style.marginTop = "-50px";
 			tb1.style.marginLeft = "-140px";
 			tb2.style.marginTop = "230px";
-			tb2.style.marginLeft = "500px";
 			tb1_text1.innerHTML = "街头”随机“特效<br>Random";
 			tb3_text1.innerHTML = "<br>一部好的艺术影片<br>往往需要过人的观察力、时机点和反应速度<br><br><br>Observations, chances, and the reaction speed"
 			tech_tag4.className = "active";
+			tech_more.href = "special.html";
 			break;
 		case 4:
-			pic = "assets/images/tech_adv.jpg";
+			pic = "assets/images/tech_adv.png";
 			tb_container.style.left = "10%";
 			tb1.style.marginTop = "-80px";
 			tb1.style.marginLeft = "-100px";
 			tb2.style.marginTop = "230px";
-			tb2.style.marginLeft = "-190px";
 			tb1_text1.innerHTML = "商家与客户共赢<br>WIN-WIN";
 			tb3_text1.innerHTML = "<br>斑马传媒将影视推广到更完善的运作模式，更形象化、具体化，最终为客户带来更多的有利的效益<br><br>We will try our best for your benefits"
-			tech_img.style.width = "90%";
-			tech_img.style.margin = "auto";
 			tech_tag5.className = "active";
+			tech_more.href = "adv.html";
 			break;
 	}
 

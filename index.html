@@ -13,11 +13,9 @@
 <header id="header"></header>
 <div class="container" id="main_menu"></div>
 
-<div class="container video_container">
-	<a href="#" onclick="playVideo('index_video', 'playicon');">
+<div class="container video_container" onclick="playVideo('index_video', 'playicon');">
 		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon">
 		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
-	</a>
 </div>
 
 <div class="container">
@@ -46,9 +44,7 @@
 		<h2 class="rhomb_text">业务范畴</h2>
 	</div>
 
-	<div class="container tag_bg"></div>
-
-	<div class="container tag">
+	<div class="tag bg_f4grey">
 		<div class="range_title">
 			<h4 id="rt_movie">微电影拍摄</h4>
 			<h4 id="rt_plan">高端婚礼策划</h4>
@@ -56,74 +52,76 @@
 			<h4 id="rt_net">网络大电影</h4>		
 			<h4 id="rt_baby">儿童记录</h4>		
 		</div>
-		<ul class="tag_text range_tag">
-			<li id="range_tag1" class="active" onclick="switch_range_img(0)">
-				<img src="assets/logo/热门电影.png">
-				<br><br>
-				热门电影
-				<br>
-				Popular Movie
-			</li>
-			<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">
-				<img src="assets/logo/热播剧集.png">
-				<br><br>
-				热播剧集
-				<br>
-				Hot Movie
-			</li>
-			<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">
-				<img src="assets/logo/中式婚礼.png">
-				<br><br>
-				中式婚礼
-				<br>
-				Chinese Wedding
-			</li>
-			<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">
-				<img src="assets/logo/西式婚礼.png">
-				<br><br>
-				西式婚礼
-				<br>
-				Western Wedding
-			</li>
-			<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">
-				<img src="assets/logo/企业宣传.png">
-				<br><br>
-				企业宣传
-				<br>
-				Company Prop
-			</li>
-			<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">
-				<img src="assets/logo/产品宣传.png">
-				<br><br>
-				产品宣传
-				<br>
-				Product Prop
-			</li>
-			<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">
-				<img src="assets/logo/网络电影.png">
-				<br><br>
-				网络电影
-				<br>
-				Internet Moive
-			</li>
-			<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">
-				<img src="assets/logo/儿童记录.png">
-				<br><br>
-				儿童记录
-				<br>
-				Baby Record
-			</li>
-		</ul>
+		<div class="range_title">
+			<ul class="tag_text range_tag">
+				<li id="range_tag1" class="active" onclick="switch_range_img(0)">
+					<img src="assets/logo/热门电影.png">
+					<br><br>
+					热门电影
+					<br>
+					Popular Movie
+				</li>
+				<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">
+					<img src="assets/logo/热播剧集.png">
+					<br><br>
+					热播剧集
+					<br>
+					Hot Movie
+				</li>
+				<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">
+					<img src="assets/logo/中式婚礼.png">
+					<br><br>
+					中式婚礼
+					<br>
+					Chinese Wedding
+				</li>
+				<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">
+					<img src="assets/logo/西式婚礼.png">
+					<br><br>
+					西式婚礼
+					<br>
+					Western Wedding
+				</li>
+				<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">
+					<img src="assets/logo/企业宣传.png">
+					<br><br>
+					企业宣传
+					<br>
+					Company Prop
+				</li>
+				<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">
+					<img src="assets/logo/产品宣传.png">
+					<br><br>
+					产品宣传
+					<br>
+					Product Prop
+				</li>
+				<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">
+					<img src="assets/logo/网络电影.png">
+					<br><br>
+					网络电影
+					<br>
+					Internet Moive
+				</li>
+				<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">
+					<img src="assets/logo/儿童记录.png">
+					<br><br>
+					儿童记录
+					<br>
+					Baby Record
+				</li>
+			</ul>
+		</div>
 	</div>
 
-	<div class="container range_bottom">
-		<img src="assets/images/range_pop.jpg" id="range_img" style="width:80%">
+	<div class="range_bottom">
+		<img src="assets/images/range_pop.png" id="range_img" class="width100">
 		<div id="rb_container">
 			<div class="range_block1" id="rb1">
 				<span id="rb1_text1" style="margin: 30px 20px 5px 20px;">Know yourself</span>
 				<span id="rb1_text2" style="text-align:right; margin:0px 30px;">了解自己</span>
 			</div>
-			<div class="range_block2 text_center box_shadow" id="rb2">
+			<div class="range_block2" id="rb2">
 				<span><a id="range_more" href="popmov.html">More →</a></span>
 			</div>
 			<div class="range_block3 box_shadow" id="rb3">
@@ -145,9 +143,7 @@
 		<h2 class="rhomb_text">技术经验</h2>
 	</div>
 
-	<div class="container tag_bg"></div>
-
-	<div class="container tag">
+	<div class="tag bg_f4grey">
 		<div class="tech_title">
 			<h4 id="tt_plan">策划</h4>
 			<h4 id="tt_shoot">拍摄</h4>
@@ -155,35 +151,37 @@
 			<h4 id="tt_special">特效</h4>
 			<h4 id="tt_adv">推广</h4>
 		</div>
-		<ul class="tag_text tech_tag">
-			<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">
-				<img src="assets/logo/策划.png">
-			</li>
-			<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">
-				<img src="assets/logo/拍摄.png">
-			</li>
-			<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">
-				<img src="assets/logo/剪辑.png">
-			</li>
-			<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">
-				<img src="assets/logo/特效.png">
-			</li>
-			<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">
-				<img src="assets/logo/推广.png">
-			</li>
-		</ul>
+		<div class="tech_title">
+			<ul class="tag_text tech_tag">
+				<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">
+					<img src="assets/logo/策划.png">
+				</li>
+				<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">
+					<img src="assets/logo/拍摄.png">
+				</li>
+				<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">
+					<img src="assets/logo/剪辑.png">
+				</li>
+				<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">
+					<img src="assets/logo/特效.png">
+				</li>
+				<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">
+					<img src="assets/logo/推广.png">
+				</li>
+			</ul>
+		</div>
 	</div>	
 
-	<div class="container font_size18 text_center bg_black" id="tech_3rd">
-		<img src="assets/images/tech_plan.jpg" id="tech_img" class="max_height600">
+	<div id="tech_3rd">
+		<img src="assets/images/tech_plan.png" id="tech_img">
 		<div id="tb_container">
 			<div class="tech_block1" id="tb1">
 				<span id="tb1_text1">镜头世界<br>The camera world</span>
 			</div>
-			<div class="tech_block2 box_shadow" id="tb2">
+			<div class="tech_block2" id="tb2">
 				<span><a id="tech_more" href="plan.html">More →</a></span>
 			</div>
-			<div class="tech_block3 text_left box_shadow" id="tb3">
+			<div class="tech_block3 box_shadow" id="tb3">
 				<span style="margin:30px;" id="tb3_text1">斑马团队拥有超强的文案能力，扎实的内容企划能力<br>Zebra team has strong copywriting ablity, solid content planning ablitiy<br><br>实时了解影视剧市场，及时把握新动态，新趋势<br>To understand the film and television play market, grasp the new dynamic trend</span>
 			</div>
 		</div>

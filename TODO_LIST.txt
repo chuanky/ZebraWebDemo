@@ -31,9 +31,9 @@ subpages for service range:
 	8. internet movie 
 
 subpages for tech:
-	1. plan
-	2. shoot
-	3. cut
+	√1. plan
+	√2. shoot
+	√3. cut
 	4. special effect
 	5. advertisement
 
@@ -66,3 +66,7 @@ CSS:
 jQuery:
 	1. create animation for switching images
 	2. improve code for clan tag in team subpage
+
+网页文书:
+	1. 完善策划部分文书 —— last block
+	2. 完善推广部分文书 —— 公司简介

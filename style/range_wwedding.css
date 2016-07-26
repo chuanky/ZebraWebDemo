@@ -51,12 +51,11 @@ p {font-size: 18px;}#services p {font-size: 16px;}
 }
 
 #travel_title {
-	float: left;
+	width: 30%;
 	height: 80px;
 	background: black;
 	color: white;
 	text-align: center;
-	min-width: 300px;
 }
 
 #travel_title h3 {
@@ -68,14 +67,21 @@ p {font-size: 18px;}#services p {font-size: 16px;}
 	padding: 0px 20px 10px 0px;
 }
 
+#travel_toptext {
+	width: 70%;
+	position: absolute;
+	margin-left: 30%;
+}
+
 #travel_toptext p {
 	display: inline-block;
-	margin: 50px 5% 0px 5%;
-	line-height: 30px;
+	line-height: 80px;
+	width: 25%;
+	text-align: center;
 }
 
 #travel_lefttext {
-	float: left;
+	position: absolute;
 }
 
 #travel_lefttext p {
@@ -85,4 +91,14 @@ p {font-size: 18px;}#services p {font-size: 16px;}
 #index_img1 {
 	width: 70%;
 	margin-left: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+	#travel_title {
+		font-size: 14px;
+	}
+
+	#travel_toptext p{
+		font-size: 13px;
+	}
 }

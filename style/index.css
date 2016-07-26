@@ -1,12 +1,6 @@
-.text_center{text-align: center;}.text_left {text-align: left;}
-
-.font_size18 {
-	font-size: 18px;
-}
-
 .max_height900{max-height: 900px;}.max_height800{max-height: 800px;}.max_height700{max-height: 700px;}.max_height600{max-height: 600px;}.max_height500{max-height: 500px;}.max_height400{max-height: 400px;}.max_height300{max-height: 300px;}
 
-.width100{width: 100%;}.width80{width: 80%;}.width60{width:60%;}.width50{width: 50%;}.width40{width:40%;}.width30{width:30%;}.width25{width:25%;}.width20{width:20%;}
+.width100{width: 100%;}.width70{width:70%;}.width80{width: 80%;}.width60{width:60%;}.width50{width: 50%;}.width40{width:40%;}.width30{width:30%;}.width25{width:25%;}.width20{width:20%;}
 
 .bg_black {background: black;}.bg_f4grey{background: #f4f4f4;}
 
@@ -56,6 +50,10 @@ video,img {
 #playicon:hover {
 	opacity: 0.5;
 	transition-duration: 1s;
+}
+
+.video_container {
+	cursor: pointer;
 }
 
 .video_container:hover #playicon{
@@ -293,31 +291,21 @@ ul {
 	margin-top: -120px;
 }
 
-.tag_bg {
-	height: 360px;
-	background-color: #f4f4f4;
-	margin-top: -100px;
-	z-index: -1;
-}
-
 .tag {
 	height: 210px;
-	margin: auto;
-	margin-top: -270px;
-	z-index: 1;
-	display: block;
 }
 
 .tag_text {
-	margin: auto;
 }
 
 .range_tag {
 	width: 1152px;
+	position: absolute;
 }
 
 .tech_tag {
 	width: 720px;
+	position: absolute;
 }
 
 .range_tag li:hover,.tech_tag li:hover{
@@ -360,7 +348,7 @@ ul {
 	transition-duration: 0.6s;
 }
 
-#range_more,#tech_more {
+#range_more, #tech_more {
 	text-decoration: none;
 	color: black;
 }
@@ -372,7 +360,7 @@ ul {
 /*tag titles*/
 .range_title {
 	width: 1152px;
-	margin: auto;
+	margin:auto;
 }
 
 .range_title h4, .tech_title h4{
@@ -428,6 +416,7 @@ ul {
 	margin-top: 110px;
 	line-height: 50px;
 	z-index: 1;
+	text-align: center;
 }
 
 .range_block3 {
@@ -444,6 +433,10 @@ ul {
 }
 
 /*technology and experience*/
+#tech_3rd {
+	text-align: center;
+}
+
 #tech_3rd span {
 	display: block;
 }
@@ -454,8 +447,6 @@ ul {
 
 #tech_img {
 	width: 100%;
-	position: relative;
-	top: -37px;
 }
 
 .tech_block1,.tech_block2,.tech_block3 {
@@ -489,6 +480,7 @@ ul {
 	width: 500px;
 	background: white;
 	line-height: 30px;
+	text-align: left;
 }
 
 
