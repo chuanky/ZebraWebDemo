@@ -255,47 +255,20 @@ function reset_tech() {
 	tb2.style.marginLeft = "310px";
 }
 
-//team tags
-var clan_tag1 = document.getElementById('clan_tag1');
-var clan_tag2 = document.getElementById('clan_tag2');
-var clan_tag3 = document.getElementById('clan_tag3');
-var clan_tag4 = document.getElementById('clan_tag4');
-var clan_tag5 = document.getElementById('clan_tag5');
 
-var clan_tags = [clan_tag1, clan_tag2, clan_tag3, clan_tag4, clan_tag5];
+function playVideo (videoID, iconID) {
+	var video = document.getElementById(videoID);
+	var icon = document.getElementById(iconID);
 
-function switch_clan (num) {
-	 reset_clan();
+	if (video.paused) {
+		video.play();
+		icon.style.display = 'none';
+	} else {
+		video.pause();
+		icon.style.display = 'block';
+	}
 
-	 switch (num) {
-	  	case 0:
-	  		clan_tag1.className = "active";
-	  		break;
-	  	case 1:
-	  		clan_tag2.className = "active";
-	  		break;
-	  	case 2:
-	  		clan_tag3.className = "active";
-	  		break;
-	  	case 3:
-	  		clan_tag4.className = "active";
-	  		break;
-	  	case 4:
-	  		clan_tag5.className = "active";
-	  		break;
-	  	default:
-	  		console.log('no such an tag')
-	  		break;
-	  } 
-}
-
-function reset_clan () {
-	 for (var i = clan_tags.length - 1; i >= 0; i--) {
-	  	if(clan_tags[i].className == "active") {
-	  		clan_tags[i].className = "inactive";
-	  	}
-	  } 
-}
+};
 
 
 

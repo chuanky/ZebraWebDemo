@@ -13,8 +13,10 @@
 <div class="container" id="main_menu"></div>
 <!-- end of header -->
 
-<div class="container">
-	<video src="assets/video/product.mp4" controls preload="none" poster="assets/images/poster_product.png" id="video_product" class="width100 bg_black"></video>
+<div class="container video_container">
+		<div class="video_cover" onclick="playVideo('product_video', 'playicon')"></div>
+		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon" onclick="playVideo('product_video', 'playicon')">
+		<video src="assets/video/scar.mp4" controls preload="none" id="product_video" class="width100" poster="assets/images/poster_product.png" ;></video>
 </div>
 
 <div class="container" style="height:15px;"></div>

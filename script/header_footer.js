@@ -112,3 +112,18 @@ footer.innerHTML =
 
 	'<div class="container" style="height:50px;"></div>' +
 	'</div>';
+
+
+function playVideo (videoID, iconID) {
+	var video = document.getElementById(videoID);
+	var icon = document.getElementById(iconID);
+
+	if (video.paused) {
+		video.play();
+		icon.style.display = 'none';
+	} else {
+		video.pause();
+		icon.style.display = 'block';
+	}
+
+};

@@ -12,8 +12,10 @@
 <header id="header"></header>
 <div class="container" id="main_menu"></div>
 
-<div class="container">
-	<video src="assets/video/baby.mp4" controls preload="none" poster="assets/images/poster_baby.png" id="baby_video" class="width100 bg_black"></video>
+<div class="container video_container">
+		<div class="video_cover" onclick="playVideo('baby_video', 'playicon')"></div>
+		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon" onclick="playVideo('baby_video', 'playicon')">
+		<video src="assets/video/scar.mp4" controls preload="none" id="baby_video" class="width100" poster="assets/images/poster_baby.png" ;></video>
 </div>
 
 

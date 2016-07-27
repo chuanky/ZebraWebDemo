@@ -127,19 +127,19 @@
 	<div id="tag4_content" class="hidden">
 		<div class="bg_f4grey" id="clan_tag">
 			<ul>
-				<li class="active" id="clan_tag1" onclick="switch_clan(0);">
+				<li class="active" id="clan_tag1" rel="require_director">
 					<p>编导</p>
 					<p>Director</p>
-				</li><li class="inactive" id="clan_tag2" onclick="switch_clan(1);">
+				</li><li class="inactive" id="clan_tag2" rel="require_cameraman">
 					<p>摄像师</p>
 					<p>Cameraman</p>
-				</li><li class="inactive" id="clan_tag3" onclick="switch_clan(2);">
+				</li><li class="inactive" id="clan_tag3" rel="require_cutter">
 					<p>剪辑师</p>
 					<p>Film Cutter</p>
-				</li><li class="inactive" id="clan_tag4" onclick="switch_clan(3);">
+				</li><li class="inactive" id="clan_tag4" rel="require_colorist">
 					<p>调色师</p>
 					<p>Colorist</p>
-				</li><li class="inactive" id="clan_tag5" onclick="switch_clan(4);">
+				</li><li class="inactive" id="clan_tag5" rel="require_apprentice">
 					<p>学徒</p>
 					<p>Apprentice</p>
 				</li>
@@ -268,96 +268,10 @@
 <footer id="footer"></footer>
 
 <script src="script/header_footer.js"></script>
-<script src="script/switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="script/map.js"></script>
 <script src="script/jquery3.1.js"></script>
-
-<script>
-//animation for team tags
-var team_tag1 = document.getElementById('team_tag1');
-var team_tag2 = document.getElementById('team_tag2');
-var team_tag3 = document.getElementById('team_tag3');
-var team_tag4 = document.getElementById('team_tag4');
-var team_tags = [team_tag1, team_tag2, team_tag3, team_tag4];
-function reset_team () {
-	for (var i = team_tags.length - 1; i >= 0; i--) {
-		if(team_tags[i].className == "active") {
-			team_tags[i].className = "inactive";
-		}
-	}
-}
-
-$("#team_tag1").click(function() {
-	reset_team();
-	this.className = "active";
-	$("#tag1_content").slideDown();
-	$("#tag2_content").slideUp();
-	$("#tag3_content").slideUp();
-	$("#tag4_content").slideUp();
-});
-$("#team_tag2").click(function() {
-	reset_team();
-	this.className = "active";
-	$("#tag1_content").slideUp();
-	$("#tag2_content").slideDown();
-	$("#tag3_content").slideUp();
-	$("#tag4_content").slideUp();
-});
-$("#team_tag3").click(function() {
-	reset_team();
-	this.className = "active";
-	$("#tag1_content").slideUp();
-	$("#tag2_content").slideUp();
-	$("#tag3_content").slideDown();
-	$("#tag4_content").slideUp();
-});
-$("#team_tag4").click(function() {
-	reset_team();
-	this.className = "active";
-	$("#tag1_content").slideUp();
-	$("#tag2_content").slideUp();
-	$("#tag3_content").slideUp();
-	$("#tag4_content").slideDown();
-});
-
-//animation for team_clan tags
-$("#clan_tag1").click(function() {
-	$("#require_director").fadeIn();
-	$("#require_cameraman").fadeOut();
-	$("#require_cutter").fadeOut();
-	$("#require_colorist").fadeOut();
-	$("#require_apprentice").fadeOut();
-});
-$("#clan_tag2").click(function() {
-	$("#require_director").fadeOut();
-	$("#require_cameraman").fadeIn();
-	$("#require_cutter").fadeOut();
-	$("#require_colorist").fadeOut();
-	$("#require_apprentice").fadeOut();
-});
-$("#clan_tag3").click(function() {
-	$("#require_director").fadeOut();
-	$("#require_cameraman").fadeOut();
-	$("#require_cutter").fadeIn();
-	$("#require_colorist").fadeOut();
-	$("#require_apprentice").fadeOut();
-});
-$("#clan_tag4").click(function() {
-	$("#require_director").fadeOut();
-	$("#require_cameraman").fadeOut();
-	$("#require_cutter").fadeOut();
-	$("#require_colorist").fadeIn();
-	$("#require_apprentice").fadeOut();
-});
-$("#clan_tag5").click(function() {
-	$("#require_director").fadeOut();
-	$("#require_cameraman").fadeOut();
-	$("#require_cutter").fadeOut();
-	$("#require_colorist").fadeOut();
-	$("#require_apprentice").fadeIn();
-});
-</script>
+<script src="script/main.js"></script>
 </body>
 </html>
 

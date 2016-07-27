@@ -12,9 +12,10 @@
 <div class="container" id="main_menu"></div>
 <!-- end of header -->
 
-<div class="container">
-	<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon">
-	<video src="assets/video/thrill.mp4" controls preload="none" poster="assets/images/poster_pop.jpg" id="index_video" class="width100 bg_black"></video>
+<div class="container video_container">
+		<div class="video_cover" onclick="playVideo('pop_video', 'playicon')"></div>
+		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon" onclick="playVideo('pop_video', 'playicon')">
+		<video src="assets/video/scar.mp4" controls preload="none" id="pop_video" class="width100" poster="assets/images/poster_pop.jpg" ;></video>
 </div>
 
 <div class="container" style="height:15px;"></div>

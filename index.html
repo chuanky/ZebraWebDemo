@@ -13,9 +13,10 @@
 <header id="header"></header>
 <div class="container" id="main_menu"></div>
 
-<div class="container video_container" onclick="playVideo('index_video', 'playicon');">
-		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon">
-		<video src="assets/video/scar.mp4" controls preload="none" poster="assets/images/poster_index.jpg" id="index_video" class="width100 bg_black"></video>
+<div class="container video_container">
+		<div class="video_cover" onclick="playVideo('index_video', 'playicon')"></div>
+		<img src="assets/logo/icon_play.svg" alt="playicon" id="playicon" onclick="playVideo('index_video', 'playicon')">
+		<video src="assets/video/scar.mp4" controls preload="none" id="index_video" class="width100" poster="assets/images/poster_index.jpg" ;></video>
 </div>
 
 <div class="container">
@@ -193,7 +194,6 @@
 <footer id="footer"></footer>
 
 <script src="script/header_footer.js"></script>
-<script src="script/debug.js"></script>
 <script src="script/switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="script/map.js"></script>
