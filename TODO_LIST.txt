@@ -65,7 +65,12 @@ CSS:
 
 jQuery:
 	1. create animation for switching images
+		- utilize setInterval function
 	2. improve code for clan tag in team subpage
+		- use callback function
+		- avoid callback hell
+		- add $ before variable names to show that they belong to jQuery Object
+	3. replace switch_img.js
 
 网页文书:
 	1. 完善策划部分文书 —— last block
