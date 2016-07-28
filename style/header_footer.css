@@ -25,9 +25,8 @@
 
 /*top icons*/
 .top_icon {
-	min-width: 270px;
-	position: absolute;
-	margin: 60px 80%;
+	width: 20%;
+	margin:0;
 }
 
 #wechat, #weibo, #youku{width: 45px;display: inline-block;transition-duration: 0.6s}
