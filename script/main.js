@@ -47,4 +47,56 @@ $(document).ready(function() {
 	});
 
 
+	//css icons response
+	var $css_icon = $('.icon')
+
+	$css_icon.on('mouseenter', function() {
+		$(this).css({
+			'filter': 'invert(100%)'
+		});
+	});
+
+	$css_icon.on('mouseleave', function() {
+		$(this).css({
+			'filter': 'invert(0)'
+		})
+	});
+
+	$css_icon.on('mousedown', function() {
+		$(this).css({
+			'filter': 'invert(0)'
+		});
+	})
+
+	$css_icon.on('mouseup', function() {
+		$(this).css({
+			'filter': 'invert(100%)'
+		});
+	})
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

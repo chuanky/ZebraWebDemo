@@ -2,17 +2,14 @@ var header = document.getElementById('header');
 var mainMenu = document.getElementById('main_menu');
 
 header.innerHTML = 
-	'<div class="container" style="height:130px;">' +
+	'<div class="container">' +
 		'<div class="logo">' +
 			'<a href="index.html">' +
-			'<img src="assets/logo/zebra.png" id="header_logo">' +
-			'<span class="logo_text"><span id="logo_text1">斑马电影工作室</span>ZEBRA FILM STUDIO</span>' +
+			'<img src="assets/logo/zebra.png" id="header_logo"><div class="logo_text">' +
+				'<h2>斑马电影工作室</h2>' +
+				'<h2>ZEBRA FILM STUDIO</h2>' +
+				'</div>' +
 			'</a>' +
-		'</div>' +
-		'<div class="top_icon">' +
-			'<a href="#"><img src="assets/logo/wechat.png" id="wechat"></a>' +
-			'<a href="#"><img src="assets/logo/weibo.png" id="weibo"></a>' +
-			'<a href="#"><img src="assets/logo/youku.jpg" id="youku"></a>' +
 		'</div>' +
 	'</div>';
 
@@ -32,7 +29,7 @@ mainMenu.innerHTML =
 		'<li>·</li>' +
 		'<li id="services">' +
 			'<span>服务类别</span>' +
-			'<div class="dropdown_content bg_black" id="sss">' +
+			'<div class="dropdown_content bg_black">' +
 				'<a href="popmov.html"><p>热门电影</p></a>' +
 				'<a href="hotmov.html"><p>热播剧集</p></a>' +
 				'<a href="cwedding.html"><p>中式婚礼</p></a>' +
@@ -55,8 +52,7 @@ footer.innerHTML =
 	'</div>' +
 
 	'<div class="container" id="footer_container">' +
-	'<div class="container" id="footer_area">' +
-		'<div class="footer_title">' +
+	'<div class="footer_title">' +
 			'<div id="map_title">' +
 				'<p>Zebra Address</p>' +
 			'</div>' +
@@ -64,7 +60,6 @@ footer.innerHTML =
 				'<p>Follow Us</p>' +
 			'</div>' +
 		'</div>' +
-	'</div>' +
 
 	'<div class="container" id="footer_content">' +
 		'<div class="map_container">' +
@@ -74,19 +69,19 @@ footer.innerHTML =
 		'<div class="contact_container">' +
 			'<img src="assets/logo/二维码.png" id="bar_code">' +
 			'<div class="contact_icon">' +
-				'<p>www.zebraStudio.com</p>' +
+				'<p>www.leecg.com</p>' +
 				'<img src="assets/logo/homepage.png" id="icon_homepage">' +
 			'</div>' +
 			'<div class="contact_icon">' +
-				'<p>电话</p>' +
+				'<p>13841214406</p>' +
 				'<img src="assets/logo/telephone.png" id="icon_telephone">' +
 			'</div>' +
 			'<div class="contact_icon">' +
-				'<p>chunguang@zebraStudio.com</p>' +
+				'<p>manager@leecg.com</p>' +
 				'<img src="assets/logo/email.png" id="icon_email">' +
 			'</div>' +
 			'<div class="contact_icon">' +
-				'<p>地址</p>' +
+				'<p>鞍山市立山区胜利北路85—S10</p>' +
 				'<img src="assets/logo/location.png" id="icon_location">' +
 			'</div>' +
 		'</div>' +
@@ -94,7 +89,7 @@ footer.innerHTML =
 
 	'<div class="container" style="height:30px;"></div>' +
 
-	'<div class="container">' +
+	'<div class="container" id="footer_welcome">' +
 		'<div id="line_bl"></div>' +
 		'<div id="m_text">' +
 			'<p>WELCOME</p>' +
@@ -110,7 +105,9 @@ footer.innerHTML =
 		'</div>' +
 	'</div>' +
 
-	'<div class="container" style="height:50px;"></div>' +
+	'<div class="container" id="footer_bottom">' +
+		'<p>WELCOME TO ZEBRA FILM STUDIO</p>' +
+	'</div>' +
 	'</div>';
 
 
