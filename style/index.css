@@ -396,13 +396,13 @@ ul {
 }
 
 .small_tag_container {
-	width: 800%;
-	height: 50px;
+	width: 900%;
+	margin-left: 0;
 }
 
 .small_tag_container li {
 	display: inline-block;
-	width: 12.5%;
+	width: 11.11%;
 }
 
 .small_tag_icon {
@@ -413,11 +413,20 @@ ul {
 	margin-top: 15%;
 }
 
+.small_tag_container li:nth-child(even) .small_tag_icon {
+	background: #b2b2b2;
+}
+
 .small_tag_text {
 	height: 50%;
 	text-align: center;
 	margin-top: 10%;
 }
+
+.small_tag_container li:nth-child(even) .small_tag_text {
+	color: #b2b2b2;
+}
+
 
 .small_tag_text h3:last-child {
 	padding: 10px 0px;
@@ -447,56 +456,70 @@ ul {
 #tt_plan{margin-left: 40px;}
 
 /*业务范畴文字块*/
+.range_img {
+	position: relative;
+	z-index: -1;
+}
+
 .range_bottom {
-	background: black;
 }
 
 .rb_block1 {
 	background: #292929;
 	color: #b2a682;
 	position: absolute;
-	bottom: 15%;
-	width: 20%;
-	height: 10%;
+	width: 15%;
 	right: 40%;
+	line-height: 20px;
+	bottom: 100px;
+}
+
+#tech .rb_block1 {
+	right: 50%;
+	bottom: 140px;
 }
 
 .rb_block1 h3:first-child {
-	padding: 5%;
+	padding: 20px 0 0 0;
+	margin-left: 10%;
 }
 
 .rb_block1 h3:last-child {
 	text-align: right;
-	padding: 0 10% 5% 5%;
+	margin-right: 10%;
+	padding: 20px 0 20px 0;
 }
 
 .rb_block2 {
 	background: white;
 	position: absolute;
 	width: 30%;
-	height: 20%;
-	bottom: 5%;
+	bottom: 40px;
 	right: 10%;
-	overflow: hidden;
+}
+
+#tech .rb_block2 {
+	width: 40%;
 }
 
 .rb_block2 p {
-	margin: 0;
-	padding: 2.5% 10%;
+	margin: 0 5%;
+	line-height: 40px;
 }
 
 .rb_block3 {
 	background: #b2a682;
+	bottom: 0;
 	position: absolute;
 	width: 10%;
-	height: 5%;
-	bottom: 0;
-	text-align: center;
+	height: 40px;
 	right: 10%;
 }
 
-.rb_block3 h3{
-	margin-top: 10%;
+.rb_block3 p {
+	margin: 0;
+	line-height: 40px;
+	text-align: center;
 }
 
 .range_block3 span {
@@ -541,37 +564,56 @@ ul {
 	.rhomb_header,#tech {
 		margin-top: 0;
 	}
-
-
-	.range_leftArrow {
-		margin-left: 20%;
-		margin-top: 59px;
-	}
-
-	.range_rightArrow {
-		margin-top: 59px;
-		margin-left: 50%;
-	}
-
 	
+	.range_leftArrow {
+		width: 2em;
+		position: absolute;
+		margin-top: 59px;
+		left: 15%;
+	}
+	
+	.range_rightArrow {
+		width: 2em;
+		position: absolute;
+		margin-top: 59px;
+		right: 15%;
+	}
+
 	.rb_block1 {
+		width: 200px;
 		right: 0;
-		bottom: 80px;
+		bottom: 0;
+	}
+
+	.rb_block1 h3:first-child {
+		padding: 10px 0 0 0;
+		margin-left: 10%;
+	}
+
+	.rb_block1 h3:last-child {
+		text-align: right;
+		margin-right: 10%;
+		padding: 10px 0 10px 0;
 	}
 
 	.rb_block2 {
 		position: relative;
+		top: 0;
 		right: 0;
 		width: 100%;
 		background: black;
 		text-align: center;
 		color: white;
-		height: 80px;
 	}
 
 	.rb_block2 p {
-		padding: 0;
 		font-size: 14px;
+		line-height: 14px;
+		padding: 10px 20% 0 20%;
+	}
+
+	.rb_block2 p:last-child {
+		padding-bottom: 10px;
 	}
 
 	.rb_block3 {
@@ -609,13 +651,28 @@ ul {
 	}
 
 	#tech .rb_block1 {
-		bottom: 100px;
+		right: 0;
+		bottom: 0;
 	}
 
 	#tech .rb_block2 {
-		height: 100px;
-		line-height: 25px;
+		width: 100%;
 	}
+
+	#tech .rb_block2 p {
+		margin-left: 0;
+		padding: 10px 20% 0 0;
+	}
+
+	#tech .rb_block2 p:last-child {
+		margin-left: 0;
+		padding: 10px 20% 10px 0;
+	}
+
+	#tech .rb_block3 p {
+		text-align: center;
+	}
+
 
 	#tech p {
 		text-align: left;
@@ -714,13 +771,19 @@ ul {
 
 
 	.rb_block1 {
-		width: 30%;
-		height: 10%;
-		bottom: 70px;
+		width: 100px;
+		bottom: 0;
 	}
 
-	.rb_block2 {
-		height: 70px;
+	.rb_block1 h3:first-child {
+		padding: 5px 0 0 0;
+		margin-left: 10%;
+	}
+
+	.rb_block1 h3:last-child {
+		text-align: right;
+		margin-right: 10%;
+		padding: 5px 0 5px 0;
 	}
 
 	.rb_block2 p {

@@ -28,12 +28,13 @@ TODO LIST:
 			-service range
 			-tech
 		√iii. rearrange header
-		iv. rearrange overlap blocks
+		√iv. rearrange overlap blocks
 			-index_img2
 			-service range
 			-tech
 
 	19. improve style for index_img2_text
+	20. change web title icon
 
 subpages for service range:
 	√1. popular movie
@@ -87,15 +88,16 @@ jQuery:
 		- add $ before variable names to show that they belong to jQuery Object
 	3. replace switch_img.js
 		√- team
-		- index
+		√- index
+	4. add animation for index range and tech content
 
 网页文书:
 	1. 完善策划部分文书 —— last block
 	2. 完善推广部分文书 —— 公司简介
 
 Publish Website:
-	1. check hostgator
-	2. set up own server
+	√1. check hostgator
+	√2. set up own server
 
 
 

@@ -48,7 +48,10 @@ $(document).ready(function() {
 
 
 	//css icons response
-	var $css_icon = $('.icon')
+	var $css_icon = $('.icon');
+	//find range tag
+	//animate range tag if the clicked css icon is in range area
+	var $range_tag = $('#range .small_tag_container');
 
 	$css_icon.on('mouseenter', function() {
 		$(this).css({
@@ -66,13 +69,34 @@ $(document).ready(function() {
 		$(this).css({
 			'filter': 'invert(0)'
 		});
-	})
+
+		var $icon_area = $(this).parent().parent().parent();
+		var $tag = $icon_area.find('.small_tag_container');
+		var $content = $icon_area.find('.range_bottom');
+
+		console.log($content);
+
+		$tag.animate({marginLeft: '-=100%'}, 1000, function() {
+			console.log(this.style.marginLeft);
+
+			if (this.style.marginLeft >= '-800%') {
+				this.style.marginLeft = 0;
+			}
+		});
+
+		$content.slideToggle(1000);
+		$content.slideToggle(1000);
+
+
+	});
 
 	$css_icon.on('mouseup', function() {
 		$(this).css({
 			'filter': 'invert(100%)'
 		});
-	})
+	});
+
+
 
 });
 

@@ -112,7 +112,7 @@ footer p {
 }
 
 .baidu_map {
-	width: 60%;
+	width: 80%;
 	height: 100%;
 	margin: auto;
 }
@@ -182,7 +182,6 @@ footer p {
 	display: inline-block;
 	width: 49%;
 	line-height: 20px;
-	font-size: 12px;
 	padding: 20px 0 0 0;
 }
 
@@ -248,6 +247,7 @@ footer p {
 	.movblock_text {
 		font-size: 18px;
 	}
+
 }
 
 
@@ -833,6 +833,12 @@ p.img_desc{
 
 	#footer_bottom p {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 512px) {
+	#footer #bb_text p {
+		font-size: 10px;
 	}
 }
 

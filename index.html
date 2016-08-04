@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style/general.css">
 	<link rel="stylesheet" type="text/css" href="style/index.css">
 	<link rel="stylesheet" href="style/cikonss.css">
-	<!-- <link rel="stylesheet" type="text/css" href="w3.css"> -->
+	
 </head>
 
 <body>
@@ -114,9 +114,13 @@
 	</div>
 
 	<div class="small_tag bg_f4grey noselect">
-		
-		<span class="icon icon-mid range_leftArrow"><span class="icon-rewind"></span></span>
-		<span class="icon icon-mid range_rightArrow"><span class="icon-forward"></span></span>
+
+		<div class="range_leftArrow">
+				<span class="icon icon-mid"><span class="icon-rewind"></span></span>
+		</div>
+		<div class="range_rightArrow">
+					<span class="icon icon-mid"><span class="icon-forward"></span></span>
+		</div>
 
 		<div class="small_tag_wrapper">
 			<ul class="small_tag_container">
@@ -168,17 +172,26 @@
 						<h3>儿童记录</h3>
 						<h3>Baby Record</h3>
 					</div>
+				</li><li>
+					<img src="assets/logo/热门电影.png" class="small_tag_icon">
+					<div class="small_tag_text">
+						<h3>热门电影</h3>
+						<h3>Popular Movie</h3>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="range_bottom">
-		<img src="assets/images/range_pop.png" id="range_img" class="width100">
-		<div class="rb_block1">
-			<h3>Know Yourself</h3>
-			<h3>了解自己</h3>
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>Know Yourself</h3>
+				<h3>了解自己</h3>
+			</div>
+			<img src="assets/images/range_pop.png" id="range_img" class="width100">
 		</div>
+		
 		<div class="rb_block2">
 				<p>视觉形象</p>
 				<p>The visual image</p>
@@ -186,7 +199,7 @@
 				<p>We shot the most real and precious moments</p>
 		</div>
 		<div class="rb_block3">
-			<a href="popmov.html" id="range_more"><h3>More →</h3></a>
+			<a href="popmov.html" id="range_more"><p>More →</p></a>
 		</div>
 	</div>
 </div>
@@ -227,8 +240,12 @@
 
 	<div class="small_tag bg_f4grey noselect">
 		
-		<span class="icon icon-mid range_leftArrow"><span class="icon-rewind"></span></span>
-		<span class="icon icon-mid range_rightArrow"><span class="icon-forward"></span></span>
+		<div class="range_leftArrow">
+				<span class="icon icon-mid"><span class="icon-rewind"></span></span>
+		</div>
+		<div class="range_rightArrow">
+					<span class="icon icon-mid"><span class="icon-forward"></span></span>
+		</div>
 
 		<div class="small_tag_wrapper">
 			<ul class="small_tag_container">
@@ -267,13 +284,15 @@
 		</div>
 	</div>
 
-	<div class="range_bottom">
-		<img src="assets/images/tech_plan.png" alt="tech_plan" id="tech_plan" class="width100">
-
+	<div class="range_img">
 		<div class="rb_block1">
 			<h3>镜头世界</h3>
 			<h3>The Camera World</h3>
 		</div>
+		<img src="assets/images/tech_plan.png" id="tech_plan" alt="tech_plan" class="width100">
+	</div>
+
+	<div class="range_bottom">
 		<div class="rb_block2">
 				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
 				<p>Zebra team has strong copywriting ablity, solid content planning ablitiy</p>
@@ -281,7 +300,7 @@
 				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
 		</div>
 		<div class="rb_block3">
-			<a href="plan.html" id="tech_more"><h3>More →</h3></a>
+			<a href="plan.html" id="tech_more"><p>More →</p></a>
 		</div>
 	</div>
 </div>
@@ -290,10 +309,9 @@
 
 <footer id="footer"></footer>
 
+<script src="script/header_footer.js"></script>
 <script src="script/jquery3.1.js"></script>
 <script src="script/main.js"></script>
-<script src="script/header_footer.js"></script>
-<script src="script/switch_img.js"></script>
 <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="script/map.js"></script>
 </body>
