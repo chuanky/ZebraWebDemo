@@ -49,8 +49,6 @@ $(document).ready(function() {
 
 	//css icons response
 	var $css_icon = $('.icon');
-	//find range tag
-	//animate range tag if the clicked css icon is in range area
 	var $range_tag = $('#range .small_tag_container');
 
 	$css_icon.on('mouseenter', function() {
@@ -71,21 +69,41 @@ $(document).ready(function() {
 		});
 
 		var $icon_area = $(this).parent().parent().parent();
-		var $tag = $icon_area.find('.small_tag_container');
+		var $tags_container = $icon_area.find('.small_tag_container'); 
 		var $content = $icon_area.find('.range_bottom');
+		var $left = $(this).parent().hasClass('range_leftArrow');
+		var $right = $(this).parent().hasClass('range_rightArrow');
 
-		console.log($content);
+		var $tags = $tags_container.find('li');
 
-		$tag.animate({marginLeft: '-=100%'}, 1000, function() {
-			console.log(this.style.marginLeft);
+		//looking for the active tag
+		//looking for corresponding content using rel attribute
 
-			if (this.style.marginLeft >= '-800%') {
-				this.style.marginLeft = 0;
-			}
-		});
+		if ($right) {
+			$tags_container.animate({marginLeft: '-=100%'}, 500, function() {
+				var contentToShow = findContentToShow(this);
 
-		$content.slideToggle(1000);
-		$content.slideToggle(1000);
+				console.log(contentToShow);
+				console.log(this.style.marginLeft);
+
+				if (this.style.marginLeft >= '-800%') {
+					this.style.marginLeft = 0;
+				}
+			});
+
+			$content.slideToggle(500);
+			$content.slideToggle(500);
+		}
+
+		if ($left) {
+			$tags_container.animate({marginLeft: '+=100%'}, 500, function() {
+				console.log(this.style.marginLeft);
+
+				if (this.style.marginLeft >= '100%') {
+					this.style.marginLeft = '-700%';
+				}
+			});
+		}
 
 
 	});
@@ -95,6 +113,47 @@ $(document).ready(function() {
 			'filter': 'invert(100%)'
 		});
 	});
+
+	function findContentToShow (tags_container) {
+
+		var contentToShow = 'popmov';
+
+		if (tags_container.style.marginLeft >= '-100%') {
+			contentToShow = 'hotmov';
+		}
+
+		if (tags_container.style.marginLeft >= '-200%') {
+			contentToShow = 'cwedding';
+		}
+
+		if (tags_container.style.marginLeft >= '-300%') {
+			contentToShow = 'wwedding';
+		}
+
+		if (tags_container.style.marginLeft >= '-400%') {
+			contentToShow = 'company';
+		}
+
+		if (tags_container.style.marginLeft >= '-500%') {
+			contentToShow = 'product';
+		}
+
+		if (tags_container.style.marginLeft >= '-600%') {
+			contentToShow = 'internet';
+		}
+
+		if (tags_container.style.marginLeft >= '-700%') {
+			contentToShow = 'baby';
+		}
+
+		if (tags_container.style.marginLeft >= '-800%') {
+			contentToShow = 'popmov';
+		}
+
+
+		
+		return contentToShow;
+	}
 
 
 
