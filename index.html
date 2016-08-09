@@ -53,56 +53,56 @@
 		</div>
 		<div class="range_title">
 			<ul class="tag_text range_tag">
-				<li id="range_tag1" class="active" onclick="switch_range_img(0)">
+				<li id="range_tag1" class="active">
 					<img src="assets/logo/热门电影.png">
 					<br><br>
 					热门电影
 					<br>
 					Popular Movie
 				</li>
-				<li id="range_tag2" class="inactive" onclick="switch_range_img(1)">
+				<li id="range_tag2" class="inactive">
 					<img src="assets/logo/热播剧集.png">
 					<br><br>
 					热播剧集
 					<br>
 					Hot Movie
 				</li>
-				<li id="range_tag3" class="inactive" onclick="switch_range_img(2)">
+				<li id="range_tag3" class="inactive">
 					<img src="assets/logo/中式婚礼.png">
 					<br><br>
 					中式婚礼
 					<br>
 					Chinese Wedding
 				</li>
-				<li id="range_tag4" class="inactive" onclick="switch_range_img(3)">
+				<li id="range_tag4" class="inactive">
 					<img src="assets/logo/西式婚礼.png">
 					<br><br>
 					西式婚礼
 					<br>
 					Western Wedding
 				</li>
-				<li id="range_tag5" class="inactive" onclick="switch_range_img(4)">
+				<li id="range_tag5" class="inactive">
 					<img src="assets/logo/企业宣传.png">
 					<br><br>
 					企业宣传
 					<br>
 					Company Prop
 				</li>
-				<li id="range_tag6" class="inactive" onclick="switch_range_img(5)">
+				<li id="range_tag6" class="inactive">
 					<img src="assets/logo/产品宣传.png">
 					<br><br>
 					产品宣传
 					<br>
 					Product Prop
 				</li>
-				<li id="range_tag7" class="inactive" onclick="switch_range_img(6)">
+				<li id="range_tag7" class="inactive">
 					<img src="assets/logo/网络电影.png">
 					<br><br>
 					网络电影
 					<br>
 					Internet Moive
 				</li>
-				<li id="range_tag8" class="inactive" onclick="switch_range_img(7)">
+				<li id="range_tag8" class="inactive">
 					<img src="assets/logo/儿童记录.png">
 					<br><br>
 					儿童记录
@@ -183,7 +183,7 @@
 		</div>
 	</div>
 
-	<div class="range_bottom">
+	<div class="range_bottom" id="popmov">
 		<div class="range_img">
 			<div class="rb_block1">
 				<h3>Know Yourself</h3>
@@ -199,9 +199,146 @@
 				<p>We shot the most real and precious moments</p>
 		</div>
 		<div class="rb_block3">
-			<a href="popmov.html" id="range_more"><p>More →</p></a>
+			<a href="popmov.html" class="more_tag"><p>More →</p></a>
 		</div>
 	</div>
+
+	<div class="range_bottom hidden" id="hotmov">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>About the Secret</h3>
+				<h3>关于秘密</h3>
+			</div>
+			<img src="assets/images/range_hot.png" id="range_hot" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>没有任何理由</p>
+				<p>There is no reason</p>
+				<p>才发现有你生命才完整</p>
+				<p>To find that life is comlplete only with you</p>
+		</div>
+		<div class="rb_block3">
+			<a href="hotmov.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="cwedding">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>Know Yourself</h3>
+				<h3>了解自己</h3>
+			</div>
+			<img src="assets/images/range_cwedding.png" id="range_cwedding" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>栈桥约定</p>
+				<p>Convention</p>
+				<p>中式婚礼我们有独到的见解和独特的做法，自成体系</p>
+				<p>We have original ideas and sui generis ways on Chinese Weddings design</p>
+		</div>
+		<div class="rb_block3">
+			<a href="cwedding.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="wwedding">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>浪漫而神圣 人心向往</h3>
+				<h3>Romantic</h3>
+			</div>
+			<img src="assets/images/range_wwedding.png" id="range_wwedding" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>王子和公主的背后，是普通人一样的共坚持、共患难</p>
+				<p>All of us are princes and princesses</p>
+				<p>总是让人心中充满暖意</p>
+				<p>Let warm fulfill your heart</p>
+		</div>
+		<div class="rb_block3">
+			<a href="wwedding.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="company">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>纪实、表现 展播方式</h3>
+				<h3>Show way</h3>
+			</div>
+			<img src="assets/images/range_company.png" id="range_company" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>通过故事的形式，对企业形象进行战略层面的宣传和创博，也是一种企业传播路径</p>
+				<p>We help you express your companies' disciplines and spirits thourgh telling stories</p>
+		</div>
+		<div class="rb_block3">
+			<a href="company.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="product">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>创业创意点子</h3>
+				<h3>Innovations</h3>
+			</div>
+			<img src="assets/images/range_product.png" id="range_product" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>为企业宣传创作的中点在于情景的故事性，是佛找到与现实场景中的共鸣</p>
+				<p>The best propaganda needs to resonate with customers</p>
+		</div>
+		<div class="rb_block3">
+			<a href="product.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="internet">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>表达创作者的思想</h3>
+				<h3>Concepts</h3>
+			</div>
+			<img src="assets/images/range_internet.png" id="range_internet" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>“小体积”的电影</p>
+				<p>将成就品牌内容的“大理想”</p>
+				<p>Tiny movies</p>
+				<p>could contain "big ideas"</p>
+		</div>
+		<div class="rb_block3">
+			<a href="internet.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="baby">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>Sweat Sisters</h3>
+				<h3>好姐妹</h3>
+			</div>
+			<img src="assets/images/range_baby.jpg" id="range_baby" class="width100">
+		</div>
+		
+		<div class="rb_block2">
+				<p>“为小宝贝们记录成长的每个快乐瞬间</p>
+				<p>Record every single precious moments for babies</p>
+				<p>永远手拉手，好姐妹一起走</p>
+				<p>Be friends forever</p>
+		</div>
+		<div class="rb_block3">
+			<a href="baby.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
 </div>
 
 <div class="container" id="tech">
@@ -219,19 +356,19 @@
 		</div>
 		<div class="tech_title">
 			<ul class="tag_text tech_tag">
-				<li id="tech_tag1" class="active" onclick="switch_tech_img(0)">
+				<li id="tech_tag1" class="active">
 					<img src="assets/logo/策划.png">
 				</li>
-				<li id="tech_tag2" class="inactive" onclick="switch_tech_img(1)">
+				<li id="tech_tag2" class="inactive">
 					<img src="assets/logo/拍摄.png">
 				</li>
-				<li id="tech_tag3" class="inactive" onclick="switch_tech_img(2)">
+				<li id="tech_tag3" class="inactive">
 					<img src="assets/logo/剪辑.png">
 				</li>
-				<li id="tech_tag4" class="inactive" onclick="switch_tech_img(3)">
+				<li id="tech_tag4" class="inactive">
 					<img src="assets/logo/特效.png">
 				</li>
-				<li id="tech_tag5" class="inactive" onclick="switch_tech_img(4)">
+				<li id="tech_tag5" class="inactive">
 					<img src="assets/logo/推广.png">
 				</li>
 			</ul>
@@ -279,20 +416,25 @@
 						<h3>推广</h3>
 						<h3>Advertisement</h3>
 					</div>
+				</li><li>
+					<img src="assets/logo/策划.png" class="small_tag_icon">
+					<div class="small_tag_text">
+						<h3>策划</h3>
+						<h3>Plan</h3>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="range_img">
-		<div class="rb_block1">
-			<h3>镜头世界</h3>
-			<h3>The Camera World</h3>
+	<div class="range_bottom" id="plan">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>镜头世界</h3>
+				<h3>The Camera World</h3>
+			</div>
+			<img src="assets/images/tech_plan.png" id="tech_plan" alt="tech_plan" class="width100">
 		</div>
-		<img src="assets/images/tech_plan.png" id="tech_plan" alt="tech_plan" class="width100">
-	</div>
-
-	<div class="range_bottom">
 		<div class="rb_block2">
 				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
 				<p>Zebra team has strong copywriting ablity, solid content planning ablitiy</p>
@@ -300,9 +442,87 @@
 				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
 		</div>
 		<div class="rb_block3">
-			<a href="plan.html" id="tech_more"><p>More →</p></a>
+			<a href="plan.html" class="more_tag"><p>More →</p></a>
 		</div>
 	</div>
+
+	<div class="range_bottom hidden" id="shoot">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>镜头世界1</h3>
+				<h3>The Camera World</h3>
+			</div>
+			<img src="assets/images/tech_shoot.png" id="tech_shoot" alt="tech_shoot" class="width100">
+		</div>
+		<div class="rb_block2">
+				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
+				<p>Zebra team has strong copywriting ablity, solid content planning ablitiy</p>
+				<p>实时了解影视剧市场，及时把握新动态，新趋势</p>
+				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
+		</div>
+		<div class="rb_block3">
+			<a href="shoot.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="cut">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>镜头世界2</h3>
+				<h3>The Camera World</h3>
+			</div>
+			<img src="assets/images/tech_cut.png" id="tech_cut" alt="tech_cut" class="width100">
+		</div>
+		<div class="rb_block2">
+				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
+				<p>Zebra team has strong copywriting ablity, solid content planing ablitiy</p>
+				<p>实时了解影视剧市场，及时把握新动态，新趋势</p>
+				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
+		</div>
+		<div class="rb_block3">
+			<a href="cut.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="special">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>镜头世界2</h3>
+				<h3>The Camera World</h3>
+			</div>
+			<img src="assets/images/tech_special.png" id="tech_special" alt="tech_special" class="width100">
+		</div>
+		<div class="rb_block2">
+				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
+				<p>Zebra team has strong copywriting ablity, solid content planing ablitiy</p>
+				<p>实时了解影视剧市场，及时把握新动态，新趋势</p>
+				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
+		</div>
+		<div class="rb_block3">
+			<a href="special.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+	<div class="range_bottom hidden" id="adv">
+		<div class="range_img">
+			<div class="rb_block1">
+				<h3>镜头世界2</h3>
+				<h3>The Camera World</h3>
+			</div>
+			<img src="assets/images/tech_adv.png" id="tech_adv" alt="tech_adv" class="width100">
+		</div>
+		<div class="rb_block2">
+				<p>斑马团队拥有超强的文案能力，扎实的内容企划能力</p>
+				<p>Zebra team has strong copywriting ablity, solid content planing ablitiy</p>
+				<p>实时了解影视剧市场，及时把握新动态，新趋势</p>
+				<p>We understand the film and television play market and are able to grasp the new dynamic trend</p>
+		</div>
+		<div class="rb_block3">
+			<a href="adv.html" class="more_tag"><p>More →</p></a>
+		</div>
+	</div>
+
+
 </div>
 
 <div class="container" style="height:200px;"></div>

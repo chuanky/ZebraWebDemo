@@ -50,6 +50,10 @@ $(document).ready(function() {
 	//css icons response
 	var $css_icon = $('.icon');
 	var $range_tag = $('#range .small_tag_container');
+	var $range_content = $('#popmov');
+	var $tech_content = $('#plan');
+	var range_index = 0;
+	var tech_index = 0;
 
 	$css_icon.on('mouseenter', function() {
 		$(this).css({
@@ -69,42 +73,93 @@ $(document).ready(function() {
 		});
 
 		var $icon_area = $(this).parent().parent().parent();
-		var $tags_container = $icon_area.find('.small_tag_container'); 
-		var $content = $icon_area.find('.range_bottom');
-		var $left = $(this).parent().hasClass('range_leftArrow');
-		var $right = $(this).parent().hasClass('range_rightArrow');
-
+		var $tags_container = $icon_area.find('.small_tag_container');
+		var tags_container = $tags_container.get(0);
 		var $tags = $tags_container.find('li');
+		var $contentToShow = undefined;
 
-		//looking for the active tag
-		//looking for corresponding content using rel attribute
+		//arrow button identifier
+		var left = $(this).parent().hasClass('range_leftArrow');
+		var right = $(this).parent().hasClass('range_rightArrow');
+		var area = $icon_area.get(0);
+		var inRange = area.id == 'range';
+		var inTech = area.id == 'tech';
 
-		if ($right) {
-			$tags_container.animate({marginLeft: '-=100%'}, 500, function() {
-				var contentToShow = findContentToShow(this);
+		//looking for corresponding range_content using rel attribute
+		//range_content and icon animations for range right arrow
+		if (right && inRange) {
 
-				console.log(contentToShow);
-				console.log(this.style.marginLeft);
+			range_index++;
+			if (range_index > 8) {
+				range_index = 1;
+				tags_container.style.marginLeft = 0;
+			};
 
-				if (this.style.marginLeft >= '-800%') {
-					this.style.marginLeft = 0;
-				}
+			$tags_container.animate({marginLeft: '-=100%'}, 300);
+
+			$contentToShow = findContentToShow(range_index, 'range');
+
+			$range_content.slideUp(300, function() {
+				$contentToShow.slideDown();
+				$range_content = $contentToShow;
 			});
 
-			$content.slideToggle(500);
-			$content.slideToggle(500);
 		}
 
-		if ($left) {
-			$tags_container.animate({marginLeft: '+=100%'}, 500, function() {
-				console.log(this.style.marginLeft);
+		//range_content and icon animations for range left arrow
+		if (left && inRange) {
 
-				if (this.style.marginLeft >= '100%') {
-					this.style.marginLeft = '-700%';
-				}
+			range_index--;
+			if (range_index < 0) {
+				range_index = 7;
+				tags_container.style.marginLeft = '-800%';
+			};
+
+			$tags_container.animate({marginLeft: '+=100%'}, 300);
+
+			$contentToShow = findContentToShow(range_index, 'range');
+
+			$range_content.slideUp(300, function() {
+				$contentToShow.slideDown();
+				$range_content = $contentToShow;
 			});
 		}
 
+		//animations for tech right arrow
+		if (right && inTech) {
+			tech_index++;
+			if (tech_index > 5) {
+				tech_index = 1;
+				tags_container.style.marginLeft = 0;
+			};
+
+			$tags_container.animate({marginLeft: '-=100%'}, 300);
+
+			$contentToShow = findContentToShow(tech_index, 'tech');
+
+			$tech_content.slideUp(300, function() {
+				$contentToShow.slideDown();
+				$tech_content = $contentToShow;
+			});
+
+		}
+
+		if (left && inTech) {
+			tech_index--;
+			if (tech_index < 0) {
+				tech_index = 4;
+				tags_container.style.marginLeft = '-500%';
+			};
+
+			$tags_container.animate({marginLeft: '+=100%'}, 300);
+
+			$contentToShow = findContentToShow(tech_index, 'tech');
+
+			$tech_content.slideUp(300, function() {
+				$contentToShow.slideDown();
+				$tech_content = $contentToShow;
+			});
+		}
 
 	});
 
@@ -114,46 +169,104 @@ $(document).ready(function() {
 		});
 	});
 
-	function findContentToShow (tags_container) {
+	function findContentToShow (index, area) {
 
-		var contentToShow = 'popmov';
+		var contentToShow = undefined;
 
-		if (tags_container.style.marginLeft >= '-100%') {
-			contentToShow = 'hotmov';
+		if (area == 'range') {
+			if (index == 0 || index == 8) {
+				contentToShow = 'popmov';
+			}
+
+			if (index == 1) {
+				contentToShow = 'hotmov';
+			}
+
+			if (index == 2) {
+				contentToShow = 'cwedding';
+			}
+
+			if (index == 3) {
+				contentToShow = 'wwedding';
+			}
+
+			if (index == 4) {
+				contentToShow = 'company';
+			}
+
+			if (index == 5) {
+				contentToShow = 'product';
+			}
+
+			if (index == 6) {
+				contentToShow = 'internet';
+			}
+
+			if (index == 7) {
+				contentToShow = 'baby';
+			}
+			
+			return $('#' + contentToShow);
 		}
 
-		if (tags_container.style.marginLeft >= '-200%') {
-			contentToShow = 'cwedding';
+		if (area == 'tech') {
+			if (index == 0 || index == 5) {
+				contentToShow = 'plan';
+			}
+
+			if (index == 1) {
+				contentToShow = 'shoot';
+			}
+
+			if (index == 2) {
+				contentToShow = 'cut';
+			}
+
+			if (index == 3) {
+				contentToShow = 'special';
+			}
+
+			if (index == 4) {
+				contentToShow = 'adv';
+			}
+
+			return $('#' + contentToShow);
 		}
 
-		if (tags_container.style.marginLeft >= '-300%') {
-			contentToShow = 'wwedding';
-		}
-
-		if (tags_container.style.marginLeft >= '-400%') {
-			contentToShow = 'company';
-		}
-
-		if (tags_container.style.marginLeft >= '-500%') {
-			contentToShow = 'product';
-		}
-
-		if (tags_container.style.marginLeft >= '-600%') {
-			contentToShow = 'internet';
-		}
-
-		if (tags_container.style.marginLeft >= '-700%') {
-			contentToShow = 'baby';
-		}
-
-		if (tags_container.style.marginLeft >= '-800%') {
-			contentToShow = 'popmov';
-		}
-
-
-		
-		return contentToShow;
+		return false;
 	}
+
+	//large tags animation
+	var $large_rtags = $('.range_tag li');
+	var $active_rtag = $('.range_tag .active');
+	var $large_ttags = $('.tech_tag li');
+	var $active_ttag = $('.tech_tag .active');
+
+	$large_rtags.click(function() {
+		switchActiveTag($(this), 'range');
+	});
+
+	$large_ttags.click(function() {
+		switchActiveTag($(this), 'tech');
+	});
+
+	function switchActiveTag ($tag, area) {
+		 if (!$tag.hasClass('active')) {
+		 	$tag.removeClass('inactive');
+		 	$tag.addClass('active');
+		 } 
+
+		 if (area == 'range') {
+		 	$active_rtag.removeClass('active');
+		 	$active_rtag = $tag;
+		 } else if (area == 'tech') {
+		 	$active_ttag.removeClass('active');
+		 	$active_ttag = $tag;
+		 } else {
+		 	console.log('no such an area');
+		 }
+	}
+	
 
 
 

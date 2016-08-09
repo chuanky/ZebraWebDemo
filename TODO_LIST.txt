@@ -75,6 +75,7 @@ JavaScript:
 PHP:
 	1. accept reservation
 	2. company emails
+		√-accomplished through hostgator
 
 CSS:
 	√1. check transition -- use jQuery
@@ -90,6 +91,8 @@ jQuery:
 		√- team
 		√- index
 	4. add animation for index range and tech content
+		√-link contents with small tags
+		-link contents with large tags
 
 网页文书:
 	1. 完善策划部分文书 —— last block
