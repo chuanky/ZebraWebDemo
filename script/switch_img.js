@@ -195,7 +195,7 @@ function switch_tech_img(num) {
 			pic = "assets/images/tech_shoot.png";
 			tb_container.style.left = "65%";
 			tb1_text1.innerHTML = "生命 —— 意义<br>Life —— Meaning";
-			tb3_text1.innerHTML = "独特的视觉角度，拍摄出不同人对生命的定义<br>Different visual angles reflect different understandings of life<br>我想，生命的意义，只能靠自己，在体验，观察，阅读，思考<br>In my opinion, the meanding of life could only discover by myself through experiencing, observations, reading and thinking";
+			tb3_text1.innerHTML = "独特的视觉角度，拍摄出不同人对生命的定义<br>Different visual angles reflect different understandings of life<br>Different visual angles reflect different understandings of lif<br>In my opinion, the meanding of life could only discover by myself through experiencing, observations, reading and thinking";
 			tech_tag2.className = "active";
 			tech_more.href = "shoot.html";
 			break;

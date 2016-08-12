@@ -133,7 +133,6 @@ ul {
 #main_menu {
 	height: 40px;
 	background: #292929;
-	z-index: 1;
 }
 
 #main_menu a {
@@ -466,6 +465,7 @@ ul {
 }
 
 .range_bottom {
+	position: relative;
 }
 
 .rb_block1 {
@@ -475,7 +475,7 @@ ul {
 	width: 15%;
 	right: 40%;
 	line-height: 20px;
-	bottom: 100px;
+	bottom: 20%;
 }
 
 #tech .rb_block1 {
@@ -726,8 +726,6 @@ ul {
 	#services .dropdown_content {
 		width: 100%;
 	}
-
-
 
 	#index_propose {
 		margin-left: 0;

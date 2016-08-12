@@ -14,8 +14,8 @@ $(document).ready(function() {
 			var $active_content = $('#tag' + i_active + '_content');
 			var $content = $('#tag' + i + '_content');
 
-			$active_content.slideUp(500, function() {
-				$content.slideDown(500);
+			$active_content.slideUp(300, function() {
+				$content.slideDown(300);
 			})
 
 			$team_tag_active = $(this);
@@ -23,6 +23,28 @@ $(document).ready(function() {
 			console.log('activated');
 		}
 
+	});
+
+	//zebra work images animation
+	var $img = $('#tag2_content img:even');
+
+	$img.click(function() {
+		var $container = $(this).parent();
+		var modal = $container.find('.movies_modal')[0];
+		var img_modal = $container.find('img')[1];
+		var img_desc = $container.find('.img_desc')[0];
+		var caption = $container.find('.movies_modal_caption')[0];
+
+		modal.style.display = 'block';
+		img_modal.src = this.src;
+		img_modal.alt = this.alt;
+		caption.innerHTML = img_desc.innerHTML;
+
+		//close
+		var $close = $container.find('.close');
+		$close.click(function() {
+			modal.style.display = 'none';
+		});
 	});
 	
 	var $clan_tags = $('#clan_tag ul li');
@@ -242,12 +264,29 @@ $(document).ready(function() {
 	var $large_ttags = $('.tech_tag li');
 	var $active_ttag = $('.tech_tag .active');
 
+	var $active_rcontent = $('#' + $active_rtag.attr('rel'));
+	var $active_tcontent = $('#' + $active_ttag.attr('rel'));
+
 	$large_rtags.click(function() {
 		switchActiveTag($(this), 'range');
+		//change contents after switching active tag
+		var $contentToShow = $('#' + $(this).attr('rel'));
+
+		$active_rcontent.slideUp(300, function() {
+			$contentToShow.slideDown(300);
+			$active_rcontent = $contentToShow;
+		});
 	});
 
 	$large_ttags.click(function() {
 		switchActiveTag($(this), 'tech');
+
+		var $contentToShow = $('#' + $(this).attr('rel'));
+
+		$active_tcontent.slideUp(300, function() {
+			$contentToShow.slideDown(300);
+			$active_tcontent = $contentToShow;
+		});
 	});
 
 	function switchActiveTag ($tag, area) {

@@ -73,10 +73,6 @@
 	background: white;
 }
 
-#team_text h3:nth-child(2) {
-		text-align: right;
-}
-
 #book_text {
 	position: absolute;
 	width: 70%;
